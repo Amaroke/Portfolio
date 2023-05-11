@@ -1,7 +1,7 @@
-import {useState, useEffect} from "react";
-import {Container, Row, Col} from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import {ArrowRightCircle} from 'react-bootstrap-icons';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -9,10 +9,10 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
-    const toRotate = ["Web Developer.", "Roi des bébous."];
-    const period = 2000;
+    const [delta, setDelta] = useState(100 - Math.random() * 100);
+    const [_, setIndex] = useState(1);
+    const toRotate = ["Hugo !", "Amaroke !"];
+    const period = 1500;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -55,32 +55,25 @@ export const Banner = () => {
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
-                            {({isVisible}) =>
+                            {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Bienvenue sur mon Portfolio</span>
-                                    <h1>{`Hey ! Je suis Amaroke, `} <span className="txt-rotate" dataPeriod="1000"
-                                                                  data-rotate={toRotate}><span
-                                        className="wrap">{text}</span></span></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dictum odio.
-                                        Suspendisse a nunc dolor. Donec mattis faucibus risus ac mollis. Duis ac porta
-                                        justo. Praesent imperdiet orci sit amet erat vestibulum, a rhoncus lacus
-                                        laoreet. Nulla a rutrum diam. Vivamus quis fermentum ipsum, eu mollis urna. Cras
-                                        rhoncus elit tellus, vel fermentum dolor finibus sed. Sed facilisis euismod
-                                        purus, nec semper ipsum semper et. Curabitur lobortis tincidunt scelerisque.
-                                        Etiam dapibus tempus leo eu dignissim. Donec ut arcu dui. Fusce et nisl ut nunc
-                                        varius molestie. Quisque sed rutrum velit, eget gravida ipsum. Integer a maximus
-                                        lorem. Cras vitae mi ullamcorper, mattis erat sed, vehicula lacus.
+                                    <h1>{"Salut !"}</h1>
+                                    <h1>{`Moi c'est `} <span className="txt-rotate" dataPeriod="1000"
+                                        data-rotate={toRotate}><span
+                                            className="wrap">{text}</span></span></h1>
+                                    <p>Actuellement étudiant en Master informatique à l'université de Lorraine, je suis passionné par le développement informatique et j'ai pour ambition de devenir chef de projet informatique. Je suis particulièrement intéressé par le développement logiciel, mais aussi par le développement web et mobile. J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. En outre, ma formation m'a permis d'acquérir une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes. Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de la technologie. Je suis prêt à relever tous les défis pour y parvenir, grâce à mon engagement à travailler dur et à continuer d'apprendre de nouvelles choses.
                                     </p>
-                                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle
-                                        size={25}/></button>
+                                    <button onClick={() => console.log('connect')}>Faisons connaissance <ArrowRightCircle
+                                        size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>
-                            {({isVisible}) =>
+                            {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img"/>
+                                    <img src={headerImg} alt="Header Img" />
                                 </div>}
                         </TrackVisibility>
                     </Col>
