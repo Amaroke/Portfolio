@@ -10,7 +10,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 100);
-    const [_, setIndex] = useState(1);
+    const [, setIndex] = useState(1);
     const toRotate = ["Hugo !", "Amaroke !"];
     const period = 1500;
 
@@ -59,7 +59,7 @@ export const Banner = () => {
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Bienvenue sur mon Portfolio</span>
                                     <h1>{"Salut !"}</h1>
-                                    <h1>{`Moi c'est `} <span className="txt-rotate" dataPeriod="1000"
+                                    <h1>{`Moi c'est `} <span className="txt-rotate" dataperiod="1000"
                                         data-rotate={toRotate}><span
                                             className="wrap">{text}</span></span></h1>
                                     <p>Actuellement étudiant en Master informatique à l'université de Lorraine, je suis passionné par le développement informatique et j'ai pour ambition de devenir chef de projet. Je suis particulièrement intéressé par le développement logiciel, mais aussi par le développement web et mobile. J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. En outre, ma formation m'a permis d'acquérir une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes. Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de la technologie. Je suis prêt à relever tous les défis pour y parvenir, grâce à mon engagement à travailler dur et à continuer d'apprendre de nouvelles choses.

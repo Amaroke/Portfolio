@@ -29,35 +29,59 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Compétences</h2>
-                        <p>J'ai appris différentes langages de programmation jusqu'à présent, voici ce que je maîtrise :<br></br></p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={logo_java} alt="Java" />
-                                <h5>Java</h5>
-                            </div>
-                            <div className="item">
-                                <img src={logo_c} alt="C" />
-                                <h5>C</h5>
-                            </div>
-                            <div className="item">
-                                <img src={logo_python} alt="Python" />
-                                <h5>Python</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter} alt="Image" />
-                                <h5>XXX</h5>
-                            </div>
-                        </Carousel>
-                    </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Compétences</h2>
+              <p>J'ai développé dans différents langages de programmation jusqu'à présent, voici ce que je connais :<br></br></p>
+              <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} className="owl-carousel owl-theme skill-slider">
+                <div className="item">
+                  <img src={logo_java} alt="Java" />
+                  <h5>Java</h5>
                 </div>
+                <div className="item">
+                  <img src={logo_c} alt="C" />
+                  <h5>C</h5>
+                </div>
+                <div className="item">
+                  <img src={logo_python} alt="Python" />
+                  <h5>Python</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>JavaScript</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>HTML</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>CSS</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>GIT</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>PHP</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>MySQL</h5>
+                </div>
+                <div className="item">
+                  <img src={meter} alt="Image" />
+                  <h5>Kotlin</h5>
+                </div>
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
