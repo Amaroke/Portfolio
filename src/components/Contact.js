@@ -44,12 +44,10 @@ export const Contact = () => {
                       <Col size={12} sm={6} className="px-1">
                         <input id="prenom" name="prenom" type="text" value={formDetails.firstName} placeholder="Prénom" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                         <ValidationError prefix="prenom" field="prenom" errors={state.errors} />
-
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input id="nom" name="nom" type="text" value={formDetails.lastName} placeholder="Nom" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
                         <ValidationError prefix="nom" field="nom" errors={state.errors} />
-
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input id="email" type="email" value={formDetails.email} name="email" placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.value)} />
@@ -64,12 +62,6 @@ export const Contact = () => {
                         <ValidationError prefix="Message" field="message" errors={state.errors} />
                         <button type="submit" disabled={state.submitting || state.succeeded}><span>{!state.succeeded && !state.submitting ? "Envoyer" : state.succeeded ? "Envoyé !" : "Envoi en cours..."}</span></button>
                       </Col>
-                      {
-                        state.submitting &&
-                        <Col>
-                          <p className={state.succeeded === false ? "danger" : "success"}>{state.submitting}</p>
-                        </Col>
-                      }
                     </Row>
                   </form>
                 </div>}

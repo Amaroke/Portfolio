@@ -1,30 +1,48 @@
-import logo_java from "../assets/img/logo_java.png";
-import logo_c from "../assets/img/logo_c.png";
-import logo_python from "../assets/img/logo_python.png";
-import meter from "../assets/img/meter.svg";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png"
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import logoJava from "../assets/img/logo_java.png";
+import logoC from "../assets/img/logo_c.png";
+import logoPython from "../assets/img/logo_python.png";
+import logoJS from "../assets/img/meter.svg";
+import logoHtmlCss from "../assets/img/logo_html_css.png";
+import logoVSCode from "../assets/img/meter.svg";
+import logoGit from "../assets/img/meter.svg";
+import logoPhp from "../assets/img/meter.svg";
+import logoMySql from "../assets/img/meter.svg";
+import logoKotlin from "../assets/img/meter.svg";
+import logoJetbrains from "../assets/img/meter.svg";
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    focusOnSelect: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    cssEase: "linear",
+    swipe: true,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   };
 
   return (
@@ -34,54 +52,62 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Compétences</h2>
-              <p>J'ai développé dans différents langages de programmation jusqu'à présent, voici ce que je connais :<br></br></p>
-              <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} className="owl-carousel owl-theme skill-slider">
+              <p>
+                J'ai de l'expérience dans plusieurs langages de programmation et suis familier avec divers outils, voici ce que je connais :
+                <br />
+              </p>
+              <Slider {...settings} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
-                  <img src={logo_java} alt="Java" />
+                  <img src={logoJava} alt="Java" />
                   <h5>Java</h5>
                 </div>
                 <div className="item">
-                  <img src={logo_c} alt="C" />
+                  <img src={logoC} alt="C" />
                   <h5>C</h5>
                 </div>
                 <div className="item">
-                  <img src={logo_python} alt="Python" />
+                  <img src={logoPython} alt="Python" />
                   <h5>Python</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
+                  <img src={logoJS} alt="JavaScript" />
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
-                  <h5>HTML</h5>
+                  <img src={logoHtmlCss} alt="HTML/CSS" />
+                  <h5>HTML/CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
-                  <h5>CSS</h5>
+                  <img src={logoVSCode} alt="VS Code" />
+                  <h5>VS Code</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
-                  <h5>GIT</h5>
+                  <img src={logoGit} alt="Git" />
+                  <h5>Git</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
+                  <img src={logoPhp} alt="PHP" />
                   <h5>PHP</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
+                  <img src={logoMySql} alt="MySQL" />
                   <h5>MySQL</h5>
                 </div>
                 <div className="item">
-                  <img src={meter} alt="Image" />
+                  <img src={logoKotlin} alt="Kotlin" />
                   <h5>Kotlin</h5>
                 </div>
-              </Carousel>
+                <div className="item">
+                  <img src={logoJetbrains} alt="IDE Jetbrains" />
+                  <h5>IDE Jetbrains</h5>
+                </div>
+              </Slider>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="background" />
     </section>
-  )
+  );
+
 }
