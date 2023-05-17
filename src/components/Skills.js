@@ -2,17 +2,17 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import logoJava from "../assets/img/logo_java.png";
-import logoC from "../assets/img/logo_c.png";
-import logoPython from "../assets/img/logo_python.png";
-import logoJS from "../assets/img/meter.svg";
-import logoHtmlCss from "../assets/img/logo_html_css.png";
-import logoVSCode from "../assets/img/meter.svg";
-import logoGit from "../assets/img/meter.svg";
-import logoPhp from "../assets/img/meter.svg";
-import logoMySql from "../assets/img/meter.svg";
-import logoKotlin from "../assets/img/meter.svg";
-import logoJetbrains from "../assets/img/meter.svg";
+import logoJava from "../assets/img/logo-java.png";
+import logoC from "../assets/img/logo-c.png";
+import logoPython from "../assets/img/logo-python.png";
+import logoJS from "../assets/img/logo-js.png";
+import logoHtmlCss from "../assets/img/logo-html-css.png";
+import logoVSCode from "../assets/img/logo-vs-code.png";
+import logoGit from "../assets/img/logo-git.png";
+import logoPhp from "../assets/img/logo-php.png";
+import logoMySql from "../assets/img/logo-mysql.png";
+import logoKotlin from "../assets/img/logo-kotlin.png";
+import logoJetbrains from "../assets/img/logo-jetbrains.png";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {

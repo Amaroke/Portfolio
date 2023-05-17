@@ -52,7 +52,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/hugo-mathieu-steinbach/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="linkedin" /></a>
                 <a href="https://github.com/Amaroke" target="_blank" rel="noreferrer"><img src={navIcon2} alt="github" /></a>
-                <a href="#" onClick={() => navigator.clipboard.writeText("Amaroke#8643")}><img src={navIcon3} alt="discord" /></a>
+                <a href="mailto:hugo.amaroke@gmail.com"><img src={navIcon3} alt="Envoyer mail" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Me contacter</span></button>
