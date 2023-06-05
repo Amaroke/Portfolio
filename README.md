@@ -1,8 +1,3 @@
-# TODO 
+Ce dépôt contient les fichiers sources de mon portfolio.
 
-* Favicon
-
-Faire les barres sous les elements du menu comme calvin
-
-lien faisons connaissances
-
+Mon portfolio est accessible en suivant ce lien : https://amaroke.github.io/Portfolio/

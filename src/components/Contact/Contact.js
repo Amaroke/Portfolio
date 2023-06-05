@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useForm, ValidationError } from '@formspree/react';
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
+import "./Contact.css";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -46,7 +47,7 @@ export const Contact = () => {
                         <ValidationError prefix="prenom" field="prenom" errors={state.errors} />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
-                        <input id="nom" name="nom" type="text" value={formDetails.lastName} placeholder="Nom"  pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
+                        <input id="nom" name="nom" type="text" value={formDetails.lastName} placeholder="Nom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
                         <ValidationError prefix="nom" field="nom" errors={state.errors} />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
