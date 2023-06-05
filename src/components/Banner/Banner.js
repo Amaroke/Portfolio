@@ -1,9 +1,10 @@
 import { useState, useEffect, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import "./Banner.css";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -61,9 +62,9 @@ export const Banner = () => {
                                     <h1>{`Moi c'est `} <span className="txt-rotate" dataperiod="1000"
                                         data-rotate={toRotate}><span
                                             className="wrap">{text}</span></span></h1>
-                                    <p>Actuellement étudiant en Master informatique, je suis passionné par la programmation et j'ai pour ambition de devenir un jour chef de projet. J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. Je possède une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes. Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de la technologie.
+                                    <p>Actuellement étudiant en Master informatique, je suis passionné par la programmation et j'ai pour ambition de devenir un jour chef de projet. J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. Je possède une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes. Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de l'informatique.
                                     </p>
-                                    <button onClick={() => console.log('connect')}>Faisons connaissance <ArrowRightCircle
+                                    <button onClick={() => { window.location.href = "#connect" }}>Faisons connaissance <ArrowRightCircle
                                         size={25} /></button>
                                 </div>}
                         </TrackVisibility>
