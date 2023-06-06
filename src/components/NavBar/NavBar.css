@@ -38,8 +38,16 @@ nav.navbar .navbar-nav .nav-link.navbar-link::after {
     transform: translateX(-50%);
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link:hover::after {
-    width: 70%;
+nav.navbar .navbar-nav .nav-link[id="home"].navbar-link:hover::after  {
+    width: 65%;
+}
+
+nav.navbar .navbar-nav .nav-link[id="skills"].navbar-link:hover::after {
+    width: 75%;
+}
+
+nav.navbar .navbar-nav .nav-link[id="project"].navbar-link:hover::after  {
+    width: 60%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:not(:hover)::after {
