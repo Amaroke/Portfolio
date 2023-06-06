@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.65af294d.css",
-    "main.js": "/Portfolio/static/js/main.71f7fc26.js",
+    "main.css": "/Portfolio/static/css/main.23b4a851.css",
+    "main.js": "/Portfolio/static/js/main.7ee52ff2.js",
     "static/media/color-sharp.png": "/Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/obstACL_tower.png": "/Portfolio/static/media/obstACL_tower.0e5c91f259564d1918a2.png",
@@ -20,6 +20,7 @@
     "static/media/logo-php.png": "/Portfolio/static/media/logo-php.e09cab3e016fcc64f1a1.png",
     "static/media/logo-java.png": "/Portfolio/static/media/logo-java.49119885df38ed492812.png",
     "static/media/logo-vs-code.png": "/Portfolio/static/media/logo-vs-code.c0e1a20dfef24c094794.png",
+    "static/media/logo-react.png": "/Portfolio/static/media/logo-react.492e35bf1e1d203e2273.png",
     "static/media/logo-mysql.png": "/Portfolio/static/media/logo-mysql.eb509fa6655fce423141.png",
     "static/media/contact-img.svg": "/Portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/projetDPiscine.png": "/Portfolio/static/media/projetDPiscine.9ca390014251009adcc9.png",
@@ -28,6 +29,7 @@
     "static/media/logo-js.png": "/Portfolio/static/media/logo-js.7ac08a7e5fb3834f8f4a.png",
     "static/media/project.jpg": "/Portfolio/static/media/project.e06e5bfa3b388829a967.jpg",
     "static/media/logo-numpy.png": "/Portfolio/static/media/logo-numpy.58ffe7e85fef1be446f2.png",
+    "static/media/logo-typescript.png": "/Portfolio/static/media/logo-typescript.e1cde68221981025b83c.png",
     "static/media/slick.svg": "/Portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -36,11 +38,11 @@
     "static/media/nav-icon1.svg": "/Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/nav-icon3.svg": "/Portfolio/static/media/nav-icon3.deb98b007c987af580650ad9bd57bc11.svg",
-    "main.65af294d.css.map": "/Portfolio/static/css/main.65af294d.css.map",
-    "main.71f7fc26.js.map": "/Portfolio/static/js/main.71f7fc26.js.map"
+    "main.23b4a851.css.map": "/Portfolio/static/css/main.23b4a851.css.map",
+    "main.7ee52ff2.js.map": "/Portfolio/static/js/main.7ee52ff2.js.map"
   },
   "entrypoints": [
-    "static/css/main.65af294d.css",
-    "static/js/main.71f7fc26.js"
+    "static/css/main.23b4a851.css",
+    "static/js/main.7ee52ff2.js"
   ]
 }
