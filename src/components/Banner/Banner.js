@@ -55,18 +55,15 @@ export const Banner = () => {
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
-                            {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className="tagline">Bienvenue sur mon Portfolio</span>
-                                    <h1>{"Salut !"}</h1>
-                                    <h1>{`Moi c'est `} <span className="txt-rotate" dataperiod="1000"
-                                        data-rotate={toRotate}><span
-                                            className="wrap">{text}</span></span></h1>
-                                    <p>Actuellement étudiant en Master informatique, je suis passionné par la programmation et j'ai pour ambition de devenir un jour chef de projet.<br></br> J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. Je possède une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes.<br></br>Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de l'informatique.
-                                    </p>
-                                    <button onClick={() => { window.location.href = "#connect" }}>Faisons connaissance <ArrowRightCircle
-                                        size={25} /></button>
-                                </div>}
+                            <span className="tagline">Bienvenue sur mon Portfolio</span>
+                            <h1>{"Salut !"}</h1>
+                            <h1>{`Moi c'est `} <span className="txt-rotate" dataperiod="1000"
+                                data-rotate={toRotate}><span
+                                    className="wrap">{text}</span></span></h1>
+                            <p>Actuellement étudiant en Master informatique, je suis passionné par la programmation et j'ai pour ambition de devenir un jour chef de projet.<br></br> J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. Je possède une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes.<br></br>Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de l'informatique.
+                            </p>
+                            <button onClick={() => { window.location.href = "#connect" }}>Faisons connaissance <ArrowRightCircle
+                                size={25} /></button>
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

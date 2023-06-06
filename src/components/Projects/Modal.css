@@ -53,10 +53,14 @@
 }
 
 .icons-container img {
+    justify-content: center;
+    align-items: center;
     margin-right: 50px;
 }
 
 .icons-container p {
+    justify-content: center;
+    align-items: center;
     margin-right: 50px;
 }
 

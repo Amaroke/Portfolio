@@ -10,7 +10,15 @@ import logoPython from "../../assets/img/logo-python.png";
 import logonumpy from "../../assets/img/logo-numpy.png";
 import logotypescript from "../../assets/img/logo-typescript.png";
 import logoReact from "../../assets/img/logo-react.png";
+import logonodejs from "../../assets/img/logo-nodejs.png";
+import logojavascript from "../../assets/img/logo-js.png";
+import logojava from "../../assets/img/logo-java.png";
+import logolibgdx from "../../assets/img/logo-libgdx.png";
+import logoPHP from "../../assets/img/logo-php.png";
+import logocomposer from "../../assets/img/logo-composer.png";
 import logohtmlcss from "../../assets/img/logo-html-css.png";
+import logoAndroidStudio from "../../assets/img/logo-android-studio.png";
+import logoKotlin from "../../assets/img/logo-kotlin.png";
 import projImg from "../../assets/img/project.jpg";
 import georges from "../../assets/img/georges.png";
 import ProjetDPiscine from "../../assets/img/projetDPiscine.png";
@@ -68,12 +76,12 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logonodejs,
+      imglang2: logojavascript,
+      imglang3: logohtmlcss,
+      lang1: "NodeJS",
+      lang2: "Javascript",
+      lang3: "Html/Css"
     },
     {
       title: "ObstACL-Tower",
@@ -85,12 +93,10 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logojava,
+      imglang2: logolibgdx,
+      lang1: "Java",
+      lang2: "LibGDX"
     },
     {
       title: "Golden-PPIT",
@@ -102,12 +108,12 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logoPHP,
+      imglang2: logohtmlcss,
+      imglang3: logocomposer,
+      lang1: "PHP",
+      lang2: "Html/Css",
+      lang3: "Composer"
     },
     {
       title: "PlatVenture",
@@ -119,12 +125,12 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logojava,
+      imglang2: logolibgdx,
+      imglang3: logoAndroidStudio,
+      lang1: "Java",
+      lang2: "LibGDX",
+      lang3: "Android Studio"
     },
     {
       title: "PuissanceQuatre",
@@ -136,12 +142,8 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logojava,
+      lang1: "Java"
     },
   ];
 
@@ -156,12 +158,12 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logoReact,
+      imglang2: logohtmlcss,
+      imglang3: logojavascript,
+      lang1: "ReactJS",
+      lang2: "Html/Css",
+      lang3: "Javascript"
     },
     {
       title: "MakeMoreMeat",
@@ -173,12 +175,10 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: projImg,
-      imglang2: projImg,
-      imglang3: projImg,
-      lang1: "TODO",
-      lang2: "TODO",
-      lang3: "TODO"
+      imglang1: logoKotlin,
+      imglang2: logoAndroidStudio,
+      lang1: "Kotlin",
+      lang2: "Android Studio"
     },
     {
       title: "ReactChess",
@@ -205,60 +205,57 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projets</h2>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Universitaires</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Personnels</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                      <Tab.Pane eventKey="first">
-                        <p>Voici certains des projets que j'ai pu réaliser au cours de ma formation :</p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {
-                            projects.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  setSelectedProject={setSelectedProject}
-                                  setShowDialog={setShowDialog}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <p>Voici les différents projets dans lesquels je suis investis sur mon temps libre :</p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <Row>
-                          {
-                            perso_projects.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  setSelectedProject={setSelectedProject}
-                                  setShowDialog={setShowDialog}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
-                </div>}
+              <h2>Projets</h2>
+              <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav.Item>
+                    <Nav.Link eventKey="first">Universitaires</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="second">Personnels</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+                <Tab.Content id="slideInUp">
+                  <Tab.Pane eventKey="first">
+                    <p>Voici certains des projets que j'ai pu réaliser au cours de ma formation :</p>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="first">
+                    <Row>
+                      {
+                        projects.map((project, index) => {
+                          return (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              setSelectedProject={setSelectedProject}
+                              setShowDialog={setShowDialog}
+                            />
+                          )
+                        })
+                      }
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="second">
+                    <p>Voici les différents projets dans lesquels je suis investis sur mon temps libre :</p>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="second">
+                    <Row>
+                      {
+                        perso_projects.map((project, index) => {
+                          return (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              setSelectedProject={setSelectedProject}
+                              setShowDialog={setShowDialog}
+                            />
+                          )
+                        })
+                      }
+                    </Row>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
             </TrackVisibility>
           </Col>
         </Row>

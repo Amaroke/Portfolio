@@ -13,6 +13,7 @@ import logoPhp from "../../assets/img/logo-php.png";
 import logoMySql from "../../assets/img/logo-mysql.png";
 import logoKotlin from "../../assets/img/logo-kotlin.png";
 import logoJetbrains from "../../assets/img/logo-jetbrains.png";
+import logoReact from "../../assets/img/logo-react.png";
 import colorSharp from "../../assets/img/color-sharp.png";
 import "./Skills.css";
 
@@ -81,6 +82,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={logoVSCode} alt="VS Code" />
                   <h5>VS Code</h5>
+                </div>
+                <div className="item">
+                  <img src={logoReact} alt="ReactJS" />
+                  <h5>ReactJS</h5>
                 </div>
                 <div className="item">
                   <img src={logoGit} alt="Git" />
