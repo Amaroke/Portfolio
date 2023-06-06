@@ -31,22 +31,22 @@ nav.navbar .navbar-nav .nav-link.navbar-link::after {
     position: absolute;
     bottom: -5px;
     left: 50%;
-        width: 0;
+    width: 0;
     height: 2px;
     background-color: #fff;
     transition: width 0.3s ease-in-out;
     transform: translateX(-50%);
 }
 
-nav.navbar .navbar-nav .nav-link[id="home"].navbar-link:hover::after  {
+nav.navbar .navbar-nav .nav-link[id="homenav"].navbar-link:hover::after {
     width: 65%;
 }
 
-nav.navbar .navbar-nav .nav-link[id="skills"].navbar-link:hover::after {
+nav.navbar .navbar-nav .nav-link[id="skillsnav"].navbar-link:hover::after {
     width: 75%;
 }
 
-nav.navbar .navbar-nav .nav-link[id="project"].navbar-link:hover::after  {
+nav.navbar .navbar-nav .nav-link[id="projectnav"].navbar-link:hover::after {
     width: 60%;
 }
 

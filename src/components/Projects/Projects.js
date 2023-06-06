@@ -8,6 +8,9 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import logoPython from "../../assets/img/logo-python.png";
 import logonumpy from "../../assets/img/logo-numpy.png";
+import logotypescript from "../../assets/img/logo-typescript.png";
+import logoReact from "../../assets/img/logo-react.png";
+import logohtmlcss from "../../assets/img/logo-html-css.png";
 import projImg from "../../assets/img/project.jpg";
 import georges from "../../assets/img/georges.png";
 import ProjetDPiscine from "../../assets/img/projetDPiscine.png";
@@ -58,27 +61,87 @@ export const Projects = () => {
     {
       title: "ProjetDPiscine",
       resume: "Site de gestion d'agenda",
-      imgUrl: ProjetDPiscine,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
+      imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
     {
       title: "ObstACL-Tower",
-      resume: "Jeu de roguelike",
-      imgUrl: obstACL_tower,
+      resume: "Jeu de type roguelike",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
+      imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
     {
       title: "Golden-PPIT",
       resume: "Site web d'organisation d'évènements",
-      imgUrl: goldenppit,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
+      imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
     {
       title: "PlatVenture",
       resume: "Jeu de plateforme",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
     {
       title: "PuissanceQuatre",
-      resume: "IA de jeu de puissance 4",
+      resume: "IA d'un jeu de puissance 4",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
   ];
 
@@ -86,17 +149,53 @@ export const Projects = () => {
     {
       title: "Charadle",
       resume: "Jeu de devinette de personnages",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
     {
       title: "MakeMoreMeat",
       resume: "Jeu incrémental sous Android",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: projImg,
+      imglang2: projImg,
+      imglang3: projImg,
+      lang1: "TODO",
+      lang2: "TODO",
+      lang3: "TODO"
     },
     {
       title: "ReactChess",
       resume: "Site d'échecs",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
+      imgUrl4: projImg,
+      imgUrl5: projImg,
+      imglang1: logotypescript,
+      imglang2: logohtmlcss,
+      imglang3: logoReact,
+      lang1: "TypeScript",
+      lang2: "Html/Css",
+      lang3: "ReactJS"
     }
   ];
 
@@ -199,8 +298,8 @@ export const Projects = () => {
                         {selectedProject?.lang2 && <p>{selectedProject?.lang2}</p>}
                       </Col>
                       <Col>
-                        {selectedProject?.lang3 && <img src={selectedProject?.imglang2} alt={selectedProject?.lang3} />}
-                        {selectedProject?.lang2 && <p>{selectedProject?.lang3}</p>}
+                        {selectedProject?.lang3 && <img src={selectedProject?.imglang3} alt={selectedProject?.lang3} />}
+                        {selectedProject?.lang3 && <p>{selectedProject?.lang3}</p>}
                       </Col>
                     </Row>
                   </div>

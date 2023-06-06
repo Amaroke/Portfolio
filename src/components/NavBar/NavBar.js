@@ -37,7 +37,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/Portfolio">
             <img className="navbar-img" src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -45,9 +45,9 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link id="home" href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Accueil</Nav.Link>
-              <Nav.Link id="skills" href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Compétences</Nav.Link>
-              <Nav.Link id="project" href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projets</Nav.Link>
+              <HashLink id="homenav" smooth to='#home' className={`nav-link navbar-link ${activeLink === 'home' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('home')}>Accueil</HashLink>
+              <HashLink id="skillsnav" smooth to='#skills' className={`nav-link navbar-link ${activeLink === 'skills' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('skills')}>Compétences</HashLink>
+              <HashLink id="projectnav" smooth to='#project' className={`nav-link navbar-link ${activeLink === 'project' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('project')}>Projets</HashLink>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
