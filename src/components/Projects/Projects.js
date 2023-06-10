@@ -20,10 +20,6 @@ import logohtmlcss from "../../assets/img/logo-html-css.png";
 import logoAndroidStudio from "../../assets/img/logo-android-studio.png";
 import logoKotlin from "../../assets/img/logo-kotlin.png";
 import projImg from "../../assets/img/project.jpg";
-import georges from "../../assets/img/georges.png";
-import ProjetDPiscine from "../../assets/img/projetDPiscine.png";
-import obstACL_tower from "../../assets/img/obstACL_tower.png";
-import goldenppit from "../../assets/img/goldenppit.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -57,10 +53,10 @@ export const Projects = () => {
       title: "Georges",
       resume: "Nettoyage d'archives",
       description: "\"Georges\" permet grâce au raisonnement à partir de cas de nettoyer des archives. Ce projet a été réalisé, dans le cadre de l'UE Initiation à la Recherche de mon Master Informatique à l'Université de Lorraine. Il a été réalisé en collaboration avec Persée, une Unité de Support et de Recherche de l'ENS de Lyon et du CNRS. Entièrement écris en Python l'outil développé à permis d'obtenir des résultats très satisfaisants sur l'ensemble des documents fournis. Ces travaux ont menés à la publication d'un article à l'occasion de l'International Conference on Case-Based Reasoning de 2023.<br>Pour plus d'informations, vous pouvez consulter le <a href=\"github.com/Amaroke/Georges\">dépôt GitHub</a> du projet.",
-      imgUrl: georges,
-      imgUrl1: georges,
-      imgUrl2: georges,
-      imgUrl3: georges,
+      imgUrl: projImg,
+      imgUrl1: projImg,
+      imgUrl2: projImg,
+      imgUrl3: projImg,
       imglang1: logoPython,
       imglang2: logonumpy,
       lang1: "Python",
@@ -150,7 +146,7 @@ export const Projects = () => {
   const perso_projects = [
     {
       title: "Charadle",
-      resume: "Jeu de devinette de personnages",
+      resume: "Jeu web de devinettes de personnages",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
       imgUrl1: projImg,
@@ -209,20 +205,20 @@ export const Projects = () => {
               <Tab.Container id="projects-tabs" defaultActiveKey="first">
                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                   <Nav.Item>
-                    <Nav.Link eventKey="first">Universitaires</Nav.Link>
+                    <Nav.Link eventKey="first">Personnels</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">Personnels</Nav.Link>
+                    <Nav.Link eventKey="second">Universitaires</Nav.Link>
                   </Nav.Item>
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="first">
-                    <p>Voici certains des projets que j'ai pu réaliser au cours de ma formation :</p>
+                    <p>Voici les différents projets dans lesquels je suis investis sur mon temps libre :</p>
                   </Tab.Pane>
                   <Tab.Pane eventKey="first">
                     <Row>
                       {
-                        projects.map((project, index) => {
+                        perso_projects.map((project, index) => {
                           return (
                             <ProjectCard
                               key={index}
@@ -236,12 +232,12 @@ export const Projects = () => {
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <p>Voici les différents projets dans lesquels je suis investis sur mon temps libre :</p>
+                    <p>Voici certains des projets que j'ai pu réaliser au cours de ma formation :</p>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     <Row>
                       {
-                        perso_projects.map((project, index) => {
+                        projects.map((project, index) => {
                           return (
                             <ProjectCard
                               key={index}
@@ -287,16 +283,22 @@ export const Projects = () => {
                   <div className="languages">
                     <Row>
                       <Col>
-                        <img src={selectedProject?.imglang1} alt={selectedProject?.lang1} />
-                        <p>{selectedProject?.lang1}</p>
+                        <div class="language-container">
+                          <img src={selectedProject?.imglang1} alt={selectedProject?.lang1} />
+                          <p>{selectedProject?.lang1}</p>
+                        </div>
                       </Col>
                       <Col>
-                        {selectedProject?.lang2 && <img src={selectedProject?.imglang2} alt={selectedProject?.lang2} />}
-                        {selectedProject?.lang2 && <p>{selectedProject?.lang2}</p>}
+                        <div class="language-container">
+                          {selectedProject?.lang2 && <img src={selectedProject?.imglang2} alt={selectedProject?.lang2} />}
+                          {selectedProject?.lang2 && <p>{selectedProject?.lang2}</p>}
+                        </div>
                       </Col>
                       <Col>
-                        {selectedProject?.lang3 && <img src={selectedProject?.imglang3} alt={selectedProject?.lang3} />}
-                        {selectedProject?.lang3 && <p>{selectedProject?.lang3}</p>}
+                        <div class="language-container">
+                          {selectedProject?.lang3 && <img src={selectedProject?.imglang3} alt={selectedProject?.lang3} />}
+                          {selectedProject?.lang3 && <p>{selectedProject?.lang3}</p>}
+                        </div>
                       </Col>
                     </Row>
                   </div>
