@@ -63,6 +63,9 @@
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
+  margin-left: -10%;
+  margin-right: -10%;
+  text-align: center;
 }
 
 .skill p {
@@ -81,7 +84,7 @@
   z-index: -4;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 
   .skill-bx {
     overflow: hidden;
