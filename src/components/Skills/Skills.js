@@ -103,7 +103,7 @@ export const Skills = () => {
                     <img src={logoJetbrains} alt="IDE Jetbrains" />
                     <h5>IDE Jetbrains</h5>
                   </div>
-                  {window.innerWidth >= 767 ? duplicat : null}
+                  {window.innerWidth > 767 ? duplicat : null}
                 </div>
               </div>
             </div>
