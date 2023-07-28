@@ -8,7 +8,6 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import logoPython from "../../assets/img/logo-python.png";
 import logonumpy from "../../assets/img/logo-numpy.png";
-import logotypescript from "../../assets/img/logo-typescript.png";
 import logoReact from "../../assets/img/logo-react.png";
 import logonodejs from "../../assets/img/logo-nodejs.png";
 import logojavascript from "../../assets/img/logo-js.png";
