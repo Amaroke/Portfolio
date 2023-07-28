@@ -177,8 +177,8 @@ export const Projects = () => {
       lang2: "Android Studio"
     },
     {
-      title: "ReactChess",
-      resume: "Site d'échecs",
+      title: "Yurei Esports",
+      resume: "Site web d'une équipe d'esport",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at risus ipsum. Vivamus magna elit, condimentum porttitor metus vel, facilisis pulvinar odio. Donec mollis ex vel metus maximus fringilla. Etiam odio tortor, scelerisque gravida massa ut, mollis eleifend lectus. Nulla ullamcorper elementum risus at hendrerit. Integer iaculis laoreet ante. Maecenas ullamcorper lectus eget viverra mattis. Donec quis augue sapien. Integer lobortis vulputate accumsan. In mollis felis nec leo dictum commodo. Nullam eu iaculis ipsum. Nam ornare tincidunt gravida.",
       imgUrl: projImg,
       imgUrl1: projImg,
