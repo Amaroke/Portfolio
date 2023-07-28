@@ -12,6 +12,48 @@ import colorSharp from "../../assets/img/color-sharp.png";
 import "./Skills.css";
 
 export const Skills = () => {
+
+  const duplicat = (
+    <>
+      <div className="item">
+        <img src={logoJava} alt="Java" />
+        <h5>Java</h5>
+      </div>
+      <div className="item">
+        <img src={logoPython} alt="Python" />
+        <h5>Python</h5>
+      </div>
+      <div className="item">
+        <img src={logoJS} alt="JavaScript" />
+        <h5>JavaScript</h5>
+      </div>
+      <div className="item">
+        <img src={logoHtmlCss} alt="HTML/CSS" />
+        <h5>HTML/CSS</h5>
+      </div>
+      <div className="item">
+        <img src={logoVSCode} alt="VS Code" />
+        <h5>VS Code</h5>
+      </div>
+      <div className="item">
+        <img src={logoReact} alt="ReactJS" />
+        <h5>ReactJS</h5>
+      </div>
+      <div className="item">
+        <img src={logoGit} alt="Git" />
+        <h5>Git</h5>
+      </div>
+      <div className="item">
+        <img src={logoMySql} alt="MySQL" />
+        <h5>MySQL</h5>
+      </div>
+      <div className="item">
+        <img src={logoJetbrains} alt="IDE Jetbrains" />
+        <h5>IDE Jetbrains</h5>
+      </div>
+    </>
+  );
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -61,42 +103,7 @@ export const Skills = () => {
                     <img src={logoJetbrains} alt="IDE Jetbrains" />
                     <h5>IDE Jetbrains</h5>
                   </div>
-                  <div className="item">
-                    <img src={logoJava} alt="Java" />
-                    <h5>Java</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoPython} alt="Python" />
-                    <h5>Python</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoJS} alt="JavaScript" />
-                    <h5>JavaScript</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoHtmlCss} alt="HTML/CSS" />
-                    <h5>HTML/CSS</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoVSCode} alt="VS Code" />
-                    <h5>VS Code</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoReact} alt="ReactJS" />
-                    <h5>ReactJS</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoGit} alt="Git" />
-                    <h5>Git</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoMySql} alt="MySQL" />
-                    <h5>MySQL</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoJetbrains} alt="IDE Jetbrains" />
-                    <h5>IDE Jetbrains</h5>
-                  </div>
+                  {window.innerWidth >= 767 ? duplicat : null}
                 </div>
               </div>
             </div>

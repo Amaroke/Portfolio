@@ -10,9 +10,9 @@ export const ProjectCard = ({ title, resume, description, imgUrl, imgUrl1, imgUr
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx" onClick={handleClick}>
-          <h4>{title}</h4>
-          <span>{resume}</span>
-          <span className="ClickMe">{"Plus d'infos →"}</span>
+        <h4>{title}</h4>
+        <span>{resume}</span>
+        <span className="ClickMe">{"Plus d'infos →"}</span>
       </div>
     </Col>
   )
