@@ -104,6 +104,8 @@
   
   .image-banner img {
     max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 10px;
   }
   
   @keyframes scroll {
