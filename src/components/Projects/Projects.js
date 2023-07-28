@@ -186,12 +186,10 @@ export const Projects = () => {
       imgUrl3: projImg,
       imgUrl4: projImg,
       imgUrl5: projImg,
-      imglang1: logotypescript,
+      imglang1: logoReact,
       imglang2: logohtmlcss,
-      imglang3: logoReact,
-      lang1: "TypeScript",
+      lang1: "ReactJS",
       lang2: "Html/Css",
-      lang3: "ReactJS"
     }
   ];
 
