@@ -84,3 +84,8 @@
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.footer .copyright {
+  font-size: 14px;
+  color: #fff;
+}
