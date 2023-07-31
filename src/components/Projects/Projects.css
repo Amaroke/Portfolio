@@ -1,7 +1,7 @@
 .project {
     padding: 40px 0;
     position: relative;
-    background-color: black;
+    background-image: url('../../assets/img/color-sharp2.png') no-repeat;
 }
 
 .project h2 {
