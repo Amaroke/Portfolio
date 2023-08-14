@@ -4,16 +4,17 @@ import logo from '../../assets/img/Amaroke.png';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon2 from '../../assets/img/nav-icon2.svg';
 import navIcon3 from '../../assets/img/nav-icon3.svg';
+import frFlag from '../../assets/img/fr_flag.png';
+import enFlag from '../../assets/img/en_flag.png';
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
+import { useLanguage } from "../LanguageProvider";
 
 export const NavBar = () => {
-
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const { currentLanguage, changeLanguage } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => {
@@ -27,11 +28,15 @@ export const NavBar = () => {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
+
+  const handleLanguageChange = () => {
+    changeLanguage();
+  };
 
   return (
     <Router>
@@ -45,9 +50,9 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <HashLink id="homenav" smooth to='#home' className={`nav-link navbar-link ${activeLink === 'home' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('home')}>Accueil</HashLink>
-              <HashLink id="skillsnav" smooth to='#skills' className={`nav-link navbar-link ${activeLink === 'skills' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('skills')}>Compétences</HashLink>
-              <HashLink id="projectnav" smooth to='#project' className={`nav-link navbar-link ${activeLink === 'project' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('project')}>Projets</HashLink>
+              <HashLink id="homenav" smooth to='#home' className={`nav-link navbar-link ${activeLink === 'home' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('home')}>{currentLanguage === "en" ? "Home" : "Accueil"}</HashLink>
+              <HashLink id="skillsnav" smooth to='#skills' className={`nav-link navbar-link ${activeLink === 'skills' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('skills')}>{currentLanguage === "en" ? "Skills" : "Compétences"}</HashLink>
+              <HashLink id="projectnav" smooth to='#project' className={`nav-link navbar-link ${activeLink === 'project' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('project')}>{currentLanguage === "en" ? "Projects" : "Projets"}</HashLink>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -55,9 +60,18 @@ export const NavBar = () => {
                 <a href="https://github.com/Amaroke" target="_blank" rel="noreferrer"><img src={navIcon2} alt="github" /></a>
                 <a href="mailto:hugo.amaroke@gmail.com"><img src={navIcon3} alt="Envoyer mail" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Me contacter</span></button>
-              </HashLink>
+              <div className="button-group">
+                <HashLink to='#connect'>
+                  <button className="vvd"><span>{currentLanguage === "en" ? "Let's Connect" : "Me contacter"}</span></button>
+                </HashLink>
+                <button onClick={handleLanguageChange} className="language-toggle-button">
+                  {currentLanguage === "en" ? (
+                    <img src={frFlag} alt="French Flag" style={{ width: "75px", height: "auto" }} />
+                  ) : (
+                    <img src={enFlag} alt="English Flag" style={{ width: "75px", height: "auto" }} />
+                  )}
+                </button>
+              </div>
             </span>
           </Navbar.Collapse>
         </Container>

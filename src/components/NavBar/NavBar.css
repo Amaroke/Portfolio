@@ -58,6 +58,16 @@ nav.navbar .navbar-nav .nav-link.navbar-link:not(:hover)::after {
     width: 150%;
 }
 
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.button-group button {
+    margin-left: 25px;
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -111,7 +121,7 @@ span.navbar-text {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.navbar-text button {
+.navbar-text button.vvd {
     font-weight: 700;
     color: #fff;
     border: 1px solid #fff;
@@ -123,11 +133,11 @@ span.navbar-text {
     transition: 0.3s ease-in-out;
 }
 
-.navbar-text button span {
+.navbar-text button.vvd span {
     z-index: 1;
 }
 
-.navbar-text button::before {
+.navbar-text button.vvd::before {
     content: "";
     width: 0%;
     height: 100%;
@@ -139,11 +149,11 @@ span.navbar-text {
     transition: 0.3s ease-in-out;
 }
 
-.navbar-text button:hover {
+.navbar-text button.vvd:hover {
     color: #121212;
 }
 
-.navbar-text button:hover::before {
+.navbar-text button.vvd:hover::before {
     content: "";
     width: 100%;
     height: 100%;
