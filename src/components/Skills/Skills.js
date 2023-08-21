@@ -10,46 +10,48 @@ import logoJetbrains from "../../assets/img/logo-jetbrains.png";
 import logoReact from "../../assets/img/logo-react.png";
 import colorSharp from "../../assets/img/color-sharp.png";
 import "./Skills.css";
+import { useLanguage } from "../LanguageProvider";
 
 export const Skills = () => {
 
+  const { currentLanguage } = useLanguage();
   const duplicat = (
     <>
       <div className="item">
         <img src={logoJava} alt="Java" />
-        <h5>Java</h5>
+        <h5>{currentLanguage === "en" ? "Java" : "Java"}</h5>
       </div>
       <div className="item">
         <img src={logoPython} alt="Python" />
-        <h5>Python</h5>
+        <h5>{currentLanguage === "en" ? "Python" : "Python"}</h5>
       </div>
       <div className="item">
         <img src={logoJS} alt="JavaScript" />
-        <h5>JavaScript</h5>
+        <h5>{currentLanguage === "en" ? "JavaScript" : "JavaScript"}</h5>
       </div>
       <div className="item">
         <img src={logoHtmlCss} alt="HTML/CSS" />
-        <h5>HTML/CSS</h5>
+        <h5>{currentLanguage === "en" ? "HTML/CSS" : "HTML/CSS"}</h5>
       </div>
       <div className="item">
         <img src={logoVSCode} alt="VS Code" />
-        <h5>VS Code</h5>
+        <h5>{currentLanguage === "en" ? "VS Code" : "VS Code"}</h5>
       </div>
       <div className="item">
         <img src={logoReact} alt="ReactJS" />
-        <h5>ReactJS</h5>
+        <h5>{currentLanguage === "en" ? "ReactJS" : "ReactJS"}</h5>
       </div>
       <div className="item">
         <img src={logoGit} alt="Git" />
-        <h5>Git</h5>
+        <h5>{currentLanguage === "en" ? "Git" : "Git"}</h5>
       </div>
       <div className="item">
         <img src={logoMySql} alt="MySQL" />
-        <h5>MySQL</h5>
+        <h5>{currentLanguage === "en" ? "MySQL" : "MySQL"}</h5>
       </div>
       <div className="item">
         <img src={logoJetbrains} alt="IDE Jetbrains" />
-        <h5>IDE Jetbrains</h5>
+        <h5>{currentLanguage === "en" ? "IDE Jetbrains" : "IDE Jetbrains"}</h5>
       </div>
     </>
   );
@@ -60,48 +62,56 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Compétences</h2>
+              <h2>
+                {currentLanguage === "en"
+                  ? "Skills"
+                  : "Compétences"
+                }
+              </h2>
               <p>
-                Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :
+                {currentLanguage === "en"
+                  ? "I have expertise in various programming languages and development tools, including the following:"
+                  : "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :"
+                }
                 <br />
               </p>
               <div className="image-banner-container">
                 <div className="image-banner">
                   <div className="item">
                     <img src={logoJava} alt="Java" />
-                    <h5>Java</h5>
+                    <h5>{currentLanguage === "en" ? "Java" : "Java"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoPython} alt="Python" />
-                    <h5>Python</h5>
+                    <h5>{currentLanguage === "en" ? "Python" : "Python"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoJS} alt="JavaScript" />
-                    <h5>JavaScript</h5>
+                    <h5>{currentLanguage === "en" ? "JavaScript" : "JavaScript"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoHtmlCss} alt="HTML/CSS" />
-                    <h5>HTML/CSS</h5>
+                    <h5>{currentLanguage === "en" ? "HTML/CSS" : "HTML/CSS"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoVSCode} alt="VS Code" />
-                    <h5>VS Code</h5>
+                    <h5>{currentLanguage === "en" ? "VS Code" : "VS Code"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoReact} alt="ReactJS" />
-                    <h5>ReactJS</h5>
+                    <h5>{currentLanguage === "en" ? "ReactJS" : "ReactJS"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoGit} alt="Git" />
-                    <h5>Git</h5>
+                    <h5>{currentLanguage === "en" ? "Git" : "Git"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoMySql} alt="MySQL" />
-                    <h5>MySQL</h5>
+                    <h5>{currentLanguage === "en" ? "MySQL" : "MySQL"}</h5>
                   </div>
                   <div className="item">
                     <img src={logoJetbrains} alt="IDE Jetbrains" />
-                    <h5>IDE Jetbrains</h5>
+                    <h5>{currentLanguage === "en" ? "IDE Jetbrains" : "IDE Jetbrains"}</h5>
                   </div>
                   {window.innerWidth > 768 ? duplicat : null}
                 </div>

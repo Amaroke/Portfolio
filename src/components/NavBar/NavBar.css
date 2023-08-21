@@ -224,3 +224,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
+
+.language-toggle-button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+.language-toggle-button b {
+    font-weight: bold;
+}
+
+.language-toggle-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.language-toggle-button:hover b {
+    color: #ff9900;
+}

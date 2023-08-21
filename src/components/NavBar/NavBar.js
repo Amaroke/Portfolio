@@ -4,8 +4,6 @@ import logo from '../../assets/img/Amaroke.png';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon2 from '../../assets/img/nav-icon2.svg';
 import navIcon3 from '../../assets/img/nav-icon3.svg';
-import frFlag from '../../assets/img/fr_flag.png';
-import enFlag from '../../assets/img/en_flag.png';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
@@ -66,9 +64,9 @@ export const NavBar = () => {
                 </HashLink>
                 <button onClick={handleLanguageChange} className="language-toggle-button">
                   {currentLanguage === "en" ? (
-                    <img src={frFlag} alt="French Flag" style={{ width: "75px", height: "auto" }} />
+                    <span dangerouslySetInnerHTML={{ __html: "FR / <b>EN</b>" }} />
                   ) : (
-                    <img src={enFlag} alt="English Flag" style={{ width: "75px", height: "auto" }} />
+                    <span dangerouslySetInnerHTML={{ __html: "<b>FR</b> / EN" }} />
                   )}
                 </button>
               </div>

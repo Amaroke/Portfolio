@@ -23,11 +23,13 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Projects.css'
 import './Modal.css'
+import { useLanguage } from "../LanguageProvider";
 
 export const Projects = () => {
 
   const [showDialog, setShowDialog] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const { currentLanguage } = useLanguage();
 
   const handleCloseDialog = () => {
     setShowDialog(false);
@@ -188,19 +190,39 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              <h2>Projets</h2>
+              <h2>
+                {currentLanguage === "en"
+                  ? "Projects"
+                  : "Projets"
+                }
+              </h2>
               <Tab.Container id="projects-tabs" defaultActiveKey="first">
                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                   <Nav.Item>
-                    <Nav.Link eventKey="first">Personnels</Nav.Link>
+                    <Nav.Link eventKey="first">
+                      {currentLanguage === "en"
+                        ? "Personal"
+                        : "Personnels"
+                      }
+                    </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">Universitaires</Nav.Link>
+                    <Nav.Link eventKey="second">
+                      {currentLanguage === "en"
+                        ? "Academic"
+                        : "Universitaires"
+                      }
+                    </Nav.Link>
                   </Nav.Item>
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="first">
-                    <p>Voici les différents projets dans lesquels je suis investis sur mon temps libre :</p>
+                    <p>
+                      {currentLanguage === "en"
+                        ? "Here are the various projects I'm involved in during my free time:"
+                        : "Voici les différents projets dans lesquels je suis investi sur mon temps libre :"
+                      }
+                    </p>
                   </Tab.Pane>
                   <Tab.Pane eventKey="first">
                     <Row>
@@ -219,7 +241,12 @@ export const Projects = () => {
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <p>Voici certains des projets que j'ai pu réaliser au cours de ma formation :</p>
+                    <p>
+                      {currentLanguage === "en"
+                        ? "Here are some of the projects I have completed during my studies:"
+                        : "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"
+                      }
+                    </p>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     <Row>
@@ -264,7 +291,10 @@ export const Projects = () => {
                   <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedProject?.description) }}></div>
                 </div>
                 <div className="technos">
-                  Technologies utilisées :
+                  {currentLanguage === "en"
+                    ? "Technologies used:"
+                    : "Technologies utilisées :"
+                  }
                 </div>
                 <div className="icons-container">
                   <div className="languages">
@@ -294,10 +324,14 @@ export const Projects = () => {
             </Row>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseDialog}>Fermer</Button>
+            <Button variant="secondary" onClick={handleCloseDialog}>
+              {currentLanguage === "en"
+                ? "Close"
+                : "Fermer"
+              }
+            </Button>
           </Modal.Footer>
         </Modal>
-
       </Container>
     </section >
   )
