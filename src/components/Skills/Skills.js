@@ -15,46 +15,81 @@ import { useLanguage } from "../LanguageProvider";
 export const Skills = () => {
 
   const { currentLanguage } = useLanguage();
-  const duplicat = (
-    <>
-      <div className="item">
-        <img src={logoJava} alt="Java" />
-        <h5>{currentLanguage === "en" ? "Java" : "Java"}</h5>
+
+  const skillsList = [
+    {
+      id: 1,
+      name: "Java",
+      image: logoJava,
+      alt: "Java",
+    },
+    {
+      id: 2,
+      name: "Python",
+      image: logoPython,
+      alt: "Python",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      image: logoJS,
+      alt: "JavaScript",
+    },
+    {
+      id: 4,
+      name: "HTML/CSS",
+      image: logoHtmlCss,
+      alt: "HTML/CSS",
+    },
+    {
+      id: 5,
+      name: "VS Code",
+      image: logoVSCode,
+      alt: "VS Code",
+    },
+    {
+      id: 6,
+      name: "ReactJS",
+      image: logoReact,
+      alt: "ReactJS",
+    },
+    {
+      id: 7,
+      name: "Git",
+      image: logoGit,
+      alt: "Git",
+    },
+    {
+      id: 8,
+      name: "MySQL",
+      image: logoMySql,
+      alt: "MySQL",
+    },
+    {
+      id: 9,
+      name: "IDE Jetbrains",
+      image: logoJetbrains,
+      alt: "IDE Jetbrains",
+    },
+  ];
+
+
+  function generateSkillItems() {
+    return skillsList.map((skill) => (
+      <div className="item" key={skill.id}>
+        <img src={skill.image} alt={skill.name} />
+        <h5>{currentLanguage === "en" ? skill.name : skill.name}</h5>
       </div>
-      <div className="item">
-        <img src={logoPython} alt="Python" />
-        <h5>{currentLanguage === "en" ? "Python" : "Python"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoJS} alt="JavaScript" />
-        <h5>{currentLanguage === "en" ? "JavaScript" : "JavaScript"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoHtmlCss} alt="HTML/CSS" />
-        <h5>{currentLanguage === "en" ? "HTML/CSS" : "HTML/CSS"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoVSCode} alt="VS Code" />
-        <h5>{currentLanguage === "en" ? "VS Code" : "VS Code"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoReact} alt="ReactJS" />
-        <h5>{currentLanguage === "en" ? "ReactJS" : "ReactJS"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoGit} alt="Git" />
-        <h5>{currentLanguage === "en" ? "Git" : "Git"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoMySql} alt="MySQL" />
-        <h5>{currentLanguage === "en" ? "MySQL" : "MySQL"}</h5>
-      </div>
-      <div className="item">
-        <img src={logoJetbrains} alt="IDE Jetbrains" />
-        <h5>{currentLanguage === "en" ? "IDE Jetbrains" : "IDE Jetbrains"}</h5>
-      </div>
-    </>
-  );
+    ));
+  }
+
+  const skillsTitle =
+    currentLanguage === "en" ? "Skills" : "Compétences";
+
+  const skillsDescription =
+    currentLanguage === "en"
+      ? "I have expertise in various programming languages and development tools, including the following:"
+      : "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :";
 
   return (
     <section className="skill" id="skills">
@@ -62,58 +97,12 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>
-                {currentLanguage === "en"
-                  ? "Skills"
-                  : "Compétences"
-                }
-              </h2>
-              <p>
-                {currentLanguage === "en"
-                  ? "I have expertise in various programming languages and development tools, including the following:"
-                  : "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :"
-                }
-                <br />
-              </p>
+              <h2>{skillsTitle}</h2>
+              <p>{skillsDescription}<br /></p>
               <div className="image-banner-container">
                 <div className="image-banner">
-                  <div className="item">
-                    <img src={logoJava} alt="Java" />
-                    <h5>{currentLanguage === "en" ? "Java" : "Java"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoPython} alt="Python" />
-                    <h5>{currentLanguage === "en" ? "Python" : "Python"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoJS} alt="JavaScript" />
-                    <h5>{currentLanguage === "en" ? "JavaScript" : "JavaScript"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoHtmlCss} alt="HTML/CSS" />
-                    <h5>{currentLanguage === "en" ? "HTML/CSS" : "HTML/CSS"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoVSCode} alt="VS Code" />
-                    <h5>{currentLanguage === "en" ? "VS Code" : "VS Code"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoReact} alt="ReactJS" />
-                    <h5>{currentLanguage === "en" ? "ReactJS" : "ReactJS"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoGit} alt="Git" />
-                    <h5>{currentLanguage === "en" ? "Git" : "Git"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoMySql} alt="MySQL" />
-                    <h5>{currentLanguage === "en" ? "MySQL" : "MySQL"}</h5>
-                  </div>
-                  <div className="item">
-                    <img src={logoJetbrains} alt="IDE Jetbrains" />
-                    <h5>{currentLanguage === "en" ? "IDE Jetbrains" : "IDE Jetbrains"}</h5>
-                  </div>
-                  {window.innerWidth > 768 ? duplicat : null}
+                  {generateSkillItems()}
+                  {window.innerWidth > 768 ? generateSkillItems() : null}
                 </div>
               </div>
             </div>
