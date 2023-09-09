@@ -9,17 +9,13 @@
   margin: 0 auto 15px;
 }
 
-
-.skill-bx {
-  overflow: hidden;
-}
-
 .skill {
   padding: 0 0 50px;
   position: relative;
 }
 
 .skill-bx {
+  overflow: hidden;
   background: #151515;
   border-radius: 64px;
   text-align: center;
