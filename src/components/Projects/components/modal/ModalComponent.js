@@ -36,9 +36,11 @@ function ModalComponent(props) {
         imglang1,
         imglang2,
         imglang3,
+        imglang4,
         lang1,
         lang2,
         lang3,
+        lang4
     } = props.selectedProject || {};
 
     return (
@@ -92,6 +94,12 @@ function ModalComponent(props) {
                                         <div class="language-container">
                                             {imglang3 && <img src={imglang3} alt={lang3} />}
                                             {imglang3 && <p>{lang3}</p>}
+                                        </div>
+                                    </Col>
+                                    <Col>
+                                        <div class="language-container">
+                                            {imglang4 && <img src={imglang4} alt={lang4} />}
+                                            {imglang4 && <p>{lang4}</p>}
                                         </div>
                                     </Col>
                                 </Row>
