@@ -3,11 +3,11 @@ import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
 import "./Footer.css";
-import { useLanguage } from "../LanguageProvider";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
 
-  const { currentLanguage } = useLanguage();
+  const [t] = useTranslation("global")
 
   return (
     <footer className="footer">
@@ -15,21 +15,19 @@ function Footer() {
         <Row className="align-items-center">
           <Col size={12} sm={6}>
             <p className="copyright">
-              {currentLanguage === "en"
-                ? "© 2023 Amaroke, all rights reserved."
-                : "© 2023 Amaroke, tous droits réservés."}
+              {t("footer.copyright")}
             </p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/hugo-mathieu-steinbach/" target="_blank" rel="noreferrer">
-                <img src={navIcon1} alt={currentLanguage === "en" ? "linkedin" : "LinkedIn"} />
+                <img src={navIcon1} alt="linkedin" />
               </a>
               <a href="https://github.com/Amaroke" target="_blank" rel="noreferrer">
                 <img src={navIcon2} alt="github" />
               </a>
               <a href="mailto:hugo.amaroke@gmail.com">
-                <img src={navIcon3} alt={currentLanguage === "en" ? "Send Email" : "Envoyer mail"} />
+                <img src={navIcon3} alt="mail" />
               </a>
             </div>
           </Col>
