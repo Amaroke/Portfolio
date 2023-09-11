@@ -59,7 +59,7 @@ function Projects() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <p>
-                    {t("projects.projects.explnationacademic")}
+                    {t("projects.projects.explanationacademic")}
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">

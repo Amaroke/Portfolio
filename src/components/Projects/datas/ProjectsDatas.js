@@ -119,8 +119,8 @@ export const perso_projects = [
     },
     {
         title: "Ideology",
-        resume: "XXX",
-        description: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        resume: "Application web de test de personalité",
+        description: "Ideology est une application web réalisé à l'aide de Spring Boot et Angular. Elle permet aux utilisateurs de répondre à un questionnaire et de recevoir un résultat indiquant leur personnalité. L'application inclut une gestion de base de données pour les utilisateurs, ainsi qu'une gestion des sessions et des cookies.",
         imgUrl1: projImg,
         imgUrl2: projImg,
         imgUrl3: projImg,
