@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     background-color: #181818;
+    text-align: justify;
 }
 
 .modal-content {
