@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
 import { useLanguage } from "../LanguageProvider";
 
-export const NavBar = () => {
+function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const { currentLanguage, changeLanguage } = useLanguage();
@@ -77,3 +77,5 @@ export const NavBar = () => {
     </Router>
   )
 }
+
+export default NavBar;

@@ -12,7 +12,7 @@ import colorSharp from "../../assets/img/color-sharp.png";
 import "./Skills.css";
 import { useLanguage } from "../LanguageProvider";
 
-export const Skills = () => {
+function Skills() {
 
   const { currentLanguage } = useLanguage();
 
@@ -113,3 +113,5 @@ export const Skills = () => {
     </section>
   );
 }
+
+export default Skills;

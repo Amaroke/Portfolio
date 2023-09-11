@@ -7,13 +7,12 @@ import { Modal, Button } from "react-bootstrap";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 import './Projects.css'
 import './Modal.css'
 import { useLanguage } from "../LanguageProvider";
 import { projects, perso_projects } from './ProjectsDatas';
 
-const Projects = () => {
+function Projects() {
   const [showDialog, setShowDialog] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const { currentLanguage } = useLanguage();
@@ -54,75 +53,73 @@ const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              <h2>
-                {currentLanguage === "en"
-                  ? "Projects"
-                  : "Projets"}
-              </h2>
-              <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                <Nav
-                  variant="pills"
-                  className="nav-pills mb-5 justify-content-center align-items-center"
-                  id="pills-tab"
-                >
-                  <Nav.Item>
-                    <Nav.Link eventKey="first">
-                      {currentLanguage === "en"
-                        ? "Personal"
-                        : "Personnels"}
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="second">
-                      {currentLanguage === "en"
-                        ? "Academic"
-                        : "Universitaires"}
-                    </Nav.Link>
-                  </Nav.Item>
-                </Nav>
-                <Tab.Content id="slideInUp">
-                  <Tab.Pane eventKey="first">
-                    <p>
-                      {currentLanguage === "en"
-                        ? "Here are the various projects I'm involved in during my free time:"
-                        : "Voici les différents projets dans lesquels je suis investi sur mon temps libre :"}
-                    </p>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="first">
-                    <Row>
-                      {perso_projects.map((project, index) => (
-                        <ProjectCard
-                          key={index}
-                          {...project}
-                          setSelectedProject={setSelectedProject}
-                          setShowDialog={setShowDialog}
-                        />
-                      ))}
-                    </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="second">
-                    <p>
-                      {currentLanguage === "en"
-                        ? "Here are some of the projects I have completed during my studies:"
-                        : "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"}
-                    </p>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="second">
-                    <Row>
-                      {projects.map((project, index) => (
-                        <ProjectCard
-                          key={index}
-                          {...project}
-                          setSelectedProject={setSelectedProject}
-                          setShowDialog={setShowDialog}
-                        />
-                      ))}
-                    </Row>
-                  </Tab.Pane>
-                </Tab.Content>
-              </Tab.Container>
-            </TrackVisibility>
+            <h2>
+              {currentLanguage === "en"
+                ? "Projects"
+                : "Projets"}
+            </h2>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+              >
+                <Nav.Item>
+                  <Nav.Link eventKey="first">
+                    {currentLanguage === "en"
+                      ? "Personal"
+                      : "Personnels"}
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="second">
+                    {currentLanguage === "en"
+                      ? "Academic"
+                      : "Universitaires"}
+                  </Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <Tab.Content id="slideInUp">
+                <Tab.Pane eventKey="first">
+                  <p>
+                    {currentLanguage === "en"
+                      ? "Here are the various projects I'm involved in during my free time:"
+                      : "Voici les différents projets dans lesquels je suis investi sur mon temps libre :"}
+                  </p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="first">
+                  <Row>
+                    {perso_projects.map((project, index) => (
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                        setSelectedProject={setSelectedProject}
+                        setShowDialog={setShowDialog}
+                      />
+                    ))}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <p>
+                    {currentLanguage === "en"
+                      ? "Here are some of the projects I have completed during my studies:"
+                      : "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"}
+                  </p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                    {projects.map((project, index) => (
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                        setSelectedProject={setSelectedProject}
+                        setShowDialog={setShowDialog}
+                      />
+                    ))}
+                  </Row>
+                </Tab.Pane>
+              </Tab.Content>
+            </Tab.Container>
           </Col>
         </Row>
         <Modal show={showDialog} onHide={handleCloseDialog}>

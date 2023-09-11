@@ -2,11 +2,10 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useForm, ValidationError } from '@formspree/react';
 import contactImg from "../../assets/img/contact-img.svg";
-import TrackVisibility from 'react-on-screen';
 import "./Contact.css";
 import { useLanguage } from "../LanguageProvider";
 
-export const Contact = () => {
+function Contact() {
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -31,14 +30,9 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isvisible }) =>
-                <img className={isvisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
-              }
-            </TrackVisibility>
+              <img className={"animate__animated animate__zoomIn"} src={contactImg} alt="Contact Us" />
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
               <h2>{currentLanguage === "en" ? "Contact me" : "Me contacter"}</h2>
               <form onSubmit={handleSubmit}>
                 <Row>
@@ -105,17 +99,18 @@ export const Contact = () => {
                         {!state.succeeded && !state.submitting
                           ? currentLanguage === "en" ? "Send" : "Envoyer"
                           : state.succeeded
-                          ? currentLanguage === "en" ? "Sent!" : "Envoyé !"
-                          : currentLanguage === "en" ? "Sending..." : "Envoi en cours..."}
+                            ? currentLanguage === "en" ? "Sent!" : "Envoyé !"
+                            : currentLanguage === "en" ? "Sending..." : "Envoi en cours..."}
                       </span>
                     </button>
                   </Col>
                 </Row>
               </form>
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
   )
 }
+
+export default Contact;

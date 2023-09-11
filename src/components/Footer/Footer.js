@@ -5,7 +5,7 @@ import navIcon3 from "../../assets/img/nav-icon3.svg";
 import "./Footer.css";
 import { useLanguage } from "../LanguageProvider";
 
-export const Footer = () => {
+function Footer() {
 
   const { currentLanguage } = useLanguage();
 
@@ -38,3 +38,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;
