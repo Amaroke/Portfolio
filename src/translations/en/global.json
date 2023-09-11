@@ -16,9 +16,18 @@
         "sending": "Sending..."
     },
     "footer": {
-        "copyrigth": "© 2023 Amaroke, all rights reserved."
+        "copyright": "© 2023 Amaroke, all rights reserved."
     },
-    "navbar": {},
+    "navbar": {
+        "home": "Home",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Let's Connect",
+        "lang": "FR / <b>EN</b>"
+    },
     "projects": {},
-    "skills": {}
+    "skills": {
+        "skills": "Skills",
+        "description": "I have expertise in various programming languages and development tools, including the following:"
+    }
 }

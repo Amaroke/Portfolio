@@ -82,7 +82,7 @@
     }
 
     100% {
-      transform: translateX(-107.3%);
+      transform: translateX(-165%);
     }
   }
 }
@@ -118,4 +118,9 @@
     margin: 0 auto 20px;
     transition: none;
   }
+
+  .item.responsive {
+    display: none;
+  }
+
 }

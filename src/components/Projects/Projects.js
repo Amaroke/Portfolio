@@ -5,17 +5,15 @@ import 'slick-carousel/slick/slick-theme.css';
 import DOMPurify from 'dompurify';
 import { Modal, Button } from "react-bootstrap";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "./components/project_card/ProjectCard";
 import 'animate.css';
-import './Projects.css'
-import './Modal.css'
-import { useLanguage } from "../LanguageProvider";
-import { projects, perso_projects } from './ProjectsDatas';
+import './projects.css'
+import './components/modal/modal.css'
+import { projects, perso_projects } from './datas/ProjectsDatas';
 
 function Projects() {
   const [showDialog, setShowDialog] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const { currentLanguage } = useLanguage();
 
   const handleCloseDialog = () => {
     setShowDialog(false);
@@ -54,7 +52,7 @@ function Projects() {
         <Row>
           <Col size={12}>
             <h2>
-              {currentLanguage === "en"
+              {"en" === "en"
                 ? "Projects"
                 : "Projets"}
             </h2>
@@ -66,14 +64,14 @@ function Projects() {
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">
-                    {currentLanguage === "en"
+                    {"en" === "en"
                       ? "Personal"
                       : "Personnels"}
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="second">
-                    {currentLanguage === "en"
+                    {"en" === "en"
                       ? "Academic"
                       : "Universitaires"}
                   </Nav.Link>
@@ -82,7 +80,7 @@ function Projects() {
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
                   <p>
-                    {currentLanguage === "en"
+                    {"en" === "en"
                       ? "Here are the various projects I'm involved in during my free time:"
                       : "Voici les différents projets dans lesquels je suis investi sur mon temps libre :"}
                   </p>
@@ -101,7 +99,7 @@ function Projects() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <p>
-                    {currentLanguage === "en"
+                    {"en" === "en"
                       ? "Here are some of the projects I have completed during my studies:"
                       : "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"}
                   </p>
@@ -151,7 +149,7 @@ function Projects() {
                   <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedProject?.description) }}></div>
                 </div>
                 <div className="technos">
-                  {currentLanguage === "en"
+                  {"en" === "en"
                     ? "Technologies used:"
                     : "Technologies utilisées :"}
                 </div>
@@ -184,7 +182,7 @@ function Projects() {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseDialog}>
-              {currentLanguage === "en"
+              {"en" === "en"
                 ? "Close"
                 : "Fermer"}
             </Button>

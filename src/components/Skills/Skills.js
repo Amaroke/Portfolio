@@ -8,13 +8,18 @@ import logoGit from "../../assets/img/logo-git.png";
 import logoMySql from "../../assets/img/logo-mysql.png";
 import logoJetbrains from "../../assets/img/logo-jetbrains.png";
 import logoReact from "../../assets/img/logo-react.png";
+import logoAngular from "../../assets/img/logo-angular.png";
+import logoSpringBoot from "../../assets/img/logo-spring-boot.png";
+import logoNode from "../../assets/img/logo-nodejs.png";
+import logoTS from "../../assets/img/logo-typescript.png";
+import logoPHP from "../../assets/img/logo-php.png";
 import colorSharp from "../../assets/img/color-sharp.png";
-import "./Skills.css";
-import { useLanguage } from "../LanguageProvider";
+import "./skills.css";
+import { useTranslation } from "react-i18next";
 
 function Skills() {
 
-  const { currentLanguage } = useLanguage();
+  const [t] = useTranslation("global");
 
   const skillsList = [
     {
@@ -25,71 +30,97 @@ function Skills() {
     },
     {
       id: 2,
-      name: "Python",
-      image: logoPython,
-      alt: "Python",
-    },
-    {
-      id: 3,
       name: "JavaScript",
       image: logoJS,
       alt: "JavaScript",
     },
     {
+      id: 3,
+      name: "Node.js",
+      image: logoNode,
+      alt: "Node.js",
+    },
+    {
       id: 4,
-      name: "HTML/CSS",
-      image: logoHtmlCss,
-      alt: "HTML/CSS",
-    },
-    {
-      id: 5,
-      name: "VS Code",
-      image: logoVSCode,
-      alt: "VS Code",
-    },
-    {
-      id: 6,
       name: "ReactJS",
       image: logoReact,
       alt: "ReactJS",
     },
     {
+      id: 5,
+      name: "Angular",
+      image: logoAngular,
+      alt: "Angular",
+    },
+    {
+      id: 6,
+      name: "Spring Boot",
+      image: logoSpringBoot,
+      alt: "Spring Boot",
+    },
+    {
       id: 7,
+      name: "VS Code",
+      image: logoVSCode,
+      alt: "VS Code",
+    },
+    {
+      id: 8,
       name: "Git",
       image: logoGit,
       alt: "Git",
     },
     {
-      id: 8,
+      id: 9,
+      name: "TypeScript",
+      image: logoTS,
+      alt: "TypeScript",
+    },
+    {
+      id: 10,
+      name: "HTML/CSS",
+      image: logoHtmlCss,
+      alt: "HTML/CSS",
+    },
+    {
+      id: 11,
       name: "MySQL",
       image: logoMySql,
       alt: "MySQL",
     },
     {
-      id: 9,
+      id: 12,
+      name: "Python",
+      image: logoPython,
+      alt: "Python",
+    },
+    {
+      id: 13,
+      name: "PHP",
+      image: logoPHP,
+      alt: "PHP"
+    },
+    {
+      id: 14,
       name: "IDE Jetbrains",
       image: logoJetbrains,
       alt: "IDE Jetbrains",
-    },
+    }
   ];
 
 
-  function generateSkillItems() {
+  function generateSkillItems(visible) {
     return skillsList.map((skill) => (
-      <div className="item" key={skill.id}>
+      <div className={"item " + (visible ? "" : "responsive")} key={skill.id}>
         <img src={skill.image} alt={skill.name} />
-        <h5>{currentLanguage === "en" ? skill.name : skill.name}</h5>
+        <h5>{skill.name} </h5>
       </div>
     ));
   }
 
-  const skillsTitle =
-    currentLanguage === "en" ? "Skills" : "Compétences";
+  const skillsTitle = t("skills.skills")
 
-  const skillsDescription =
-    currentLanguage === "en"
-      ? "I have expertise in various programming languages and development tools, including the following:"
-      : "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :";
+  const skillsDescription = t("skills.description")
 
   return (
     <section className="skill" id="skills">
@@ -101,8 +132,8 @@ function Skills() {
               <p>{skillsDescription}<br /></p>
               <div className="image-banner-container">
                 <div className="image-banner">
-                  {generateSkillItems()}
-                  {window.innerWidth > 768 ? generateSkillItems() : null}
+                  {generateSkillItems(true)}
+                  {generateSkillItems(false)}
                 </div>
               </div>
             </div>

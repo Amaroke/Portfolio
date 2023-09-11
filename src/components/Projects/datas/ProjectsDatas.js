@@ -1,16 +1,16 @@
-import logoPython from "../../assets/img/logo-python.png";
-import logonumpy from "../../assets/img/logo-numpy.png";
-import logoReact from "../../assets/img/logo-react.png";
-import logonodejs from "../../assets/img/logo-nodejs.png";
-import logojavascript from "../../assets/img/logo-js.png";
-import logojava from "../../assets/img/logo-java.png";
-import logolibgdx from "../../assets/img/logo-libgdx.png";
-import logoPHP from "../../assets/img/logo-php.png";
-import logocomposer from "../../assets/img/logo-composer.png";
-import logohtmlcss from "../../assets/img/logo-html-css.png";
-import logoAndroidStudio from "../../assets/img/logo-android-studio.png";
-import logoKotlin from "../../assets/img/logo-kotlin.png";
-import projImg from "../../assets/img/project.jpg";
+import logoPython from "../../../assets/img/logo-python.png";
+import logonumpy from "../../../assets/img/logo-numpy.png";
+import logoReact from "../../../assets/img/logo-react.png";
+import logonodejs from "../../../assets/img/logo-nodejs.png";
+import logojavascript from "../../../assets/img/logo-js.png";
+import logojava from "../../../assets/img/logo-java.png";
+import logolibgdx from "../../../assets/img/logo-libgdx.png";
+import logoPHP from "../../../assets/img/logo-php.png";
+import logocomposer from "../../../assets/img/logo-composer.png";
+import logohtmlcss from "../../../assets/img/logo-html-css.png";
+import logoAndroidStudio from "../../../assets/img/logo-android-studio.png";
+import logoKotlin from "../../../assets/img/logo-kotlin.png";
+import projImg from "../../../assets/img/project.jpg";
 
 export const projects = [
     {

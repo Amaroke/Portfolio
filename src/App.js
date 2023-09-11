@@ -1,24 +1,21 @@
-import './App.css';
+import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from "./components/NavBar/NavBar";
-import Banner from "./components/Banner/Banner";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import { LanguageProvider } from "./components/LanguageProvider";
+import NavBar from "./components/navbar/Navbar";
+import Banner from "./components/banner/Banner";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <LanguageProvider>
-        <NavBar />
-        <Banner />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </LanguageProvider>
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

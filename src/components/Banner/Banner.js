@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import ReactMarkdown from "react-markdown";
 import { useTranslation } from "react-i18next";
 import headerImg from "../../assets/img/header-img.svg";
 import "animate.css";
-import "./Banner.css";
+import "./banner.css";
 
 const period = 1500;
 
@@ -64,7 +63,7 @@ function Banner() {
                                 <span className="wrap">{text} </span>
                             </span>
                         </h1>
-                        <p><ReactMarkdown>{(t("banner.presentation"))}</ReactMarkdown></p>
+                        <p>{(t("banner.presentation"))}</p>
                         <button onClick={() => { window.location.href = "#connect" }}>{t("banner.connect")}
                             <ArrowRightCircle size={25} />
                         </button>
