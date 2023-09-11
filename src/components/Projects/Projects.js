@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./components/project_card/ProjectCard";
+import ProjectCard from "./components/project_card/ProjectCard";
 import ModalComponent from "./components/modal/ModalComponent";
 import 'animate.css';
 import './projects.css'
 import './components/modal/modal.css'
 import { projects, perso_projects } from './datas/ProjectsDatas';
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const [t] = useTranslation("global")
   const [showDialog, setShowDialog] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -17,9 +19,7 @@ function Projects() {
         <Row>
           <Col size={12}>
             <h2>
-              {"en" === "en"
-                ? "Projects"
-                : "Projets"}
+              {t("projects.projects.project")}
             </h2>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
@@ -29,25 +29,19 @@ function Projects() {
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">
-                    {"en" === "en"
-                      ? "Personal"
-                      : "Personnels"}
+                    {t("projects.projects.personal")}
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="second">
-                    {"en" === "en"
-                      ? "Academic"
-                      : "Universitaires"}
+                    {t("projects.projects.academic")}
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
                   <p>
-                    {"en" === "en"
-                      ? "Here are the various projects I'm involved in during my free time:"
-                      : "Voici les différents projets dans lesquels je suis investi sur mon temps libre :"}
+                    {t("projects.projects.explanation")}
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="first">
@@ -58,15 +52,14 @@ function Projects() {
                         {...project}
                         setSelectedProject={setSelectedProject}
                         setShowDialog={setShowDialog}
+                        isLastRow={index >= 2 && (index - 2) % 3 === 0}
                       />
                     ))}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <p>
-                    {"en" === "en"
-                      ? "Here are some of the projects I have completed during my studies:"
-                      : "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"}
+                    {t("projects.projects.explnationacademic")}
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
@@ -77,6 +70,7 @@ function Projects() {
                         {...project}
                         setSelectedProject={setSelectedProject}
                         setShowDialog={setShowDialog}
+                        isLastRow={index >= 3 && (index - 3) % 4 === 0}
                       />
                     ))}
                   </Row>

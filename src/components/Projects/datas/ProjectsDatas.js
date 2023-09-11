@@ -9,7 +9,6 @@ import logoPHP from "../../../assets/img/logo-php.png";
 import logocomposer from "../../../assets/img/logo-composer.png";
 import logohtmlcss from "../../../assets/img/logo-html-css.png";
 import logoAndroidStudio from "../../../assets/img/logo-android-studio.png";
-import logoKotlin from "../../../assets/img/logo-kotlin.png";
 import projImg from "../../../assets/img/project.jpg";
 
 export const projects = [
@@ -119,18 +118,18 @@ export const perso_projects = [
         lang3: "Javascript"
     },
     {
-        title: "MakeMoreMeat",
-        resume: "Jeu incrémental sous Android",
-        description: "MakeMoreMeat est un jeu de type incrémental en cours de développement, réalisé en Kotlin spécialement pour Android. L'objectif de ce projet est de découvrir les différentes facettes du développement mobile et d'explorer les aspects liés à la création d'applications pour cette plateforme.",
+        title: "Ideology",
+        resume: "XXX",
+        description: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         imgUrl1: projImg,
         imgUrl2: projImg,
         imgUrl3: projImg,
         imgUrl4: projImg,
         imgUrl5: projImg,
-        imglang1: logoKotlin,
-        imglang2: logoAndroidStudio,
-        lang1: "Kotlin",
-        lang2: "Android Studio"
+        imglang1: logoReact,
+        imglang2: logohtmlcss,
+        lang1: "ReactJS",
+        lang2: "Html/Css",
     },
     {
         title: "Yurei Esports",

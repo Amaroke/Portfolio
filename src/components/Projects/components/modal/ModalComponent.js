@@ -4,8 +4,11 @@ import Slider from 'react-slick';
 import DOMPurify from 'dompurify';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useTranslation } from "react-i18next";
 
 function ModalComponent(props) {
+    const [t] = useTranslation("global");
+
     const closeModal = () => {
         props.setShowDialog(false);
         props.setSelectedProject(null);
@@ -68,9 +71,7 @@ function ModalComponent(props) {
                             <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(props.selectedProject?.description) }}></div>
                         </div>
                         <div className="technos">
-                            {"en" === "en"
-                                ? "Technologies used:"
-                                : "Technologies utilisées :"}
+                            {t("projects.modalcomponent.technos")}
                         </div>
                         <div className="icons-container">
                             <div className="languages">
@@ -101,9 +102,7 @@ function ModalComponent(props) {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={closeModal}>
-                    {"en" === "en"
-                        ? "Close"
-                        : "Fermer"}
+                    {t("projects.modalcomponent.close")}
                 </Button>
             </Modal.Footer>
         </Modal>

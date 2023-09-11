@@ -26,10 +26,21 @@
         "lang": "FR / <b>EN</b>"
     },
     "projects": {
-        "modalcomponent": {},
-        "projectcard": {},
+        "modalcomponent": {
+            "technos": "Technologies used",
+            "close": "Close"
+        },
+        "projectcard": {
+            "info": "More info →"
+        },
         "projectdatas": {},
-        "projects": {}
+        "projects": {
+            "project": "Projects",
+            "personale": "Personal",
+            "academic": "Academic",
+            "explanation": "Here are the various projects I'm involved in during my free time:",
+            "explanationacademic": "Here are some of the projects I have completed during my studies:"
+        }
     },
     "skills": {
         "skills": "Skills",
