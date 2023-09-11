@@ -25,7 +25,12 @@
         "contact": "Me contacter",
         "lang": "<b>FR</b> / EN"
     },
-    "projects": {},
+    "projects": {
+        "modalcomponent": {},
+        "projectcard": {},
+        "projectdatas": {},
+        "projects": {}
+    },
     "skills": {
         "skills": "Compétences",
         "description": "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :"

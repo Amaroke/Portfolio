@@ -12,18 +12,18 @@
 
 .modal-header {
     display: flex;
-    background-color: #151515;
+    background-color: #181818;
 }
 
 .modal-body {
     display: flex;
     align-items: center;
-    background-color: #151515;
+    background-color: #181818;
 }
 
 .modal-content {
     display: flex;
-    background-color: #151515;
+    background-color: #181818;
 }
 
 .languages img {

@@ -25,7 +25,12 @@
         "contact": "Let's Connect",
         "lang": "FR / <b>EN</b>"
     },
-    "projects": {},
+    "projects": {
+        "modalcomponent": {},
+        "projectcard": {},
+        "projectdatas": {},
+        "projects": {}
+    },
     "skills": {
         "skills": "Skills",
         "description": "I have expertise in various programming languages and development tools, including the following:"
