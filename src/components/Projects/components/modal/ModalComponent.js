@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useTranslation } from "react-i18next";
 
 function ModalComponent(props) {
-    const [t] = useTranslation("global");
+    const [t, i18n] = useTranslation("global");
 
     const closeModal = () => {
         props.setShowDialog(false);
@@ -70,7 +70,7 @@ function ModalComponent(props) {
                     </Col>
                     <Col size={10} sm={5}>
                         <div className="text-container">
-                            <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(props.selectedProject?.description) }}></div>
+                            <div dangerouslySetInnerHTML={{ __html: i18n.language === "en" ? DOMPurify.sanitize(props.selectedProject?.descriptionen) : DOMPurify.sanitize(props.selectedProject?.descriptionfr) }}></div>
                         </div>
                         <div className="technos">
                             {t("projects.modalcomponent.technos")}

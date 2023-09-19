@@ -96,3 +96,14 @@
     text-align: center;
     width: 60px;
 }
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.text-container a {
+    color: #fff;
+}

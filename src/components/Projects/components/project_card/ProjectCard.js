@@ -1,12 +1,12 @@
 import { Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
-function ProjectCard({ title, resumeen, resumefr, description, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imglang1, imglang2, imglang3, imglang4, lang1, lang2, lang3, lang4, setSelectedProject, setShowDialog }) {
+function ProjectCard({ title, resumeen, resumefr, descriptionen, descriptionfr, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imglang1, imglang2, imglang3, imglang4, lang1, lang2, lang3, lang4, setSelectedProject, setShowDialog }) {
 
   const [t, i18n] = useTranslation("global");
 
   const handleClick = () => {
-    setSelectedProject({ title, description, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imglang1, imglang2, imglang3, imglang4, lang1, lang2, lang3, lang4 });
+    setSelectedProject({ title, descriptionen, descriptionfr, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imglang1, imglang2, imglang3, imglang4, lang1, lang2, lang3, lang4 });
     setShowDialog(true);
   };
 
