@@ -13,7 +13,7 @@ import logovercel from "../../../assets/img/logo-vercel.png";
 import logospring from "../../../assets/img/logo-spring-boot.png";
 import logoangular from "../../../assets/img/logo-angular.png";
 import logotypescript from "../../../assets/img/logo-typescript.png";
-import logonextjs from "../../../assets/img/logo-nextjs.png";
+import logonestjs from "../../../assets/img/logo-nestjs.png";
 import logoKotlin from "../../../assets/img/logo-kotlin.png";
 import projImg from "../../../assets/img/project.jpg";
 import charadle1 from "../../../assets/img/charadle1.png";
@@ -144,7 +144,7 @@ export const perso_projects = [
     },
     {
         title: "Ideology",
-        resumeen: "Personality test web app",
+        resumeen: "Personality test web application",
         resumefr: "Application web de test de personalité",
         descriptionen: "TODO",
         descriptionfr: "TODO",
@@ -164,8 +164,8 @@ export const perso_projects = [
     },
     {
         title: "Achievo",
-        resumeen: "Common goals website",
-        resumefr: "Site web d'objectifs en commun",
+        resumeen: "Common objectives web application",
+        resumefr: "Application web d'objectifs en commun",
         descriptionen: "TODO",
         descriptionfr: "TODO",
         imgUrl1: projImg,
@@ -173,11 +173,11 @@ export const perso_projects = [
         imgUrl3: projImg,
         imgUrl4: projImg,
         imgUrl5: projImg,
-        imglang1: logonextjs,
+        imglang1: logonestjs,
         imglang2: logoangular,
         imglang3: logotypescript,
         imglang4: logohtmlcss,
-        lang1: "NextJS",
+        lang1: "NestJS",
         lang2: "Angular",
         lang3: "Typescript",
         lang4: "Html/Css"

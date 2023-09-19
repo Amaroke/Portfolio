@@ -10,6 +10,7 @@ import logoJetbrains from "../../assets/img/logo-jetbrains.png";
 import logoReact from "../../assets/img/logo-react.png";
 import logoAngular from "../../assets/img/logo-angular.png";
 import logoSpringBoot from "../../assets/img/logo-spring-boot.png";
+import logoNestJS from "../../assets/img/logo-nestjs.png";
 import logoNode from "../../assets/img/logo-nodejs.png";
 import logoTS from "../../assets/img/logo-typescript.png";
 import logoPHP from "../../assets/img/logo-php.png";
@@ -60,48 +61,54 @@ function Skills() {
     },
     {
       id: 7,
+      name: "NestJS",
+      image: logoNestJS,
+      alt: "NestJS",
+    },
+    {
+      id: 8,
       name: "VS Code",
       image: logoVSCode,
       alt: "VS Code",
     },
     {
-      id: 8,
+      id: 9,
       name: "Git",
       image: logoGit,
       alt: "Git",
     },
     {
-      id: 9,
+      id: 10,
       name: "TypeScript",
       image: logoTS,
       alt: "TypeScript",
     },
     {
-      id: 10,
+      id: 11,
       name: "HTML/CSS",
       image: logoHtmlCss,
       alt: "HTML/CSS",
     },
     {
-      id: 11,
+      id: 12,
       name: "MySQL",
       image: logoMySql,
       alt: "MySQL",
     },
     {
-      id: 12,
+      id: 13,
       name: "Python",
       image: logoPython,
       alt: "Python",
     },
     {
-      id: 13,
+      id: 14,
       name: "PHP",
       image: logoPHP,
       alt: "PHP"
     },
     {
-      id: 14,
+      id: 15,
       name: "IDE Jetbrains",
       image: logoJetbrains,
       alt: "IDE Jetbrains",
