@@ -52,20 +52,25 @@ function ModalComponent(props) {
                 <Row>
                     <Col size={14} sm={7}>
                         <div className="image-container">
-                            <Slider
-                                {...settings}
-                                style={{
-                                    width: '50vw',
-                                    dotStyle: { backgroundColor: 'white' },
-                                    activeDotStyle: { backgroundColor: 'white' },
-                                }}
-                            >
+                            {[imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5].filter(Boolean).length > 1 ? (
+                                <Slider
+                                    {...settings}
+                                    style={{
+                                        width: '50vw',
+                                        dotStyle: { backgroundColor: 'white' },
+                                        activeDotStyle: { backgroundColor: 'white' },
+                                    }}
+                                >
+                                    {imgUrl1 && <img src={imgUrl1} alt={props.selectedProject?.title} />}
+                                    {imgUrl2 && <img src={imgUrl2} alt={props.selectedProject?.title} />}
+                                    {imgUrl3 && <img src={imgUrl3} alt={props.selectedProject?.title} />}
+                                    {imgUrl4 && <img src={imgUrl4} alt={props.selectedProject?.title} />}
+                                    {imgUrl5 && <img src={imgUrl5} alt={props.selectedProject?.title} />}
+                                </Slider>
+                            ) : (
                                 <img src={imgUrl1} alt={props.selectedProject?.title} />
-                                {imgUrl2 && <img src={imgUrl2} alt={props.selectedProject?.title} />}
-                                {imgUrl3 && <img src={imgUrl3} alt={props.selectedProject?.title} />}
-                                {imgUrl4 && <img src={imgUrl4} alt={props.selectedProject?.title} />}
-                                {imgUrl5 && <img src={imgUrl5} alt={props.selectedProject?.title} />}
-                            </Slider>
+                            )}
+
                         </div>
                     </Col>
                     <Col size={10} sm={5}>

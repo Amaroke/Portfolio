@@ -16,6 +16,7 @@ import logotypescript from "../../../assets/img/logo-typescript.png";
 import logonestjs from "../../../assets/img/logo-nestjs.png";
 import logoKotlin from "../../../assets/img/logo-kotlin.png";
 import projImg from "../../../assets/img/project.jpg";
+import projImg2 from "../../../assets/img/project_in_progress.jpg";
 import charadle1 from "../../../assets/img/charadle1.png";
 import charadle2 from "../../../assets/img/charadle2.png";
 import charadle3 from "../../../assets/img/charadle3.png";
@@ -127,8 +128,8 @@ export const perso_projects = [
         title: "Charadle",
         resumeen: "Character guessing web game",
         resumefr: "Jeu web de devinettes de personnages",
-        descriptionen: "Charadle is a web application developed in React, inspired by Wordle, that offers a game where players have to guess a character from manga or anime based on an image. Several hint systems are available. The site uses the MyAnimeList API and performs some automated data collection to obtain information about the characters. Additionally, users can personalize their experience by connecting their own MyAnimeList list by entering their username. The backend is hosted on the Vercel platform.<br/>I completely developed this project on my own in 2023.<br/><br/>You can access the application by following this link:<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>And the GitHub repository by following this one:<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
-        descriptionfr: "Charadle est une application web développée en React, s'inspirant de Wordle, qui propose un jeu où l'on doit deviner un personnage de manga ou d'animé à partir d'une image. Plusieurs systèmes d'indices sont disponibles. Le site utilise l'API de MyAnimeList et effectue un peu de collecte de données automatisée pour obtenir des informations sur les personnages. De plus, il est possible d'utiliser sa propre liste MyAnimeList en renseignant son pseudonyme. Le backend est hébergé sur la plateforme Vercel.<br/>J'ai entièrement réalisé ce projet seul en 2023.<br/><br/>Vous pouvez accéder à l'application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
+        descriptionen: "Charadle is a web application developed in React, inspired by Wordle, that offers a game where players have to guess a character from manga or anime based on an image. Several hint systems are available. The site uses the MyAnimeList API and performs some automated data collection to obtain information about the characters. Additionally, users can personalize their experience by connecting their own MyAnimeList list by entering their username. The backend is hosted on the Vercel platform.<br/>I completely developed this project on my own in end of summer 2023.<br/><br/>You can access the application by following this link:<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>And the GitHub repository by following this one:<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
+        descriptionfr: "Charadle est une application web développée en React, s'inspirant de Wordle, qui propose un jeu où l'on doit deviner un personnage de manga ou d'animé à partir d'une image. Plusieurs systèmes d'indices sont disponibles. Le site utilise l'API de MyAnimeList et effectue un peu de collecte de données automatisée pour obtenir des informations sur les personnages. De plus, il est possible d'utiliser sa propre liste MyAnimeList en renseignant son pseudonyme. Le backend est hébergé sur la plateforme Vercel.<br/>J'ai entièrement réalisé ce projet seul lors de la fin de l'été 2023.<br/><br/>Vous pouvez accéder à l'application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
         imgUrl1: charadle1,
         imgUrl2: charadle2,
         imgUrl3: charadle3,
@@ -146,13 +147,9 @@ export const perso_projects = [
         title: "Ideology",
         resumeen: "Personality test web application",
         resumefr: "Application web de test de personalité",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        descriptionen: "\"Ideology\" is an ongoing web application development project, created in collaboration with a friend. It is a full-stack application utilizing the Angular framework for the front-end and the Spring framework for the back-end. The core concept of the application is to offer an online personality/ideology test. The application also plans to implement user account management and the ability for users to submit new questions.<br/><br/>You can track the progress of this application by following this link:<br/><a href=\"https://amaroke.github.io/Ideology\">https://amaroke.github.io/Ideology</a><br/>And the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Ideology\">https://github.com/Amaroke/Ideology</a>.",
+        descriptionfr: "\"Ideology\" est une application web en cours de développement, créée en collaboration avec un ami. Elle se présente comme une application full-stack utilisant le framework Angular pour le front-end et le framework Spring pour le back-end. Le concept central de l'application est de proposer un test de personnalité/d'idéologie en ligne. L'application prévoit également de mettre en place une gestion de compte d'utilisateurs, et de soumission de nouvelles questions.<br/><br/>Vous pouvez suivre la progression de cette application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Ideology\">https://amaroke.github.io/Ideology</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Ideology\">https://github.com/Amaroke/Ideology</a>",
+        imgUrl1: projImg2,
         imglang1: logospring,
         imglang2: logoangular,
         imglang3: logohtmlcss,
@@ -166,13 +163,9 @@ export const perso_projects = [
         title: "Achievo",
         resumeen: "Common objectives web application",
         resumefr: "Application web d'objectifs en commun",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        descriptionen: "\"Achievo\" is a web application currently in development, with the aim for me to experimente with the Angular framework for the front-end and the Nest.js framework for the back-end. The application allows users to create shared goals (for example: \"Read 5 books in one week\"), offers progress tracking, and includes a reward system.<br/><br/>You can track the progress of this application by visiting this link:<br/><a href=\"https://amaroke.github.io/Achievo\">https://amaroke.github.io/Achievo</a><br/>And access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Achievo\">https://github.com/Amaroke/Achievo<a>",
+        descriptionfr: "\"Achievo\" est une application web en cours de développement que je développe seul dans le but d'expérimenter le framework Angular pour le front-end et le framework Nest.js pour le back-end. L'application permet à des utilisateurs de créer des objectifs en commun (exemple : Lire 5 livres en une semaine), propose un suivi de la progression, et un système de récompense.<br/><br/>Vous pouvez suivre la progression de cette application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Achievo\">https://amaroke.github.io/Achievo</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Achievo\">https://github.com/Amaroke/Achievo</a>",
+        imgUrl1: projImg2,
         imglang1: logonestjs,
         imglang2: logoangular,
         imglang3: logotypescript,
