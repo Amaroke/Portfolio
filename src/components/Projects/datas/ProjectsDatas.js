@@ -1,26 +1,29 @@
-import logoPython from "../../../assets/img/logo-python.png";
-import logonumpy from "../../../assets/img/logo-numpy.png";
-import logoReact from "../../../assets/img/logo-react.png";
-import logonodejs from "../../../assets/img/logo-nodejs.png";
-import logojavascript from "../../../assets/img/logo-js.png";
-import logojava from "../../../assets/img/logo-java.png";
-import logolibgdx from "../../../assets/img/logo-libgdx.png";
-import logoPHP from "../../../assets/img/logo-php.png";
-import logocomposer from "../../../assets/img/logo-composer.png";
-import logohtmlcss from "../../../assets/img/logo-html-css.png";
-import logoAndroidStudio from "../../../assets/img/logo-android-studio.png";
-import logovercel from "../../../assets/img/logo-vercel.png";
-import logospring from "../../../assets/img/logo-spring-boot.png";
-import logoangular from "../../../assets/img/logo-angular.png";
-import logotypescript from "../../../assets/img/logo-typescript.png";
-import logonestjs from "../../../assets/img/logo-nestjs.png";
-import logoKotlin from "../../../assets/img/logo-kotlin.png";
-import projImg from "../../../assets/img/project.jpg";
-import projImg2 from "../../../assets/img/project_in_progress.jpg";
-import charadle1 from "../../../assets/img/charadle1.png";
-import charadle2 from "../../../assets/img/charadle2.png";
-import charadle3 from "../../../assets/img/charadle3.png";
-import charadle4 from "../../../assets/img/charadle4.png";
+import logoPython from "../../../assets/img/logos/logo-python.png";
+import logonumpy from "../../../assets/img/logos/logo-numpy.png";
+import logoReact from "../../../assets/img/logos/logo-react.png";
+import logonodejs from "../../../assets/img/logos/logo-nodejs.png";
+import logojavascript from "../../../assets/img/logos/logo-js.png";
+import logojava from "../../../assets/img/logos/logo-java.png";
+import logolibgdx from "../../../assets/img/logos/logo-libgdx.png";
+import logoPHP from "../../../assets/img/logos/logo-php.png";
+import logocomposer from "../../../assets/img/logos/logo-composer.png";
+import logohtmlcss from "../../../assets/img/logos/logo-html-css.png";
+import logoAndroidStudio from "../../../assets/img/logos/logo-android-studio.png";
+import logovercel from "../../../assets/img/logos/logo-vercel.png";
+import logospring from "../../../assets/img/logos/logo-spring-boot.png";
+import logoangular from "../../../assets/img/logos/logo-angular.png";
+import logotypescript from "../../../assets/img/logos/logo-typescript.png";
+import logonestjs from "../../../assets/img/logos/logo-nestjs.png";
+import logoKotlin from "../../../assets/img/logos/logo-kotlin.png";
+import projImg from "../../../assets/img/projects-images/project-no-preview.jpg";
+import projImg2 from "../../../assets/img/projects-images/project-in-progress.jpg";
+import charadle1 from "../../../assets/img/projects-images/charadle1.png";
+import charadle2 from "../../../assets/img/projects-images/charadle2.png";
+import charadle3 from "../../../assets/img/projects-images/charadle3.png";
+import charadle4 from "../../../assets/img/projects-images/charadle4.png";
+import dpiscine1 from "../../../assets/img/projects-images/dpiscine1.png";
+import dpiscine2 from "../../../assets/img/projects-images/dpiscine2.png";
+import dpiscine3 from "../../../assets/img/projects-images/dpiscine3.png";
 
 export const projects = [
     {
@@ -41,13 +44,11 @@ export const projects = [
         title: "DPiscine",
         resumeen: "Agenda management website",
         resumefr: "Site de gestion d'agenda",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        descriptionen: "DPiscine is a web application using Node.js, implementing an API, managing a user account system, and featuring a calendar interface for planning multi-user events. It was developed during my first year of master's with two other friends.<br/><br/>You can access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/ProjetDPiscine\">GitHub Repository</a>",
+        descriptionfr: "DPiscine est une application web utilisant node.js, et implémentant une API, gérant un système de gestion de comptes d'utilisateurs et une interface présentant un calendrier, utilisé pour planifier des évènements à plusieurs. Il a été développé lors de ma première année de master avec deux autres amis.<br/><br/>Vous pouvez accéder au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/ProjetDPiscine\">https://github.com/Amaroke/ProjetDPiscine</a>",
+        imgUrl1: dpiscine1,
+        imgUrl2: dpiscine2,
+        imgUrl3: dpiscine3,
         imglang1: logonodejs,
         imglang2: logojavascript,
         imglang3: logohtmlcss,
@@ -128,8 +129,8 @@ export const perso_projects = [
         title: "Charadle",
         resumeen: "Character guessing web game",
         resumefr: "Jeu web de devinettes de personnages",
-        descriptionen: "Charadle is a web application developed in React, inspired by Wordle, that offers a game where players have to guess a character from manga or anime based on an image. Several hint systems are available. The site uses the MyAnimeList API and performs some automated data collection to obtain information about the characters. Additionally, users can personalize their experience by connecting their own MyAnimeList list by entering their username. The backend is hosted on the Vercel platform.<br/>I completely developed this project on my own in end of summer 2023.<br/><br/>You can access the application by following this link:<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>And the GitHub repository by following this one:<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
-        descriptionfr: "Charadle est une application web développée en React, s'inspirant de Wordle, qui propose un jeu où l'on doit deviner un personnage de manga ou d'animé à partir d'une image. Plusieurs systèmes d'indices sont disponibles. Le site utilise l'API de MyAnimeList et effectue un peu de collecte de données automatisée pour obtenir des informations sur les personnages. De plus, il est possible d'utiliser sa propre liste MyAnimeList en renseignant son pseudonyme. Le backend est hébergé sur la plateforme Vercel.<br/>J'ai entièrement réalisé ce projet seul lors de la fin de l'été 2023.<br/><br/>Vous pouvez accéder à l'application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
+        descriptionen: "Charadle is a web application developed in React, that offers a game where players have to guess a character from manga or anime based on an image. Several hint systems are available. The site uses the MyAnimeList API and performs some automated data collection to obtain information about the characters. Additionally, users can personalize their experience by connecting their own MyAnimeList list by entering their username. The backend is hosted on the Vercel platform.<br/>I completely developed this project on my own in end of summer 2023.<br/><br/>You can access the application by following this link:<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>And the GitHub repository by following this one:<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
+        descriptionfr: "Charadle est une application web développée en React qui propose un jeu où l'on doit deviner un personnage de manga ou d'animé à partir d'une image. Plusieurs systèmes d'indices sont disponibles. Le site utilise l'API de MyAnimeList et effectue un peu de collecte de données automatisée pour obtenir des informations sur les personnages. De plus, il est possible d'utiliser sa propre liste MyAnimeList en renseignant son pseudonyme. Le backend est hébergé sur la plateforme Vercel.<br/>J'ai entièrement réalisé ce projet seul lors de la fin de l'été 2023.<br/><br/>Vous pouvez accéder à l'application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Charadle\">https://amaroke.github.io/Charadle</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Charadle\">https://github.com/Amaroke/Charadle</a>",
         imgUrl1: charadle1,
         imgUrl2: charadle2,
         imgUrl3: charadle3,
@@ -144,11 +145,11 @@ export const perso_projects = [
         lang4: "Vercel"
     },
     {
-        title: "Ideology",
-        resumeen: "Personality test web application",
-        resumefr: "Application web de test de personalité",
-        descriptionen: "\"Ideology\" is an ongoing web application development project, created in collaboration with a friend. It is a full-stack application utilizing the Angular framework for the front-end and the Spring framework for the back-end. The core concept of the application is to offer an online personality/ideology test. The application also plans to implement user account management and the ability for users to submit new questions.<br/><br/>You can track the progress of this application by following this link:<br/><a href=\"https://amaroke.github.io/Ideology\">https://amaroke.github.io/Ideology</a><br/>And the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Ideology\">https://github.com/Amaroke/Ideology</a>.",
-        descriptionfr: "\"Ideology\" est une application web en cours de développement, créée en collaboration avec un ami. Elle se présente comme une application full-stack utilisant le framework Angular pour le front-end et le framework Spring pour le back-end. Le concept central de l'application est de proposer un test de personnalité/d'idéologie en ligne. L'application prévoit également de mettre en place une gestion de compte d'utilisateurs, et de soumission de nouvelles questions.<br/><br/>Vous pouvez suivre la progression de cette application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Ideology\">https://amaroke.github.io/Ideology</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Ideology\">https://github.com/Amaroke/Ideology</a>",
+        title: "Quantify",
+        resumeen: "Web application for a estimation-based game",
+        resumefr: "Application web pour un jeu basé sur le principe d'estimation",
+        descriptionen: "XXX",
+        descriptionfr: "XXX",
         imgUrl1: projImg2,
         imglang1: logospring,
         imglang2: logoangular,
