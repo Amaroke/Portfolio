@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.129dfc83.css",
-    "main.js": "/Portfolio/static/js/main.30e67888.js",
+    "main.css": "/Portfolio/static/css/main.075f0bf5.css",
+    "main.js": "/Portfolio/static/js/main.48634777.js",
     "static/media/color-sharp.png": "/Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/charadle3.png": "/Portfolio/static/media/charadle3.c6f62a399bec4578e106.png",
-    "static/media/charadle2.png": "/Portfolio/static/media/charadle2.b525d971668a6a605726.png",
-    "static/media/charadle4.png": "/Portfolio/static/media/charadle4.94b08d21c07174ea7684.png",
     "static/media/banner-bg.png": "/Portfolio/static/media/banner-bg.9e6732fcbca457805e69.png",
-    "static/media/charadle1.png": "/Portfolio/static/media/charadle1.60d60daaf0744ea9fc98.png",
+    "static/media/charadle3.png": "/Portfolio/static/media/charadle3.9ca2bebdde10e854c842.png",
+    "static/media/charadle4.png": "/Portfolio/static/media/charadle4.6d1564893d1e415ce5ee.png",
     "static/media/logo-composer.png": "/Portfolio/static/media/logo-composer.43336cdd398ef7fce51d.png",
+    "static/media/charadle2.png": "/Portfolio/static/media/charadle2.8cd738bb7ea199cb54e0.png",
+    "static/media/charadle1.png": "/Portfolio/static/media/charadle1.9f03a7b75d15bfbaf699.png",
     "static/media/header-img.svg": "/Portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/logo-html-css.png": "/Portfolio/static/media/logo-html-css.5152f4972766be748c4d.png",
     "static/media/logo-kotlin.png": "/Portfolio/static/media/logo-kotlin.77c650577eb943c0cf02.png",
@@ -19,6 +19,7 @@
     "static/media/CentraNo2-Book.ttf": "/Portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/Portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/logo-android-studio.png": "/Portfolio/static/media/logo-android-studio.56a5276493ea40666fde.png",
+    "static/media/dpiscine3.png": "/Portfolio/static/media/dpiscine3.b3a159da49822dd41231.png",
     "static/media/logo-php.png": "/Portfolio/static/media/logo-php.e09cab3e016fcc64f1a1.png",
     "static/media/logo-java.png": "/Portfolio/static/media/logo-java.49119885df38ed492812.png",
     "static/media/logo-vs-code.png": "/Portfolio/static/media/logo-vs-code.c0e1a20dfef24c094794.png",
@@ -26,10 +27,12 @@
     "static/media/logo-angular.png": "/Portfolio/static/media/logo-angular.0e63cf1c46689d270e7a.png",
     "static/media/logo-spring-boot.png": "/Portfolio/static/media/logo-spring-boot.177a37384a973c0fe1e0.png",
     "static/media/logo-react.png": "/Portfolio/static/media/logo-react.492e35bf1e1d203e2273.png",
-    "static/media/project_in_progress.jpg": "/Portfolio/static/media/project_in_progress.58c1fb6a9767648942a5.jpg",
+    "static/media/dpiscine2.png": "/Portfolio/static/media/dpiscine2.0deb9b8ae406f0bbc6af.png",
+    "static/media/dpiscine1.png": "/Portfolio/static/media/dpiscine1.9c9d32979d8812db96a8.png",
+    "static/media/project-in-progress.jpg": "/Portfolio/static/media/project-in-progress.58c1fb6a9767648942a5.jpg",
     "static/media/logo-mysql.png": "/Portfolio/static/media/logo-mysql.eb509fa6655fce423141.png",
     "static/media/contact-img.svg": "/Portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
-    "static/media/project.jpg": "/Portfolio/static/media/project.f9de501a5764477c338d.jpg",
+    "static/media/project-no-preview.jpg": "/Portfolio/static/media/project-no-preview.f9de501a5764477c338d.jpg",
     "static/media/logo-git.png": "/Portfolio/static/media/logo-git.bea9eb3cf3f7d355937d.png",
     "static/media/logo-jetbrains.png": "/Portfolio/static/media/logo-jetbrains.1f4e3d31b10674ac6f75.png",
     "static/media/logo-nodejs.png": "/Portfolio/static/media/logo-nodejs.e49a963a4514b8e80e04.png",
@@ -41,15 +44,15 @@
     "static/media/slick.eot": "/Portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Portfolio/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/nav-icon2.svg": "/Portfolio/static/media/nav-icon2.d97c59cdc339abf20d8446825ae96b4c.svg",
-    "static/media/nav-icon1.svg": "/Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/icon-github.svg": "/Portfolio/static/media/icon-github.d97c59cdc339abf20d8446825ae96b4c.svg",
+    "static/media/icon-linkedin.svg": "/Portfolio/static/media/icon-linkedin.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/Portfolio/index.html",
-    "static/media/nav-icon3.svg": "/Portfolio/static/media/nav-icon3.deb98b007c987af580650ad9bd57bc11.svg",
-    "main.129dfc83.css.map": "/Portfolio/static/css/main.129dfc83.css.map",
-    "main.30e67888.js.map": "/Portfolio/static/js/main.30e67888.js.map"
+    "static/media/icon-email.svg": "/Portfolio/static/media/icon-email.deb98b007c987af580650ad9bd57bc11.svg",
+    "main.075f0bf5.css.map": "/Portfolio/static/css/main.075f0bf5.css.map",
+    "main.48634777.js.map": "/Portfolio/static/js/main.48634777.js.map"
   },
   "entrypoints": [
-    "static/css/main.129dfc83.css",
-    "static/js/main.30e67888.js"
+    "static/css/main.075f0bf5.css",
+    "static/js/main.48634777.js"
   ]
 }
