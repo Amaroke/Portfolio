@@ -24,6 +24,9 @@ import charadle4 from "../../../assets/img/projects-images/charadle4.png";
 import dpiscine1 from "../../../assets/img/projects-images/dpiscine1.png";
 import dpiscine2 from "../../../assets/img/projects-images/dpiscine2.png";
 import dpiscine3 from "../../../assets/img/projects-images/dpiscine3.png";
+import obstacl1 from "../../../assets/img/projects-images/obstacl1.png";
+import obstacl2 from "../../../assets/img/projects-images/obstacl2.png";
+import obstacl3 from "../../../assets/img/projects-images/obstacl3.png";
 
 export const projects = [
     {
@@ -33,8 +36,6 @@ export const projects = [
         descriptionen: "\"Georges\" enables the cleaning of archives through case-based reasoning. This project was carried out as part of the Introduction to Research course in my Computer Science Master's program at the University of Lorraine. It was developed in collaboration with Persée, a Support and Research Unit at ENS Lyon and CNRS. Entirely written in Python, the tool developed yielded very satisfactory results across all provided documents. These efforts led to the publication of a <a href=\"https://delegate.iccbr2023.org/res/paper_18.pdf\">paper</a> at the 2023 International Conference on Case-Based Reasoning.<br>For more information, you can visit the project's <a href=\"github.com/Amaroke/Georges\">GitHub repository</a>.",
         descriptionfr: "\"Georges\" permet grâce au raisonnement à partir de cas de nettoyer des archives. Ce projet a été réalisé, dans le cadre de l'UE Initiation à la Recherche de mon Master Informatique à l'Université de Lorraine. Il a été réalisé en collaboration avec Persée, une Unité de Support et de Recherche de l'ENS de Lyon et du CNRS. Entièrement écris en Python l'outil développé à permis d'obtenir des résultats très satisfaisants sur l'ensemble des documents fournis. Ces travaux ont menés à la publication d'un <a href=\"https://delegate.iccbr2023.org/res/paper_18.pdf\">article</a> à l'occasion de l'International Conference on Case-Based Reasoning de 2023.<br>Pour plus d'informations, vous pouvez consulter le <a href=\"github.com/Amaroke/Georges\">dépôt GitHub</a> du projet.",
         imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
         imglang1: logoPython,
         imglang2: logonumpy,
         lang1: "Python",
@@ -45,7 +46,7 @@ export const projects = [
         resumeen: "Agenda management website",
         resumefr: "Site de gestion d'agenda",
         descriptionen: "DPiscine is a web application using Node.js, implementing an API, managing a user account system, and featuring a calendar interface for planning multi-user events. It was developed during my first year of master's with two other friends.<br/><br/>You can access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/ProjetDPiscine\">GitHub Repository</a>",
-        descriptionfr: "DPiscine est une application web utilisant node.js, et implémentant une API, gérant un système de gestion de comptes d'utilisateurs et une interface présentant un calendrier, utilisé pour planifier des évènements à plusieurs. Il a été développé lors de ma première année de master avec deux autres amis.<br/><br/>Vous pouvez accéder au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/ProjetDPiscine\">https://github.com/Amaroke/ProjetDPiscine</a>",
+        descriptionfr: "DPiscine est une application web utilisant node.js, et implémentant une API, gérant un système de gestion de comptes d'utilisateurs et une interface présentant un calendrier, utilisé pour planifier des évènements à plusieurs. Il a été développé lors de ma première année de master avec deux autres amis.<br/><br/>Vous pouvez accéder au dépôt github en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/ProjetDPiscine\">https://github.com/Amaroke/ProjetDPiscine</a>",
         imgUrl1: dpiscine1,
         imgUrl2: dpiscine2,
         imgUrl3: dpiscine3,
@@ -60,13 +61,11 @@ export const projects = [
         title: "ObstACL-Tower",
         resumeen: "Roguelike game",
         resumefr: "Jeu de type roguelike",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        descriptionen: "ObstACL-Tower is a video game developed by a team of four during my first year of master's studies. For its development, we applied an agile development method, similar to Scrum, involving multiple sprints. The game evolves gradually over the sprints, transitioning from a text-based version to a graphical one, and eventually incorporating features like a labyrinth, exits, monsters, and more. This project provided an opportunity to apply software analysis and design principles and collaborate as a team to develop an interactive game with a graphical user interface using LibGDX and Java.<br/><br/>You can access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/ObstACL-Tower\">https://github.com/Amaroke/ObstACL-Tower</a>",
+        descriptionfr: "ObstACL-Tower est un jeu vidéo développé en équipe de quatre pendant ma première année de master, pour son développement nous avons appliqué une méthode de développement agile, similaire à scrum, incluant plusieurs sprints. Le jeu évolue progressivement au fil des sprints, passant de la version texte à une version graphique, puis à une version incluant un labyrinthe, des sorties, des monstres, et d'autres fonctionnalités. Ce projet était donc une opportunité d'appliquer les principes de l'analyse et de la conception de logiciels, ainsi que de travailler en équipe pour développer un jeu interactif avec une interface utilisateur graphique, utilisant LibGDX et Java.<br/><br/>Vous pouvez accéder au dépôt github en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/ObstACL-Tower\">https://github.com/Amaroke/ObstACL-Tower</a>",
+        imgUrl1: obstacl1,
+        imgUrl2: obstacl2,
+        imgUrl3: obstacl3,
         imglang1: logojava,
         imglang2: logolibgdx,
         lang1: "Java",
