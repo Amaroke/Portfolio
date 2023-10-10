@@ -16,7 +16,8 @@ import logotypescript from "../../../assets/img/logos/logo-typescript.png";
 import logonestjs from "../../../assets/img/logos/logo-nestjs.png";
 import logoKotlin from "../../../assets/img/logos/logo-kotlin.png";
 import projImg from "../../../assets/img/projects-images/project-no-preview.jpg";
-import projImg2 from "../../../assets/img/projects-images/project-in-progress.jpg";
+import projAbandonned from "../../../assets/img/projects-images/project-abandonned.jpg";
+import projInProgImg from "../../../assets/img/projects-images/project-in-progress.jpg";
 import charadle1 from "../../../assets/img/projects-images/charadle1.png";
 import charadle2 from "../../../assets/img/projects-images/charadle2.png";
 import charadle3 from "../../../assets/img/projects-images/charadle3.png";
@@ -27,6 +28,10 @@ import dpiscine3 from "../../../assets/img/projects-images/dpiscine3.png";
 import obstacl1 from "../../../assets/img/projects-images/obstacl1.png";
 import obstacl2 from "../../../assets/img/projects-images/obstacl2.png";
 import obstacl3 from "../../../assets/img/projects-images/obstacl3.png";
+import ppit1 from "../../../assets/img/projects-images/ppit1.png";
+import ppit2 from "../../../assets/img/projects-images/ppit2.png";
+import ppit3 from "../../../assets/img/projects-images/ppit3.png";
+import ppit4 from "../../../assets/img/projects-images/ppit4.png";
 
 export const projects = [
     {
@@ -75,13 +80,12 @@ export const projects = [
         title: "Golden-PPIT",
         resumeen: "Event organization website",
         resumefr: "Site web d'organisation d'évènements",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        descriptionen: "Golden-PPIT is a web application developed in PHP as part of the \"Introduction to Software Engineering\" course by a group of 8 individuals. This application provides a comprehensive range of features focused on user and event management. With a user-friendly interface and flexible functionalities, Golden-PPIT aims to simplify the management of events, requirements, and users, while offering advanced options for super-users. This achievement demonstrates the commitment and skills of the group in creating a robust and functional web application.<br/><br/>You can access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Golden-PPIT\">https://github.com/Amaroke/Golden-PPIT</a>",
+        descriptionfr: "Golden-PPIT est une application développée en PHP, dans le cadre du cours de \"Premier Pas en Ingénierie Logiciel\" (PPIL) par un groupe de 8 personnes. Cette application offre une gamme complète de fonctionnalités axées sur la gestion des utilisateurs et des événements. Avec une interface conviviale et des fonctionnalités flexibles, Golden-PPIT vise à simplifier la gestion d'événements, de besoins et d'utilisateurs, tout en offrant des options avancées pour les super-utilisateurs. Cette réalisation démontre l'engagement et les compétences du groupe dans la création d'une application web robuste et fonctionnelle.<br/><br/>Vous pouvez accéder au dépôt github en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/Golden-PPIT\">https://github.com/Amaroke/Golden-PPIT</a>",
+        imgUrl1: ppit1,
+        imgUrl2: ppit2,
+        imgUrl3: ppit3,
+        imgUrl4: ppit4,
         imglang1: logoPHP,
         imglang2: logohtmlcss,
         imglang3: logocomposer,
@@ -149,7 +153,7 @@ export const perso_projects = [
         resumefr: "Application web pour un jeu basé sur le principe d'estimation",
         descriptionen: "XXX",
         descriptionfr: "XXX",
-        imgUrl1: projImg2,
+        imgUrl1: projInProgImg,
         imglang1: logospring,
         imglang2: logoangular,
         imglang3: logohtmlcss,
@@ -165,7 +169,7 @@ export const perso_projects = [
         resumefr: "Application web d'objectifs en commun",
         descriptionen: "\"Achievo\" is a web application currently in development, with the aim for me to experimente with the Angular framework for the front-end and the Nest.js framework for the back-end. The application allows users to create shared goals (for example: \"Read 5 books in one week\"), offers progress tracking, and includes a reward system.<br/><br/>You can track the progress of this application by visiting this link:<br/><a href=\"https://amaroke.github.io/Achievo\">https://amaroke.github.io/Achievo</a><br/>And access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Achievo\">https://github.com/Amaroke/Achievo<a>",
         descriptionfr: "\"Achievo\" est une application web en cours de développement que je développe seul dans le but d'expérimenter le framework Angular pour le front-end et le framework Nest.js pour le back-end. L'application permet à des utilisateurs de créer des objectifs en commun (exemple : Lire 5 livres en une semaine), propose un suivi de la progression, et un système de récompense.<br/><br/>Vous pouvez suivre la progression de cette application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Achievo\">https://amaroke.github.io/Achievo</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Achievo\">https://github.com/Amaroke/Achievo</a>",
-        imgUrl1: projImg2,
+        imgUrl1: projInProgImg,
         imglang1: logonestjs,
         imglang2: logoangular,
         imglang3: logotypescript,
@@ -174,6 +178,20 @@ export const perso_projects = [
         lang2: "Angular",
         lang3: "Typescript",
         lang4: "Html/Css"
+    },
+    {
+        title: "BibliAuxLivres",
+        resumeen: "Library web application",
+        resumefr: "Application web de bibliotèque",
+        descriptionen: "TODO",
+        descriptionfr: "TODO",
+        imgUrl1: projInProgImg,
+        imglang1: logospring,
+        imglang2: logoReact,
+        imglang3: logonodejs,
+        lang1: "Spring Boot",
+        lang2: "ReactJS",
+        lang3: "NodeJS"
     },
     {
         title: "Yurei Esports",
@@ -199,27 +217,7 @@ export const perso_projects = [
         resumefr: "Application Android d'un jeu incrémental",
         descriptionen: "TODO",
         descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
-        imglang1: logoKotlin,
-        imglang2: logoAndroidStudio,
-        lang1: "Kotlin",
-        lang2: "Android Studio"
-    },
-    {
-        title: "PiscineTime",
-        resumeen: "Widget for swimming pool hours",
-        resumefr: "Widget pour les horaires de la piscine",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        imgUrl1: projAbandonned,
         imglang1: logoKotlin,
         imglang2: logoAndroidStudio,
         lang1: "Kotlin",
