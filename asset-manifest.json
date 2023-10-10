@@ -1,18 +1,24 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.075f0bf5.css",
-    "main.js": "/Portfolio/static/js/main.48634777.js",
+    "main.js": "/Portfolio/static/js/main.cf1a6b37.js",
     "static/media/color-sharp.png": "/Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/banner-bg.png": "/Portfolio/static/media/banner-bg.9e6732fcbca457805e69.png",
+    "static/media/obstacl2.png": "/Portfolio/static/media/obstacl2.54ec4bc34bd0e51479ac.png",
+    "static/media/obstacl3.png": "/Portfolio/static/media/obstacl3.e22fab5eded1b0782362.png",
+    "static/media/ppit1.png": "/Portfolio/static/media/ppit1.f9505e3efd16fcd2d647.png",
     "static/media/charadle3.png": "/Portfolio/static/media/charadle3.9ca2bebdde10e854c842.png",
     "static/media/charadle4.png": "/Portfolio/static/media/charadle4.6d1564893d1e415ce5ee.png",
     "static/media/logo-composer.png": "/Portfolio/static/media/logo-composer.43336cdd398ef7fce51d.png",
     "static/media/charadle2.png": "/Portfolio/static/media/charadle2.8cd738bb7ea199cb54e0.png",
     "static/media/charadle1.png": "/Portfolio/static/media/charadle1.9f03a7b75d15bfbaf699.png",
+    "static/media/ppit4.png": "/Portfolio/static/media/ppit4.11adf9728ac5da2c6ecd.png",
+    "static/media/ppit3.png": "/Portfolio/static/media/ppit3.2b6f23c2bb72618784e7.png",
     "static/media/header-img.svg": "/Portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/logo-html-css.png": "/Portfolio/static/media/logo-html-css.5152f4972766be748c4d.png",
     "static/media/logo-kotlin.png": "/Portfolio/static/media/logo-kotlin.77c650577eb943c0cf02.png",
+    "static/media/ppit2.png": "/Portfolio/static/media/ppit2.af6877573529a093a556.png",
     "static/media/logo-python.png": "/Portfolio/static/media/logo-python.204d2826d29215f6d30f.png",
     "static/media/CentraNo2-Bold.ttf": "/Portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/Portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -29,13 +35,15 @@
     "static/media/logo-react.png": "/Portfolio/static/media/logo-react.492e35bf1e1d203e2273.png",
     "static/media/dpiscine2.png": "/Portfolio/static/media/dpiscine2.0deb9b8ae406f0bbc6af.png",
     "static/media/dpiscine1.png": "/Portfolio/static/media/dpiscine1.9c9d32979d8812db96a8.png",
-    "static/media/project-in-progress.jpg": "/Portfolio/static/media/project-in-progress.58c1fb6a9767648942a5.jpg",
+    "static/media/project-in-progress.jpg": "/Portfolio/static/media/project-in-progress.206db9608794bd74ce35.jpg",
     "static/media/logo-mysql.png": "/Portfolio/static/media/logo-mysql.eb509fa6655fce423141.png",
     "static/media/contact-img.svg": "/Portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
-    "static/media/project-no-preview.jpg": "/Portfolio/static/media/project-no-preview.f9de501a5764477c338d.jpg",
+    "static/media/project-no-preview.jpg": "/Portfolio/static/media/project-no-preview.5b8487cddd143b8234c4.jpg",
+    "static/media/project-abandonned.jpg": "/Portfolio/static/media/project-abandonned.c0123062d68a7e6b31a3.jpg",
     "static/media/logo-git.png": "/Portfolio/static/media/logo-git.bea9eb3cf3f7d355937d.png",
     "static/media/logo-jetbrains.png": "/Portfolio/static/media/logo-jetbrains.1f4e3d31b10674ac6f75.png",
     "static/media/logo-nodejs.png": "/Portfolio/static/media/logo-nodejs.e49a963a4514b8e80e04.png",
+    "static/media/obstacl1.png": "/Portfolio/static/media/obstacl1.36d239c313c148b94535.png",
     "static/media/logo-js.png": "/Portfolio/static/media/logo-js.7ac08a7e5fb3834f8f4a.png",
     "static/media/logo-numpy.png": "/Portfolio/static/media/logo-numpy.58ffe7e85fef1be446f2.png",
     "static/media/logo-vercel.png": "/Portfolio/static/media/logo-vercel.16b2bee7b7391d093ba0.png",
@@ -49,10 +57,10 @@
     "index.html": "/Portfolio/index.html",
     "static/media/icon-email.svg": "/Portfolio/static/media/icon-email.deb98b007c987af580650ad9bd57bc11.svg",
     "main.075f0bf5.css.map": "/Portfolio/static/css/main.075f0bf5.css.map",
-    "main.48634777.js.map": "/Portfolio/static/js/main.48634777.js.map"
+    "main.cf1a6b37.js.map": "/Portfolio/static/js/main.cf1a6b37.js.map"
   },
   "entrypoints": [
     "static/css/main.075f0bf5.css",
-    "static/js/main.48634777.js"
+    "static/js/main.cf1a6b37.js"
   ]
 }
