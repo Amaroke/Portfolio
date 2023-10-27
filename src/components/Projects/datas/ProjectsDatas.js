@@ -32,8 +32,23 @@ import ppit1 from "../../../assets/img/projects-images/ppit1.png";
 import ppit2 from "../../../assets/img/projects-images/ppit2.png";
 import ppit3 from "../../../assets/img/projects-images/ppit3.png";
 import ppit4 from "../../../assets/img/projects-images/ppit4.png";
+import platventure1 from "../../../assets/img/projects-images/platventure1.png";
 
 export const projects = [
+    {
+        title: "NWT Project",
+        resumeen: "Web application for survey management",
+        resumefr: "Application web de création de sondages",
+        descriptionen: "NWT is a survey creation application with a Front-end interface built in Angular and a Back-end in NestJS. It enables user account management, creation of questions and surveys, as well as sharing them among users. The Back-end provides a complete CRUD system with a MongoDB database and I/O validations. This project was developed collaboratively as part of the web technologies course in my Master's program at the University of Lorraine.<br/><br/>You can access the GitHub repository via this link:<br/><a href=\"https://github.com/Amaroke/nwt_project\">https://github.com/Amaroke/nwt_project</a><br>And you can visit the site by following this link:<br/><a href=\"https://amaroke.github.io/nwt_project\">https://amaroke.github.io/nwt_project</a>",
+        descriptionfr: "NWT est une application de création de sondages avec une interface Front-end en Angular et un Back-end en NestJS. Elle permet la gestion de comptes utilisateurs, la création de questions et de sondages ainsi que leur partage entre utilisateurs. Le Back-end propose un CRUD complet avec une base de données MongoDB et des validations I/O. Il a été réalisé en binôme pour la matière de nouvelles technologies du web de mon Master 2 Informatique à l'Université de Lorraine.<br/><br/>Vous pouvez accéder au dépôt github en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/nwt_project\">https://github.com/Amaroke/nwt_project</a><br>Et vous pouvez accéder au site en suivant ce lien :<br/><a href=\"https://amaroke.github.io/nwt_project\">https://amaroke.github.io/nwt_project</a>",
+        imgUrl1: projInProgImg,
+        imglang1: logonodejs,
+        imglang2: logonestjs,
+        imglang3: logoangular,
+        lang1: "NodeJS",
+        lang2: "NestJS",
+        lang3: "Angular"
+    },
     {
         title: "Georges",
         resumeen: "Archive cleaning tool",
@@ -97,34 +112,16 @@ export const projects = [
         title: "PlatVenture",
         resumeen: "Platformer game",
         resumefr: "Jeu de plateforme",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
+        descriptionen: "PlatVenture is a Java-based platformer game developed using the LibGDX game development framework during my Bachelor's studies. The game features dynamic sound management, collision detection, and both victory and defeat conditions. Also available on android. Players will navigate levels, overcome obstacles, and collect power-ups as they strive to achieve victory. You can explore the project and its source code on GitHub by following this link: <a href=\"https://github.com/Amaroke/PlatVenture\">https://github.com/Amaroke/PlatVenture</a>",
+        descriptionfr: "PlatVenture est un jeu de plateforme basé sur Java, développé en utilisant le framework de développement de jeux LibGDX pendant mes études en 3ème année de licence. Le jeu propose une gestion dynamique des sons, une détection des collisions, ainsi que des conditions de victoire et de défaite. Il est également disponible sur Android. Les joueurs devront naviguer à travers des niveaux, surmonter des obstacles et collecter des améliorations pour atteindre la victoire. Vous pouvez explorer le projet et son code source sur GitHub en suivant ce lien : <a href=\"https://github.com/Amaroke/PlatVenture\">https://github.com/Amaroke/PlatVenture</a>.",
+        imgUrl1: platventure1,
         imglang1: logojava,
         imglang2: logolibgdx,
         imglang3: logoAndroidStudio,
         lang1: "Java",
         lang2: "LibGDX",
         lang3: "Android Studio"
-    },
-    {
-        title: "PuissanceQuatre",
-        resumeen: "Connect Four game AI",
-        resumefr: "IA d'un jeu de puissance 4",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
-        imglang1: logojava,
-        lang1: "Java"
-    },
+    }
 ];
 
 export const perso_projects = [
@@ -148,20 +145,18 @@ export const perso_projects = [
         lang4: "Vercel"
     },
     {
-        title: "Quantify",
-        resumeen: "Web application for a estimation-based game",
-        resumefr: "Application web pour un jeu basé sur le principe d'estimation",
-        descriptionen: "XXX",
-        descriptionfr: "XXX",
+        title: "Yurei Esports",
+        resumeen: "Esport team website",
+        resumefr: "Site web d'une équipe d'esport",
+        descriptionen: "TODO",
+        descriptionfr: "TODO",
         imgUrl1: projInProgImg,
-        imglang1: logospring,
-        imglang2: logoangular,
+        imglang1: logoReact,
+        imglang2: logojavascript,
         imglang3: logohtmlcss,
-        imglang4: logotypescript,
-        lang1: "Spring Boot",
-        lang2: "Angular",
-        lang3: "Html/Css",
-        lang4: "Typescript"
+        lang1: "ReactJS",
+        lang2: "Javascript",
+        lang3: "Html/Css"
     },
     {
         title: "Achievo",
@@ -180,36 +175,20 @@ export const perso_projects = [
         lang4: "Html/Css"
     },
     {
-        title: "BibliAuxLivres",
-        resumeen: "Library web application",
-        resumefr: "Application web de bibliotèque",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
+        title: "Quantify",
+        resumeen: "Web application for a estimation-based game",
+        resumefr: "Application web pour un jeu basé sur le principe d'estimation",
+        descriptionen: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare magna. Vestibulum posuere augue quis lectus hendrerit efficitur. Etiam lobortis diam eros, at fringilla nisi venenatis sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam mollis pretium nibh in dignissim. Ut consequat nisl feugiat lectus elementum, id rhoncus purus convallis. Aliquam neque massa, ullamcorper at orci at, dictum interdum diam. Cras nec nunc non massa aliquet lobortis eget sed turpis. Suspendisse at nisi sed massa vehicula viverra. Sed non dolor iaculis, vulputate lacus nec, auctor dolor. Etiam urna ipsum, aliquam eu erat sed, condimentum semper ipsum. Proin et molestie sem, ac cursus urna. Vestibulum varius dapibus ante ut malesuada.",
+        descriptionfr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare magna. Vestibulum posuere augue quis lectus hendrerit efficitur. Etiam lobortis diam eros, at fringilla nisi venenatis sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam mollis pretium nibh in dignissim. Ut consequat nisl feugiat lectus elementum, id rhoncus purus convallis. Aliquam neque massa, ullamcorper at orci at, dictum interdum diam. Cras nec nunc non massa aliquet lobortis eget sed turpis. Suspendisse at nisi sed massa vehicula viverra. Sed non dolor iaculis, vulputate lacus nec, auctor dolor. Etiam urna ipsum, aliquam eu erat sed, condimentum semper ipsum. Proin et molestie sem, ac cursus urna. Vestibulum varius dapibus ante ut malesuada.",
         imgUrl1: projInProgImg,
         imglang1: logospring,
-        imglang2: logoReact,
-        imglang3: logonodejs,
-        lang1: "Spring Boot",
-        lang2: "ReactJS",
-        lang3: "NodeJS"
-    },
-    {
-        title: "Yurei Esports",
-        resumeen: "Esport team website",
-        resumefr: "Site web d'une équipe d'esport",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
-        imgUrl1: projImg,
-        imgUrl2: projImg,
-        imgUrl3: projImg,
-        imgUrl4: projImg,
-        imgUrl5: projImg,
-        imglang1: logoReact,
-        imglang2: logojavascript,
+        imglang2: logoangular,
         imglang3: logohtmlcss,
-        lang1: "ReactJS",
-        lang2: "Javascript",
-        lang3: "Html/Css"
+        imglang4: logotypescript,
+        lang1: "Spring Boot",
+        lang2: "Angular",
+        lang3: "Html/Css",
+        lang4: "Typescript"
     },
     {
         title: "MakeMoreMeat",
