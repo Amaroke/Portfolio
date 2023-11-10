@@ -33,6 +33,9 @@ import ppit2 from "../../../assets/img/projects-images/ppit2.png";
 import ppit3 from "../../../assets/img/projects-images/ppit3.png";
 import ppit4 from "../../../assets/img/projects-images/ppit4.png";
 import platventure1 from "../../../assets/img/projects-images/platventure1.png";
+import nwt1 from "../../../assets/img/projects-images/nwt1.png";
+import nwt2 from "../../../assets/img/projects-images/nwt2.png";
+import nwt3 from "../../../assets/img/projects-images/nwt3.png";
 
 export const projects = [
     {
@@ -41,7 +44,9 @@ export const projects = [
         resumefr: "Application web de création de sondages",
         descriptionen: "NWT is a survey creation application with a Front-end interface built in Angular and a Back-end in NestJS. It enables user account management, creation of questions and surveys, as well as sharing them among users. The Back-end provides a complete CRUD system with a MongoDB database and I/O validations. This project was developed collaboratively as part of the web technologies course in my Master's program at the University of Lorraine.<br/><br/>You can access the GitHub repository via this link:<br/><a href=\"https://github.com/Amaroke/nwt_project\">https://github.com/Amaroke/nwt_project</a><br>And you can visit the site by following this link:<br/><a href=\"https://amaroke.github.io/nwt_project\">https://amaroke.github.io/nwt_project</a>",
         descriptionfr: "NWT est une application de création de sondages avec une interface Front-end en Angular et un Back-end en NestJS. Elle permet la gestion de comptes utilisateurs, la création de questions et de sondages ainsi que leur partage entre utilisateurs. Le Back-end propose un CRUD complet avec une base de données MongoDB et des validations I/O. Il a été réalisé en binôme pour la matière de nouvelles technologies du web de mon Master 2 Informatique à l'Université de Lorraine.<br/><br/>Vous pouvez accéder au dépôt github en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/nwt_project\">https://github.com/Amaroke/nwt_project</a><br>Et vous pouvez accéder au site en suivant ce lien :<br/><a href=\"https://amaroke.github.io/nwt_project\">https://amaroke.github.io/nwt_project</a>",
-        imgUrl1: projInProgImg,
+        imgUrl1: nwt1,
+        imgUrl2: nwt2,
+        imgUrl3: nwt3,
         imglang1: logonodejs,
         imglang2: logonestjs,
         imglang3: logoangular,
@@ -148,8 +153,8 @@ export const perso_projects = [
         title: "Yurei Esports",
         resumeen: "Esport team website",
         resumefr: "Site web d'une équipe d'esport",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
+        descriptionen: "Yurei Esports is a showcase website for a German esports team. It is currently under development.",
+        descriptionfr: "Yurei Esports est un site vitrine pour une équipe d'esport allemande. Il est actuellement en cours de développement.",
         imgUrl1: projInProgImg,
         imglang1: logoReact,
         imglang2: logojavascript,
@@ -178,8 +183,8 @@ export const perso_projects = [
         title: "Quantify",
         resumeen: "Web application for a estimation-based game",
         resumefr: "Application web pour un jeu basé sur le principe d'estimation",
-        descriptionen: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare magna. Vestibulum posuere augue quis lectus hendrerit efficitur. Etiam lobortis diam eros, at fringilla nisi venenatis sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam mollis pretium nibh in dignissim. Ut consequat nisl feugiat lectus elementum, id rhoncus purus convallis. Aliquam neque massa, ullamcorper at orci at, dictum interdum diam. Cras nec nunc non massa aliquet lobortis eget sed turpis. Suspendisse at nisi sed massa vehicula viverra. Sed non dolor iaculis, vulputate lacus nec, auctor dolor. Etiam urna ipsum, aliquam eu erat sed, condimentum semper ipsum. Proin et molestie sem, ac cursus urna. Vestibulum varius dapibus ante ut malesuada.",
-        descriptionfr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare magna. Vestibulum posuere augue quis lectus hendrerit efficitur. Etiam lobortis diam eros, at fringilla nisi venenatis sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam mollis pretium nibh in dignissim. Ut consequat nisl feugiat lectus elementum, id rhoncus purus convallis. Aliquam neque massa, ullamcorper at orci at, dictum interdum diam. Cras nec nunc non massa aliquet lobortis eget sed turpis. Suspendisse at nisi sed massa vehicula viverra. Sed non dolor iaculis, vulputate lacus nec, auctor dolor. Etiam urna ipsum, aliquam eu erat sed, condimentum semper ipsum. Proin et molestie sem, ac cursus urna. Vestibulum varius dapibus ante ut malesuada.",
+        descriptionen: "\"Quantify\" is a collaborative project currently in development, created in partnership with a teammate. The goal of this project is to explore the integration of the Spring framework for the back-end and Angular for the front-end. The application enables users to engage in online quizzes where they estimate various values. Additionally, the platform offers progress tracking and a rewarding system.<br/><br/>You can track the progress of this application by visiting this link:<br/><a href=\"https://amaroke.github.io/Quantify\">https://amaroke.github.io/Quantify</a><br/>And access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Quantify\">https://github.com/Amaroke/Quantify<a>",
+        descriptionfr: "\"Quantify\" est un projet collaboratif actuellement en développement, réalisé en partenariat avec un coéquipier. L'objectif de ce projet est d'explorer l'intégration du framework Spring pour le back-end et d'Angular pour le front-end. L'application permet aux utilisateurs de participer à des quiz en ligne où ils doivent estimer diverses valeurs. De plus, la plateforme propose un suivi de la progression et un système de récompenses.<br/><br/>Vous pouvez suivre l'avancement de cette application en visitant ce lien :<br/><a href=\"https://amaroke.github.io/Quantify\">https://amaroke.github.io/Quantify</a><br/>Et accéder au dépôt GitHub en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/Quantify\">https://github.com/Amaroke/Quantify<a>",
         imgUrl1: projInProgImg,
         imglang1: logospring,
         imglang2: logoangular,
@@ -194,8 +199,8 @@ export const perso_projects = [
         title: "MakeMoreMeat",
         resumeen: "Incremental Android game",
         resumefr: "Application Android d'un jeu incrémental",
-        descriptionen: "TODO",
-        descriptionfr: "TODO",
+        descriptionen: "MakeMoreMeat was intended to be an incremental game on Android. I was able to use it to test mobile development with Kotlin and gain a better understanding of Android Studio. The project was abandoned midway because I did not appreciate the UI and graphics design aspects. Nonetheless, it allowed me to acquire new skills and explore Kotlin. In the final version, the entire game mechanics were implemented and functional, as well as the save system.",
+        descriptionfr: "MakeMoreMeat avait pour vocation d'être un jeu de type incrémental sous Android. J'ai pu y tester le développement mobile avec Kotlin et mieux comprendre le fonctionnement d'Android Studio. Le projet a été abandonné en cours de route, car je n'ai pas apprécié l'aspect design de l'interface utilisateur et des graphismes en général. Il m'a tout de même permis d'acquérir de nouvelles compétences et de découvrir Kotlin. Dans la dernière version, toute la mécanique du jeu était implémentée et fonctionnelle, de même que le système de sauvegarde.",
         imgUrl1: projAbandonned,
         imglang1: logoKotlin,
         imglang2: logoAndroidStudio,
