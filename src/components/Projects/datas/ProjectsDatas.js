@@ -15,6 +15,8 @@ import logoangular from "../../../assets/img/logos/logo-angular.png";
 import logotypescript from "../../../assets/img/logos/logo-typescript.png";
 import logonestjs from "../../../assets/img/logos/logo-nestjs.png";
 import logoKotlin from "../../../assets/img/logos/logo-kotlin.png";
+import logoPhaser from "../../../assets/img/logos/logo-phaser.png";
+import logoTensorFlowJS from "../../../assets/img/logos/logo-tensorflowjs.png";
 import projImg from "../../../assets/img/projects-images/project-no-preview.jpg";
 import projAbandonned from "../../../assets/img/projects-images/project-abandonned.jpg";
 import projInProgImg from "../../../assets/img/projects-images/project-in-progress.jpg";
@@ -50,9 +52,11 @@ export const projects = [
         imglang1: logonodejs,
         imglang2: logonestjs,
         imglang3: logoangular,
+        imglang4: logotypescript,
         lang1: "NodeJS",
         lang2: "NestJS",
-        lang3: "Angular"
+        lang3: "Angular",
+        lang4: "TypeScript"
     },
     {
         title: "Georges",
@@ -163,37 +167,38 @@ export const perso_projects = [
         lang2: "Javascript",
         lang3: "Html/Css"
     },
+
     {
-        title: "Achievo",
-        resumeen: "Common objectives web application",
-        resumefr: "Application web d'objectifs en commun",
-        descriptionen: "\"Achievo\" is a web application currently in development, with the aim for me to experimente with the Angular framework for the front-end and the Nest.js framework for the back-end. The application allows users to create shared goals (for example: \"Read 5 books in one week\"), offers progress tracking, and includes a reward system.<br/><br/>You can track the progress of this application by visiting this link:<br/><a href=\"https://amaroke.github.io/Achievo\">https://amaroke.github.io/Achievo</a><br/>And access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Achievo\">https://github.com/Amaroke/Achievo<a>",
-        descriptionfr: "\"Achievo\" est une application web en cours de développement que je développe seul dans le but d'expérimenter le framework Angular pour le front-end et le framework Nest.js pour le back-end. L'application permet à des utilisateurs de créer des objectifs en commun (exemple : Lire 5 livres en une semaine), propose un suivi de la progression, et un système de récompense.<br/><br/>Vous pouvez suivre la progression de cette application en suivant ce lien :<br/><a href=\"https://amaroke.github.io/Achievo\">https://amaroke.github.io/Achievo</a><br/>Et au dépôt github en suivant celui-ci :<br/><a href=\"https://github.com/Amaroke/Achievo\">https://github.com/Amaroke/Achievo</a>",
+        title: "AntsEvolution",
+        resumeen: "JavaScript project using Phaser for ant colony simulation",
+        resumefr: "Projet JavaScript utilisant Phaser pour la simulation de colonie de fourmis",
+        descriptionen: "\"AntsEvolution\" is an ongoing JavaScript project hosted on Vercel, aimed at simulating an ant colony using the Phaser game development framework. The project focuses on implementing neural networks to manage and evolve the behavior of the ant colony. Users can observe the ants' collective behavior, track their progress, and witness the colony's evolution over time.<br/><br/>Stay updated on the progress of this project by visiting the following link:<br/><a href=\"https://ants-evolution.vercel.app\" >https://ants-evolution.vercel.app/</a><br/>Explore the project's codebase on GitHub by following this link:<br/><a href=\"https://github.com/Amaroke/AntsEvolution\">https://github.com/Amaroke/AntsEvolution</a>",
+        descriptionfr: "\"AntsEvolution\" est un projet JavaScript en cours hébergé sur Vercel, visant à simuler une colonie de fourmis à l'aide du framework de développement de jeux Phaser. Le projet se concentre sur la mise en œuvre de réseaux de neurones pour gérer et faire évoluer le comportement de la colonie de fourmis. Les utilisateurs peuvent observer le comportement collectif des fourmis, suivre leur progression et témoigner de l'évolution de la colonie au fil du temps.<br/><br/>Restez informé sur l'avancement de ce projet en visitant le lien suivant :<br/><a href=\"https://ants-evolution.vercel.app\" >https://ants-evolution.vercel.app/</a><br/>Explorez le code source du projet sur GitHub en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/AntsEvolution\">https://github.com/Amaroke/AntsEvolution</a>",
         imgUrl1: projInProgImg,
-        imglang1: logonestjs,
-        imglang2: logoangular,
-        imglang3: logotypescript,
-        imglang4: logohtmlcss,
-        lang1: "NestJS",
-        lang2: "Angular",
-        lang3: "Typescript",
-        lang4: "Html/Css"
+        imglang1: logoPhaser,
+        imglang2: logojavascript,
+        imglang3: logovercel,
+        imglang4: logoTensorFlowJS,
+        lang1: "Phaser",
+        lang2: "JavaScript",
+        lang3: "Vercel",
+        lang4: "TensorFlow.js"
     },
     {
-        title: "Quantify",
-        resumeen: "Web application for a estimation-based game",
-        resumefr: "Application web pour un jeu basé sur le principe d'estimation",
-        descriptionen: "\"Quantify\" is a collaborative project currently in development, created in partnership with a teammate. The goal of this project is to explore the integration of the Spring framework for the back-end and Angular for the front-end. The application enables users to engage in online quizzes where they estimate various values. Additionally, the platform offers progress tracking and a rewarding system.<br/><br/>You can track the progress of this application by visiting this link:<br/><a href=\"https://amaroke.github.io/Quantify\">https://amaroke.github.io/Quantify</a><br/>And access the GitHub repository by following this link:<br/><a href=\"https://github.com/Amaroke/Quantify\">https://github.com/Amaroke/Quantify<a>",
-        descriptionfr: "\"Quantify\" est un projet collaboratif actuellement en développement, réalisé en partenariat avec un coéquipier. L'objectif de ce projet est d'explorer l'intégration du framework Spring pour le back-end et d'Angular pour le front-end. L'application permet aux utilisateurs de participer à des quiz en ligne où ils doivent estimer diverses valeurs. De plus, la plateforme propose un suivi de la progression et un système de récompenses.<br/><br/>Vous pouvez suivre l'avancement de cette application en visitant ce lien :<br/><a href=\"https://amaroke.github.io/Quantify\">https://amaroke.github.io/Quantify</a><br/>Et accéder au dépôt GitHub en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/Quantify\">https://github.com/Amaroke/Quantify<a>",
-        imgUrl1: projInProgImg,
-        imglang1: logospring,
-        imglang2: logoangular,
-        imglang3: logohtmlcss,
-        imglang4: logotypescript,
-        lang1: "Spring Boot",
-        lang2: "Angular",
-        lang3: "Html/Css",
-        lang4: "Typescript"
+        "title": "Ideology",
+        "resumeen": "Web application for personality test",
+        "resumefr": "Application web pour un test de personnalité",
+        "descriptionen": "Ideology is a solo project currently in development. The primary aim of this venture is to create a web application that allows users to take a personality test, providing them with insightful results. The project use React.js framework for the front-end and Spring-boot for the back-end. The application incorporates a user-friendly interface, progress tracking, and result analysis, providing individuals with valuable insights into their personality traits.<br/><br/>Stay updated on the progress of Ideology by visiting:<br/><a href=\"https://amaroke.github.io/Ideology\">https://amaroke.github.io/Ideology</a><br/>Explore the project's code on GitHub:<br/><a href=\"https://github.com/Amaroke/Ideology\">https://github.com/Amaroke/Ideology<a>",
+        "descriptionfr": "Idelogy est un projet individuel actuellement en développement. L'objectif principal de cette initiative est de créer une application web permettant aux utilisateurs de réaliser un test de personnalité, en leur fournissant des résultats captivants. Le projet met en avant l'exploration du framework React.js pour le front-end et Spring Boot pour le back-end. L'application intègre une interface conviviale, un suivi de la progression et une analyse des résultats, offrant aux individus des informations précieuses sur leurs traits de personnalité.<br/><br/>Restez informé(e) sur l'avancement d'Ideology en visitant :<br/><a href=\"https://amaroke.github.io/Ideology\">https://amaroke.github.io/Ideology</a><br/>Explorez le code du projet sur GitHub :<br/><a href=\"https://github.com/Amaroke/Ideology\">https://github.com/Amaroke/Ideology</a>",
+        "imgUrl1": projInProgImg,
+        "imglang1": logoReact,
+        "imglang2": logospring,
+        "imglang3": logohtmlcss,
+        "imglang4": logonodejs,
+        "lang1": "ReactJS",
+        "lang2": "SpringBoot",
+        "lang3": "Html/Css",
+        "lang4": "NodeJS"
     },
     {
         title: "MakeMoreMeat",
