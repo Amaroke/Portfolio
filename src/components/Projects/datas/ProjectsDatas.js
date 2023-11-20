@@ -15,8 +15,6 @@ import logoangular from "../../../assets/img/logos/logo-angular.png";
 import logotypescript from "../../../assets/img/logos/logo-typescript.png";
 import logonestjs from "../../../assets/img/logos/logo-nestjs.png";
 import logoKotlin from "../../../assets/img/logos/logo-kotlin.png";
-import logoPhaser from "../../../assets/img/logos/logo-phaser.png";
-import logoTensorFlowJS from "../../../assets/img/logos/logo-tensorflowjs.png";
 import projImg from "../../../assets/img/projects-images/project-no-preview.jpg";
 import projAbandonned from "../../../assets/img/projects-images/project-abandonned.jpg";
 import projInProgImg from "../../../assets/img/projects-images/project-in-progress.jpg";
@@ -154,37 +152,6 @@ export const perso_projects = [
         lang4: "Vercel"
     },
     {
-        title: "Yurei Esports",
-        resumeen: "Esport team website",
-        resumefr: "Site web d'une équipe d'esport",
-        descriptionen: "Yurei Esports is a showcase website for a German esports team. It is currently under development.",
-        descriptionfr: "Yurei Esports est un site vitrine pour une équipe d'esport allemande. Il est actuellement en cours de développement.",
-        imgUrl1: projInProgImg,
-        imglang1: logoReact,
-        imglang2: logojavascript,
-        imglang3: logohtmlcss,
-        lang1: "ReactJS",
-        lang2: "Javascript",
-        lang3: "Html/Css"
-    },
-
-    {
-        title: "AntsEvolution",
-        resumeen: "JavaScript project using Phaser for ant colony simulation",
-        resumefr: "Projet JavaScript utilisant Phaser pour la simulation de colonie de fourmis",
-        descriptionen: "\"AntsEvolution\" is an ongoing JavaScript project hosted on Vercel, aimed at simulating an ant colony using the Phaser game development framework. The project focuses on implementing neural networks to manage and evolve the behavior of the ant colony. Users can observe the ants' collective behavior, track their progress, and witness the colony's evolution over time.<br/><br/>Stay updated on the progress of this project by visiting the following link:<br/><a href=\"https://ants-evolution.vercel.app\" >https://ants-evolution.vercel.app/</a><br/>Explore the project's codebase on GitHub by following this link:<br/><a href=\"https://github.com/Amaroke/AntsEvolution\">https://github.com/Amaroke/AntsEvolution</a>",
-        descriptionfr: "\"AntsEvolution\" est un projet JavaScript en cours hébergé sur Vercel, visant à simuler une colonie de fourmis à l'aide du framework de développement de jeux Phaser. Le projet se concentre sur la mise en œuvre de réseaux de neurones pour gérer et faire évoluer le comportement de la colonie de fourmis. Les utilisateurs peuvent observer le comportement collectif des fourmis, suivre leur progression et témoigner de l'évolution de la colonie au fil du temps.<br/><br/>Restez informé sur l'avancement de ce projet en visitant le lien suivant :<br/><a href=\"https://ants-evolution.vercel.app\" >https://ants-evolution.vercel.app/</a><br/>Explorez le code source du projet sur GitHub en suivant ce lien :<br/><a href=\"https://github.com/Amaroke/AntsEvolution\">https://github.com/Amaroke/AntsEvolution</a>",
-        imgUrl1: projInProgImg,
-        imglang1: logoPhaser,
-        imglang2: logojavascript,
-        imglang3: logovercel,
-        imglang4: logoTensorFlowJS,
-        lang1: "Phaser",
-        lang2: "JavaScript",
-        lang3: "Vercel",
-        lang4: "TensorFlow.js"
-    },
-    {
         "title": "Ideology",
         "resumeen": "Web application for personality test",
         "resumefr": "Application web pour un test de personnalité",
@@ -199,6 +166,20 @@ export const perso_projects = [
         "lang2": "SpringBoot",
         "lang3": "Html/Css",
         "lang4": "NodeJS"
+    },
+    {
+        title: "Yurei Esports",
+        resumeen: "Esport team website",
+        resumefr: "Site web d'une équipe d'esport",
+        descriptionen: "Yurei Esports is a showcase website for a German esports team. It is currently under development.",
+        descriptionfr: "Yurei Esports est un site vitrine pour une équipe d'esport allemande. Il est actuellement en cours de développement.",
+        imgUrl1: projInProgImg,
+        imglang1: logoReact,
+        imglang2: logojavascript,
+        imglang3: logohtmlcss,
+        lang1: "ReactJS",
+        lang2: "Javascript",
+        lang3: "Html/Css"
     },
     {
         title: "MakeMoreMeat",
