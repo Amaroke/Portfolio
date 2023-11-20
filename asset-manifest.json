@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.d8b72ef4.css",
-    "main.js": "/Portfolio/static/js/main.66fbbc2a.js",
+    "main.js": "/Portfolio/static/js/main.f8d24950.js",
     "static/media/color-sharp.png": "/Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/banner-bg.png": "/Portfolio/static/media/banner-bg.9e6732fcbca457805e69.png",
@@ -13,7 +13,6 @@
     "static/media/charadle4.png": "/Portfolio/static/media/charadle4.6d1564893d1e415ce5ee.png",
     "static/media/logo-composer.png": "/Portfolio/static/media/logo-composer.43336cdd398ef7fce51d.png",
     "static/media/charadle2.png": "/Portfolio/static/media/charadle2.8cd738bb7ea199cb54e0.png",
-    "static/media/logo-phaser.png": "/Portfolio/static/media/logo-phaser.76984e555ec585918f7e.png",
     "static/media/platventure1.png": "/Portfolio/static/media/platventure1.109361c4f9872b3a4c4c.png",
     "static/media/charadle1.png": "/Portfolio/static/media/charadle1.9f03a7b75d15bfbaf699.png",
     "static/media/ppit4.png": "/Portfolio/static/media/ppit4.11adf9728ac5da2c6ecd.png",
@@ -51,7 +50,6 @@
     "static/media/obstacl1.png": "/Portfolio/static/media/obstacl1.36d239c313c148b94535.png",
     "static/media/logo-js.png": "/Portfolio/static/media/logo-js.7ac08a7e5fb3834f8f4a.png",
     "static/media/logo-numpy.png": "/Portfolio/static/media/logo-numpy.58ffe7e85fef1be446f2.png",
-    "static/media/logo-tensorflowjs.png": "/Portfolio/static/media/logo-tensorflowjs.646015af71e9d5a9721f.png",
     "static/media/logo-vercel.png": "/Portfolio/static/media/logo-vercel.16b2bee7b7391d093ba0.png",
     "static/media/logo-typescript.png": "/Portfolio/static/media/logo-typescript.e1cde68221981025b83c.png",
     "static/media/slick.svg": "/Portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -63,10 +61,10 @@
     "index.html": "/Portfolio/index.html",
     "static/media/icon-email.svg": "/Portfolio/static/media/icon-email.deb98b007c987af580650ad9bd57bc11.svg",
     "main.d8b72ef4.css.map": "/Portfolio/static/css/main.d8b72ef4.css.map",
-    "main.66fbbc2a.js.map": "/Portfolio/static/js/main.66fbbc2a.js.map"
+    "main.f8d24950.js.map": "/Portfolio/static/js/main.f8d24950.js.map"
   },
   "entrypoints": [
     "static/css/main.d8b72ef4.css",
-    "static/js/main.66fbbc2a.js"
+    "static/js/main.f8d24950.js"
   ]
 }
