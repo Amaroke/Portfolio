@@ -131,6 +131,8 @@ span.navbar-text {
     position: relative;
     background-color: transparent;
     transition: 0.3s ease-in-out;
+    border-radius: 0.5rem;
+
 }
 
 .navbar-text button.vvd span {
@@ -147,6 +149,8 @@ span.navbar-text {
     top: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
+    border-radius: 0.5rem;
+
 }
 
 .navbar-text button.vvd:hover {
