@@ -1,48 +1,48 @@
 {
-    "banner": {
-        "welcome": "Welcome to my Portfolio",
-        "hi": "Hi!",
-        "im": "I'm ",
-        "presentation": "Currently pursuing a Master's degree in Computer Science, I'm passionate about programming.\n I enjoy exploring new technologies and adapting to their evolution to continuously enhance my skills. I have a strong background in software analysis, design, project management, and team leadership. My rigorous and motivated approach enables me to be effective and proficient in handling complex projects. I firmly believe that my skills and enthusiasm for computer science will allow me to make a significant contribution to innovative and exciting projects in the field of computing.",
-        "connect": "Let's Connect "
+  "banner": {
+    "welcome": "Welcome to my Portfolio",
+    "hi": "Hi!",
+    "im": "I'm ",
+    "presentation": "Currently undergoing a internship as a developer analyst at ITS4U, I am passionate about programming. I enjoy exploring new technologies and adapting to their evolution to continuously enhance my skills. I develop my skills in software analysis and design as well as project management. I approach complex projects with rigor and motivation, which enables me to be effective and competent. I have a strong attachment to teamwork and I wish to continue to evolve in this direction. I am convinced that my skills and enthusiasm for computer science will allow me to make a significant contribution to innovative and exciting projects.",
+    "connect": "Let's Connect "
+  },
+  "contact": {
+    "contact": "Contact me",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "phone": "Phone Number",
+    "send": "Send",
+    "sent": "Sent!",
+    "sending": "Sending..."
+  },
+  "footer": {
+    "copyright": "© 2024 Amaroke, all rights reserved."
+  },
+  "navbar": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Let's Connect",
+    "lang": "FR / <b>EN</b>"
+  },
+  "projects": {
+    "modalcomponent": {
+      "technos": "Technologies used",
+      "close": "Close"
     },
-    "contact": {
-        "contact": "Contact me",
-        "firstname": "First Name",
-        "lastname": "Last Name",
-        "phone": "Phone Number",
-        "send": "Send",
-        "sent": "Sent!",
-        "sending": "Sending..."
-    },
-    "footer": {
-        "copyright": "© 2023 Amaroke, all rights reserved."
-    },
-    "navbar": {
-        "home": "Home",
-        "skills": "Skills",
-        "projects": "Projects",
-        "contact": "Let's Connect",
-        "lang": "FR / <b>EN</b>"
+    "projectcard": {
+      "info": "More info →"
     },
     "projects": {
-        "modalcomponent": {
-            "technos": "Technologies used",
-            "close": "Close"
-        },
-        "projectcard": {
-            "info": "More info →"
-        },
-        "projects": {
-            "project": "Projects",
-            "personal": "Personal",
-            "academic": "Academic",
-            "explanation": "Here are the various projects I'm involved in during my free time:",
-            "explanationacademic": "Here are some of the projects I have completed during my studies:"
-        }
-    },
-    "skills": {
-        "skills": "Skills",
-        "description": "I have expertise in various programming languages and development tools, including the following:"
+      "project": "Projects",
+      "personal": "Personal",
+      "academic": "Academic",
+      "explanation": "Here are the various projects I'm involved in during my free time:",
+      "explanationacademic": "Here are some of the projects I have completed during my studies:"
     }
+  },
+  "skills": {
+    "skills": "Skills",
+    "description": "I have expertise in various programming languages and development tools, including the following:"
+  }
 }

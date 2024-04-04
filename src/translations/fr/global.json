@@ -1,48 +1,48 @@
 {
-    "banner": {
-        "welcome": "Bienvenue sur mon Portfolio",
-        "hi": "Salut !",
-        "im": "Moi c'est ",
-        "presentation": "Actuellement étudiant en Master informatique, je suis passionné par la programmation.\n J'aime explorer de nouvelles technologies et m'adapter à leur évolution pour améliorer mes compétences de façon continue. Je possède une solide expérience en analyse et conception de logiciels ainsi que dans la gestion de projets et d'équipes. Mon approche rigoureuse et motivée me permet d'être efficace et performant dans la réalisation de projets complexes.\n Je suis convaincu que mes compétences et ma passion pour l'informatique me permettront de contribuer de manière significative à des projets innovants et stimulants dans le domaine de l'informatique.",
-        "connect": "Faisons connaissance "
+  "banner": {
+    "welcome": "Bienvenue sur mon Portfolio",
+    "hi": "Salut !",
+    "im": "Moi c'est ",
+    "presentation": "Actuellement en stage en tant qu'analyste développeur chez ITS4U, je suis passionné par la programmation. J'apprécie explorer de nouvelles technologies et m'adapter à leur évolution pour continuellement améliorer mes compétences. Je développe mes compétences en analyse et conception de logiciels ainsi qu'en gestion de projets, j'aborde les projets complexes avec rigueur et motivation, ce qui me permet d'être efficace et compétent. J'ai un fort attachement au travail en équipe et je souhaite continuer à évoluer dans cette voie. Je suis convaincu que mes compétences et mon enthousiasme pour l'informatique me permettront de contribuer de manière significative à des projets innovants et passionnants.",
+    "connect": "Faisons connaissance "
+  },
+  "contact": {
+    "contact": "Me contacter",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "phone": "N°. Tel",
+    "send": "Envoyer",
+    "sent": "Envoyé !",
+    "sending": "Envoi en cours..."
+  },
+  "footer": {
+    "copyright": "© 2024 Amaroke, tous droits réservés."
+  },
+  "navbar": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Me contacter",
+    "lang": "<b>FR</b> / EN"
+  },
+  "projects": {
+    "modalcomponent": {
+      "technos": "Technologies utilisées :",
+      "close": "Fermer"
     },
-    "contact": {
-        "contact": "Me contacter",
-        "firstname": "Prénom",
-        "lastname": "Nom",
-        "phone": "N°. Tel",
-        "send": "Envoyer",
-        "sent": "Envoyé !",
-        "sending": "Envoi en cours..."
-    },
-    "footer": {
-        "copyright": "© 2023 Amaroke, tous droits réservés."
-    },
-    "navbar": {
-        "home": "Accueil",
-        "skills": "Compétences",
-        "projects": "Projets",
-        "contact": "Me contacter",
-        "lang": "<b>FR</b> / EN"
+    "projectcard": {
+      "info": "Plus dinfos →"
     },
     "projects": {
-        "modalcomponent": {
-            "technos": "Technologies utilisées :",
-            "close": "Fermer"
-        },
-        "projectcard": {
-            "info": "Plus dinfos →"
-        },
-        "projects": {
-            "project": "Projets",
-            "personal": "Personnels",
-            "academic": "Universitaires",
-            "explanation": "Voici les différents projets dans lesquels je suis investi sur mon temps libre :",
-            "explanationacademic": "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"
-        }
-    },
-    "skills": {
-        "skills": "Compétences",
-        "description": "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :"
+      "project": "Projets",
+      "personal": "Personnels",
+      "academic": "Universitaires",
+      "explanation": "Voici les différents projets dans lesquels je suis investi sur mon temps libre :",
+      "explanationacademic": "Voici certains des projets que j'ai pu réaliser au cours de ma formation :"
     }
+  },
+  "skills": {
+    "skills": "Compétences",
+    "description": "Je maîtrise plusieurs langages de programmation et outils de développement, dont voici les principaux :"
+  }
 }
