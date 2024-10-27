@@ -14,7 +14,7 @@ function Banner() {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 100);
     const [, setIndex] = useState(1);
-    const toRotate = useMemo(() => ["Hugo !", "Amaroke !"], []);
+    const toRotate = useMemo(() => ["Hugo", "Amaroke"], []);
     const [t] = useTranslation("global")
 
     useEffect(() => {
