@@ -4,7 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useTranslation } from "react-i18next";
 import headerImg from "../../assets/img/header-img.svg";
 import "animate.css";
-import "./banner.css";
+import "./Banner.css";
 
 const period = 1500;
 

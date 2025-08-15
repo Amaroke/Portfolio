@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useForm, ValidationError } from '@formspree/react';
 import contactImg from "../../assets/img/contact-img.svg";
-import "./contact.css";
+import "./Contact.css";
 import { useTranslation } from "react-i18next";
 
 function Contact() {

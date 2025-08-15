@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import iconLinkedin from "../../assets/img/icons/icon-linkedin.svg";
 import iconGithub from "../../assets/img/icons/icon-github.svg";
 import iconMail from "../../assets/img/icons/icon-email.svg";
-import "./footer.css";
+import "./Footer.css";
 import { useTranslation } from "react-i18next";
 
 function Footer() {

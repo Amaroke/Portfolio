@@ -1,5 +1,5 @@
 nav.navbar {
-    padding: 18px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -125,7 +125,7 @@ span.navbar-text {
     font-weight: 700;
     color: #fff;
     border: 1px solid #fff;
-    padding: 18px 34px;
+    padding: 10px 34px;
     font-size: 18px;
     margin-left: 18px;
     position: relative;

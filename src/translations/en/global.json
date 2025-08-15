@@ -3,11 +3,11 @@
     "welcome": "Welcome to my Portfolio",
     "hi": "Hi!",
     "im": "I'm ",
-    "presentation": "Currently working as a developer analyst at ITS4U, I enjoy exploring new technologies and adapting to their evolution to continually improve. I'm building skills in software analysis and design, while also perfecting my Java and Spring Boot expertise, which helps me tackle complex projects effectively. I value teamwork greatly and enjoy progressing alongside my colleagues to achieve more together. I’m confident that my skills and passion for IT will allow me to make a meaningful contribution to innovative and exciting projects.",
-    "connect": "Let's Connect "
+    "presentation": "Currently a developer analyst at ITS4U, I enjoy exploring new technologies and adapting to their evolution to continuously improve. Currently on assignment at BIL, I am developing skills in software analysis and design, while also refining my expertise in Java and Spring Boot, allowing me to tackle complex projects efficiently. I value teamwork highly and enjoy growing alongside my colleagues. I am confident that my skills and enthusiasm for IT will enable me to contribute meaningfully to innovative and exciting projects.",
+    "connect": "Let's get in touch "
   },
   "contact": {
-    "contact": "Contact me",
+    "contact": "Contact Me",
     "firstname": "First Name",
     "lastname": "Last Name",
     "phone": "Phone Number",
@@ -16,33 +16,16 @@
     "sending": "Sending..."
   },
   "footer": {
-    "copyright": "© 2024 Amaroke, all rights reserved."
+    "copyright": "© 2025 Amaroke, all rights reserved."
   },
   "navbar": {
     "home": "Home",
     "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Let's Connect",
+    "contact": "Contact Me",
     "lang": "FR / <b>EN</b>"
-  },
-  "projects": {
-    "modalcomponent": {
-      "technos": "Technologies used",
-      "close": "Close"
-    },
-    "projectcard": {
-      "info": "More info →"
-    },
-    "projects": {
-      "project": "Projects",
-      "personal": "Personal",
-      "academic": "Academic",
-      "explanation": "Here are the various projects I'm involved in during my free time:",
-      "explanationacademic": "Here are some of the projects I have completed during my studies:"
-    }
   },
   "skills": {
     "skills": "Skills",
-    "description": "I have expertise in various programming languages and development tools, including the following:"
+    "description": "I am proficient in several programming languages, software, utilities, and development tools, listed below in an random order:"
   }
 }

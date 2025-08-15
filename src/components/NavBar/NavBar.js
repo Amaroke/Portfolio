@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../../assets/img/Amaroke.png';
 import iconLinkedin from "../../assets/img/icons/icon-linkedin.svg";
 import iconGithub from "../../assets/img/icons/icon-github.svg";
 import iconMail from "../../assets/img/icons/icon-email.svg";
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
-import "./navbar.css";
+import "./NavBar.css";
 import { useTranslation } from "react-i18next";
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const [t, i18n] = useTranslation("global");
 
@@ -28,10 +26,6 @@ function NavBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
-
   const handleLanguageChange = () => {
     i18n.changeLanguage(i18n.language === "en" ? "fr" : "en");
   }
@@ -40,17 +34,12 @@ function NavBar() {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/Portfolio">
-            <img className="navbar-img" src={logo} alt="Logo" />
-          </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <HashLink id="homenav" smooth to='#home' className={`nav-link navbar-link ${activeLink === 'home' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('home')}>{t("navbar.home")}</HashLink>
-              <HashLink id="skillsnav" smooth to='#skills' className={`nav-link navbar-link ${activeLink === 'skills' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('skills')}>{t("navbar.skills")}</HashLink>
-              <HashLink id="projectnav" smooth to='#project' className={`nav-link navbar-link ${activeLink === 'project' ? 'active' : ''}`} onClick={() => onUpdateActiveLink('project')}>{t("navbar.projects")}</HashLink>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
