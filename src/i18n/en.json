@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to my Portfolio",
+    "greeting": "Hey!",
+    "hi": "I'm",
+    "presentation": "Analyst Developer at ITS4U, currently on mission at BIL. Passionate about new technologies and finance, I mainly work with Java and Spring Boot, and enjoy building front-end projects with React, TypeScript and Tailwind on the side. I love working in a team and discovering new things.",
+    "connect": "Let's Connect"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "work": "My work stack",
+    "personal": "On my personal projects"
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "description": "A few public projects I built in my spare time.",
+    "privateNote": "I also have many private projects and work from my studies that I don't showcase here.",
+    "demo": "Demo",
+    "code": "Code",
+    "items": {
+      "amarokeInsights": {
+        "description": "Personal educational website about finance, banking concepts, investments (stocks, ETFs, bonds), crypto and trading basics, with interactive calculation tools."
+      },
+      "milkLinks": {
+        "description": "Web application centralizing useful links for the game Milky Way Idle: expansions, strategy guides and community-created tools."
+      },
+      "charadle": {
+        "description": "Wordle-inspired web game where you guess an anime or manga character from the character's image displayed on screen."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Sent!",
+    "sending": "Sending..."
+  },
+  "footer": {
+    "copyright": "© 2026 Hugo Mathieu-Steinbach. All rights reserved."
+  }
+}
