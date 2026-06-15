@@ -54,7 +54,7 @@ export default function Hero() {
       <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-orange-500/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-cyan-500/8 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-28 pb-16 md:py-16 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-14 pb-16 md:py-16 w-full">
         {/* Left: text content */}
         <div>
           <span
@@ -150,13 +150,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/25">
-        <span className="text-[10px] tracking-[0.3em] font-orbitron">
-          SCROLL
-        </span>
-        <div className="animate-bounce w-px h-10 bg-linear-to-b from-orange-500/40 to-transparent" />
-      </div>
+
     </section>
   );
 }
