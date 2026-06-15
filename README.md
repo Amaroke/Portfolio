@@ -1,6 +1,6 @@
 # Hugo Mathieu-Steinbach - Portfolio
 
-Personal portfolio built with React, TypeScript, Vite and Tailwind CSS v4. Auto-deployed to GitHub Pages.
+Personal portfolio built with React, TypeScript, Vite and Tailwind CSS. Auto-deployed to GitHub Pages.
 
 Vibe coded from scratch with [Claude Code](https://claude.ai/code) as a modernized rewrite of my [previous portfolio](https://github.com/Amaroke/Portfolio-old), which was no longer maintained.
 
