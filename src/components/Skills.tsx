@@ -35,6 +35,7 @@ const personalSkills: { name: string; icon?: string }[] = [
   { name: "VS Code", icon: dv("vscode") },
   { name: "GitHub", icon: si("github", "ffffff") },
   { name: "Postman", icon: dv("postman") },
+  { name: "Claude Code", icon: si("claude") },
 ];
 
 function SkillItem({
