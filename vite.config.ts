@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import svgr from "vite-plugin-svgr";
+import Icons from "unplugin-icons/vite";
 
 export default defineConfig({
   base: "/Portfolio/",
-  plugins: [react(), svgr(), tailwindcss()],
+  plugins: [react(), tailwindcss(), Icons({ compiler: "jsx", jsx: "react" })],
 });

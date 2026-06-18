@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-orbitron: "Orbitron", sans-serif;
+  --font-orbitron: "Space Grotesk", sans-serif;
   --font-inter: "Inter", sans-serif;
   --color-space: #050510;
   --color-space-light: #080820;
@@ -10,7 +10,9 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 html {
@@ -114,7 +116,6 @@ body {
   animation-play-state: paused;
 }
 
-/* Float */
 @keyframes float {
 
   0%,
@@ -131,7 +132,6 @@ body {
   animation: float 5s ease-in-out infinite;
 }
 
-/* Hero entrance fade-up */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -148,7 +148,6 @@ body {
   animation: fade-up 0.6s ease-out both;
 }
 
-/* Glow pulse on CTA */
 @keyframes glow-pulse {
 
   0%,
@@ -165,7 +164,6 @@ body {
   animation: glow-pulse 2.5s ease-in-out infinite;
 }
 
-/* Scroll-driven section reveal */
 @keyframes section-reveal {
   from {
     opacity: 0;
@@ -182,6 +180,31 @@ body {
   animation: section-reveal linear both;
   animation-timeline: view();
   animation-range: entry 0% entry 22%;
+}
+
+@keyframes title-line-expand {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.title-line {
+  height: 2px;
+  width: 180px;
+  margin-inline: auto;
+  background: linear-gradient(to right, transparent, #f97316 35%, #f97316 65%, transparent);
+  box-shadow: 0 0 6px 1px rgba(249, 115, 22, 0.25);
+  border-radius: 2px;
+  transform-origin: center center;
+  animation: title-line-expand linear both;
+  animation-timeline: view();
+  animation-range: entry 5% entry 40%;
 }
 
 @keyframes card-spin {

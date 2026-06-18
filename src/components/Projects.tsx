@@ -45,22 +45,20 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="section-animate py-24 bg-space-light relative overflow-hidden"
+      className="section-animate py-14 md:py-24 bg-space-light relative overflow-hidden"
     >
       <div className="absolute top-1/2 left-0 w-72 h-72 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
       <div className="absolute top-1/2 right-0 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-4">
-            <span className="bg-linear-to-r from-orange-400 to-cyan-400 bg-clip-text text-transparent">
-              {t("projects.title")}
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-4 text-white">
+            {t("projects.title")}
           </h2>
+          <div className="title-line mt-5 mb-6" />
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
             {t("projects.description")}
           </p>
-          <div className="mt-6 h-px w-24 mx-auto bg-linear-to-r from-orange-500 to-cyan-500" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

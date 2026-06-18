@@ -95,19 +95,17 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="section-animate py-24 bg-space relative overflow-hidden"
+      className="section-animate py-14 md:py-24 bg-space relative overflow-hidden"
     >
       <div className="absolute -top-20 left-0 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-20 right-0 w-72 h-72 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-4">
-            <span className="bg-linear-to-r from-orange-400 to-cyan-400 bg-clip-text text-transparent">
-              {t("skills.title")}
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-4 text-white">
+            {t("skills.title")}
           </h2>
-          <div className="mt-6 h-px w-24 mx-auto bg-linear-to-r from-orange-500 to-cyan-500" />
+          <div className="title-line mt-5" />
         </div>
 
         <div className="flex flex-col gap-6">
@@ -116,7 +114,6 @@ export default function Skills() {
               {t("skills.work")}
             </p>
 
-            {/* Mobile: grid */}
             <div className="md:hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-4">
               <div className="grid grid-cols-4 gap-y-4 gap-x-2">
                 {workSkills.map((skill, i) => (
@@ -125,7 +122,6 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* Desktop: marquee */}
             <div className="hidden md:block overflow-hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-6">
               <div className="skill-marquee">
                 {doubledWork.map((skill, i) => (
@@ -140,7 +136,6 @@ export default function Skills() {
               {t("skills.personal")}
             </p>
 
-            {/* Mobile: grid */}
             <div className="md:hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-4">
               <div className="grid grid-cols-4 gap-y-4 gap-x-2 justify-items-center">
                 {personalSkills.map((skill, i) => (
@@ -149,7 +144,6 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* Desktop: marquee */}
             <div className="hidden md:block overflow-hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-6">
               <div className="skill-marquee-reverse">
                 {doubledPersonal.map((skill, i) => (

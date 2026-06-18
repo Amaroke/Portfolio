@@ -14,7 +14,6 @@ Vibe coded from scratch with [Claude Code](https://claude.ai/code) as a moderniz
 - **i18next** - FR / EN language toggle
 - **Formspree** - contact form backend
 - **GitHub Actions** - CI/CD auto-deploy to GitHub Pages
-- **Renovate** - automated dependency updates
 
 ## Getting started
 

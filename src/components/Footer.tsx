@@ -9,7 +9,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="font-orbitron font-bold text-sm tracking-wider">
           <span className="text-orange-400">Amaroke</span>
-          <span className="text-cyan-400">.</span>
         </div>
 
         <p className="text-slate-600 text-xs">{t("footer.copyright")}</p>

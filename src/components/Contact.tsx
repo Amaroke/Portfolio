@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <section
       id="connect"
-      className="section-animate py-24 md:min-h-screen md:flex md:flex-col md:justify-center bg-space relative overflow-hidden"
+      className="section-animate py-14 md:py-24 md:min-h-screen md:flex md:flex-col md:justify-center bg-space relative overflow-hidden"
     >
       <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-orange-500/40 to-transparent" />
       <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -55,18 +55,14 @@ export default function Contact() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold font-orbitron text-center">
-            <span className="bg-linear-to-r from-orange-400 to-cyan-400 bg-clip-text text-transparent">
-              {t("contact.title")}
-            </span>
+          <h2 className="text-3xl font-bold font-orbitron text-center text-white">
+            {t("contact.title")}
           </h2>
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold font-orbitron mb-8 md:hidden">
-            <span className="bg-linear-to-r from-orange-400 to-cyan-400 bg-clip-text text-transparent">
-              {t("contact.title")}
-            </span>
+          <h2 className="text-3xl font-bold font-orbitron mb-8 md:hidden text-white">
+            {t("contact.title")}
           </h2>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
