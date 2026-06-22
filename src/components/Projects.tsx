@@ -131,7 +131,7 @@ export default function Projects() {
         </div>
 
         <div className="mt-10 text-center">
-          <p className="inline-flex items-center gap-2 text-slate-500 text-sm border border-white/8 rounded-full px-5 py-2.5 bg-white/2">
+          <p className="inline-flex items-center gap-2 text-slate-400 text-sm border border-white/8 rounded-full px-5 py-2.5 bg-white/2">
             <LockIcon className="w-4 h-4 text-orange-400/60 shrink-0" />
             {t("projects.privateNote")}
           </p>

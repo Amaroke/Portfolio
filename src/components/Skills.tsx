@@ -80,7 +80,7 @@ function SkillItem({
             />
           ) : (
             <span
-              className={`text-white/50 font-bold font-orbitron text-center leading-tight ${
+              className={`text-white/70 font-bold font-orbitron text-center leading-tight ${
                 compact ? "text-[8px]" : "text-[10px]"
               }`}
             >
@@ -99,7 +99,7 @@ function SkillItem({
         )}
       </div>
       <span
-        className={`text-slate-500 font-medium group-hover:text-orange-400 transition-colors duration-300 text-center whitespace-nowrap ${
+        className={`text-slate-400 font-medium group-hover:text-orange-400 transition-colors duration-300 text-center whitespace-nowrap ${
           compact ? "text-[9px]" : "text-xs"
         }`}
       >
@@ -135,7 +135,7 @@ export default function Skills() {
 
         <div className="flex flex-col gap-6">
           <div>
-            <p className="text-slate-500 text-xs font-orbitron tracking-widest uppercase mb-4 pl-1">
+            <p className="text-slate-400 text-xs font-orbitron tracking-widest uppercase mb-4 pl-1">
               {t("skills.work")}
             </p>
 
@@ -157,7 +157,7 @@ export default function Skills() {
           </div>
 
           <div>
-            <p className="text-slate-500 text-xs font-orbitron tracking-widest uppercase mb-4 pl-1">
+            <p className="text-slate-400 text-xs font-orbitron tracking-widest uppercase mb-4 pl-1">
               {t("skills.personal")}
             </p>
 
