@@ -9,10 +9,12 @@ export default function App() {
   return (
     <div className="bg-space text-white font-inter min-h-screen">
       <NavBar />
-      <Landing />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <Landing />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
