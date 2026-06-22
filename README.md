@@ -1,10 +1,7 @@
 # Hugo Mathieu-Steinbach - Portfolio
 
 [![Deploy](https://github.com/Amaroke/Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Amaroke/Portfolio/actions/workflows/deploy.yml)
-[![PageSpeed Insights](https://img.shields.io/badge/PageSpeed-Insights-blue?logo=googlechrome&logoColor=white)](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Famaroke.github.io%2FPortfolio%2F)
-[![Lighthouse](https://img.shields.io/badge/Lighthouse-report-f44b21?logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Famaroke.github.io%2FPortfolio%2F)
-
-> The PageSpeed / Lighthouse badges link to a **live audit** of the deployed site. Click to run a fresh report (Performance, Accessibility, Best Practices, SEO).
+[![PageSpeed](https://img.shields.io/badge/PageSpeed-report-4285F4?logo=googlechrome&logoColor=white)](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Famaroke.github.io%2FPortfolio%2F)
 
 Personal portfolio built with React, TypeScript, Vite and Tailwind CSS. Auto-deployed to GitHub Pages.
 
