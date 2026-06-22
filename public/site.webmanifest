@@ -1,0 +1,25 @@
+{
+  "name": "Hugo Mathieu-Steinbach – Développeur Java Spring Boot & React",
+  "short_name": "Hugo M-S",
+  "description": "Analyste développeur Java spécialisé Spring Boot et React TypeScript Tailwind, basé en France.",
+  "lang": "fr",
+  "start_url": "/Portfolio/",
+  "scope": "/Portfolio/",
+  "display": "standalone",
+  "background_color": "#050510",
+  "theme_color": "#050510",
+  "icons": [
+    {
+      "src": "/Portfolio/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/Portfolio/profile.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
