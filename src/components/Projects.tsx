@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { GitHubIcon, ExternalLinkIcon, LockIcon } from "./icons";
+import GitHubIcon from "~icons/simple-icons/github";
+import ExternalLinkIcon from "~icons/lucide/external-link";
+import LockIcon from "~icons/lucide/lock";
 
 interface Project {
   key: string;

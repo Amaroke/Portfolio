@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { LinkedInIcon, GitHubIcon, MailIcon } from "./icons";
+import LinkedInIcon from "~icons/simple-icons/linkedin";
+import GitHubIcon from "~icons/simple-icons/github";
+import MailIcon from "~icons/lucide/mail";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);

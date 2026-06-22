@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { ArrowRightIcon } from "./icons";
+import ArrowRightIcon from "~icons/lucide/arrow-right";
 
 const PERIOD = 1500;
 const toRotate = ["Hugo", "Amaroke"];
@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-space"
+      className="relative min-h-[92vh] flex items-center overflow-hidden bg-space"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="stars" />

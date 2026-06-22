@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { LinkedInIcon, GitHubIcon, MailIcon } from "./icons";
+import LinkedInIcon from "~icons/simple-icons/linkedin";
+import GitHubIcon from "~icons/simple-icons/github";
+import MailIcon from "~icons/lucide/mail";
 
 export default function Footer() {
   const { t } = useTranslation("global");
@@ -11,7 +13,7 @@ export default function Footer() {
           <span className="text-orange-400">Amaroke</span>
         </div>
 
-        <p className="text-slate-600 text-xs">{t("footer.copyright")}</p>
+        <p className="text-slate-400 text-xs">{t("footer.copyright")}</p>
 
         <div className="flex items-center gap-2">
           <a

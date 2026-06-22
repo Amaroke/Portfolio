@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { useTranslation } from "react-i18next";
-import { EnvelopeIcon } from "./icons";
+import EnvelopeIcon from "~icons/lucide/mail";
 
 export default function Contact() {
   const { t } = useTranslation("global");
@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <section
       id="connect"
-      className="section-animate py-14 md:py-24 md:min-h-screen md:flex md:flex-col md:justify-center bg-space relative overflow-hidden"
+      className="section-animate py-14 md:py-24 md:min-h-[85vh] md:flex md:flex-col md:justify-center bg-space relative overflow-hidden"
     >
       <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-orange-500/40 to-transparent" />
       <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl pointer-events-none" />
