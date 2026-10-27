@@ -1,11 +1,36 @@
+import type { ComponentType, SVGProps } from "react";
 import { useTranslation } from "react-i18next";
 import HeartIcon from "~icons/lucide/heart";
+import JavaIcon from "~icons/devicon/java";
+import SpringIcon from "~icons/devicon/spring";
+import MavenIcon from "~icons/devicon/maven";
+import OracleIcon from "~icons/devicon/oracle";
+import GitIcon from "~icons/devicon/git";
+import GitLabIcon from "~icons/devicon/gitlab";
+import IntelliJIcon from "~icons/devicon/intellij";
+import JiraIcon from "~icons/devicon/jira";
+import ConfluenceIcon from "~icons/devicon/confluence";
+import JavaScriptIcon from "~icons/devicon/javascript";
+import TypeScriptIcon from "~icons/devicon/typescript";
+import ReactIcon from "~icons/devicon/react";
+import TailwindIcon from "~icons/devicon/tailwindcss";
+import HtmlIcon from "~icons/devicon/html5";
+import ViteIcon from "~icons/devicon/vitejs";
+import NodeIcon from "~icons/devicon/nodejs";
+import VSCodeIcon from "~icons/devicon/vscode";
+import PostmanIcon from "~icons/devicon/postman";
+import OpenShiftIcon from "~icons/simple-icons/redhatopenshift";
+import BrunoIcon from "~icons/simple-icons/bruno";
+import GitHubIcon from "~icons/simple-icons/github";
+import ClaudeIcon from "~icons/simple-icons/claude";
 
-const DV = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
-const SI = "https://cdn.simpleicons.org";
-const dv = (slug: string) => `${DV}/${slug}/${slug}-original.svg`;
-const si = (slug: string, color?: string) =>
-  color ? `${SI}/${slug}/${color}` : `${SI}/${slug}`;
+type Skill = {
+  name: string;
+  icon?: ComponentType<SVGProps<SVGSVGElement>> | string;
+  color?: string;
+  favorite?: boolean;
+};
+
 const pub = (file: string) => `${import.meta.env.BASE_URL}icons/${file}`;
 
 function shuffle<T>(arr: T[]): T[] {
@@ -17,48 +42,44 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-const workSkills: { name: string; icon?: string; favorite?: boolean }[] = [
-  { name: "Java", icon: dv("java"), favorite: true },
-  { name: "Spring Boot", icon: dv("spring"), favorite: true },
-  { name: "Maven", icon: dv("maven") },
-  { name: "Oracle", icon: dv("oracle") },
-  { name: "OpenShift", icon: si("redhatopenshift") },
+const workSkills: Skill[] = [
+  { name: "Java", icon: JavaIcon, favorite: true },
+  { name: "Spring Boot", icon: SpringIcon, favorite: true },
+  { name: "Maven", icon: MavenIcon },
+  { name: "Oracle", icon: OracleIcon },
+  { name: "OpenShift", icon: OpenShiftIcon, color: "#EE0000" },
   { name: "XLDeploy", icon: pub("xldeploy.png") },
   { name: "XLRelease" },
-  { name: "Git", icon: dv("git") },
-  { name: "GitLab", icon: dv("gitlab") },
-  { name: "IntelliJ", icon: dv("intellij"), favorite: true },
-  { name: "Jira", icon: dv("jira") },
-  { name: "Confluence", icon: dv("confluence") },
-  { name: "Bruno", icon: si("bruno") },
+  { name: "Git", icon: GitIcon },
+  { name: "GitLab", icon: GitLabIcon },
+  { name: "IntelliJ", icon: IntelliJIcon, favorite: true },
+  { name: "Jira", icon: JiraIcon },
+  { name: "Confluence", icon: ConfluenceIcon },
+  { name: "Bruno", icon: BrunoIcon, color: "#F4AA41" },
   { name: "DBeaver", icon: pub("dbeaver.svg") },
 ];
 
-const personalSkills: { name: string; icon?: string; favorite?: boolean }[] = [
-  { name: "JavaScript", icon: dv("javascript") },
-  { name: "TypeScript", icon: dv("typescript"), favorite: true },
-  { name: "React", icon: dv("react"), favorite: true },
-  { name: "Tailwind", icon: dv("tailwindcss"), favorite: true },
-  { name: "HTML / CSS", icon: dv("html5") },
-  { name: "Vite", icon: dv("vitejs"), favorite: true },
-  { name: "Node.js", icon: dv("nodejs") },
-  { name: "VS Code", icon: dv("vscode"), favorite: true },
-  { name: "GitHub", icon: si("github", "ffffff") },
-  { name: "Postman", icon: dv("postman") },
-  { name: "Claude Code", icon: si("claude") },
+const personalSkills: Skill[] = [
+  { name: "JavaScript", icon: JavaScriptIcon },
+  { name: "TypeScript", icon: TypeScriptIcon, favorite: true },
+  { name: "React", icon: ReactIcon, favorite: true },
+  { name: "Tailwind", icon: TailwindIcon, favorite: true },
+  { name: "HTML / CSS", icon: HtmlIcon },
+  { name: "Vite", icon: ViteIcon, favorite: true },
+  { name: "Node.js", icon: NodeIcon },
+  { name: "VS Code", icon: VSCodeIcon, favorite: true },
+  { name: "GitHub", icon: GitHubIcon, color: "#FFFFFF" },
+  { name: "Postman", icon: PostmanIcon },
+  { name: "Claude Code", icon: ClaudeIcon, color: "#D97757" },
 ];
 
 function SkillItem({
   name,
-  icon,
+  icon: Icon,
+  color,
   compact = false,
   favorite = false,
-}: {
-  name: string;
-  icon?: string;
-  compact?: boolean;
-  favorite?: boolean;
-}) {
+}: Skill & { compact?: boolean }) {
   return (
     <div
       className={`flex flex-col items-center group cursor-default ${
@@ -71,12 +92,19 @@ function SkillItem({
             compact ? "w-12 h-12 p-2" : "w-16 h-16 p-3"
           }`}
         >
-          {icon ? (
+          {typeof Icon === "string" ? (
             <img
-              src={icon}
+              src={Icon}
               alt={name}
               className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               loading="lazy"
+            />
+          ) : Icon ? (
+            <Icon
+              role="img"
+              aria-label={name}
+              style={color ? { color } : undefined}
+              className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
             />
           ) : (
             <span

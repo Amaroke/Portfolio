@@ -15,8 +15,11 @@ Vibe coded from scratch with [Claude Code](https://claude.ai/code) as a moderniz
 - **Vite** - bundler, dev server
 - **Tailwind CSS** - utility-first styling with custom theme tokens
 - **i18next** - FR / EN language toggle
+- **unplugin-icons** - Iconify icons (Devicon, Simple Icons, Lucide) bundled at build time
+- **Fontsource** - self-hosted Inter and Space Grotesk
 - **Formspree** - contact form backend
 - **GitHub Actions** - CI/CD auto-deploy to GitHub Pages
+- **Dependabot** - monthly dependency updates, auto-merged when CI passes
 
 ## Getting started
 
@@ -36,4 +39,6 @@ npm run dev
 
 ## Deploy
 
-Every push to `main` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds the project and deploys `dist/` to GitHub Pages automatically.
+Every push to `main` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which lints, builds and deploys `dist/` to GitHub Pages. Pull requests are linted and built without deploying. A monthly scheduled run redeploys so that auto-merged Dependabot updates go live.
+
+The contact form needs the `VITE_FORMSPREE_ID` repository secret (see `.env.example` for local development).
