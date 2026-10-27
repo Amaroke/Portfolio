@@ -76,11 +76,11 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {projects.map((project, index) => (
             <article
               key={project.key}
-              className="project-card relative rounded-2xl p-px overflow-hidden"
+              className="project-card relative rounded-2xl p-px overflow-hidden w-full md:w-[calc((100%-3rem)/3)]"
             >
               <div
                 className="pointer-events-none absolute top-1/2 left-1/2 aspect-square w-[200%]"
