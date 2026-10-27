@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import LinkedInIcon from "~icons/simple-icons/linkedin";
-import GitHubIcon from "~icons/simple-icons/github";
-import MailIcon from "~icons/lucide/mail";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
   const { t, i18n } = useTranslation("global");
+  const isEnglish = i18n.resolvedLanguage === "en";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -14,72 +12,50 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "fr" : "en");
-  };
+  const links = [
+    { href: "#skills", label: t("navbar.skills") },
+    { href: "#projects", label: t("navbar.projects") },
+    { href: "#connect", label: t("navbar.contact") },
+  ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 border-b ${
         scrolled
-          ? "bg-space/95 backdrop-blur-md shadow-lg shadow-orange-500/5"
-          : "bg-transparent"
+          ? "bg-space/90 backdrop-blur-md border-white/5"
+          : "bg-transparent border-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div />
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        <a
+          href="#home"
+          className="font-display font-bold text-orange-400 tracking-wide"
+        >
+          Amaroke
+        </a>
 
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <a
-              href="https://www.linkedin.com/in/hugo-mathieu-steinbach/"
-              target="_blank"
-              rel="noreferrer"
-              className="w-10 h-10 rounded-full border border-white/20 bg-white/5 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
-              aria-label="LinkedIn"
-            >
-              <LinkedInIcon className="w-4 h-4 fill-white/70 group-hover:fill-orange-400 transition-colors" />
-            </a>
-
-            <a
-              href="https://github.com/Amaroke"
-              target="_blank"
-              rel="noreferrer"
-              className="w-10 h-10 rounded-full border border-white/20 bg-white/5 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
-              aria-label="GitHub"
-            >
-              <GitHubIcon className="w-4 h-4 fill-white/70 group-hover:fill-orange-400 transition-colors" />
-            </a>
-
-            <a
-              href="mailto:hugo.amaroke@gmail.com"
-              className="w-10 h-10 rounded-full border border-white/20 bg-white/5 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
-              aria-label="Email"
-            >
-              <MailIcon className="w-4 h-4 stroke-white/70 group-hover:stroke-orange-400 transition-colors" />
-            </a>
-          </div>
-
-          <a
-            href="#connect"
-            className="px-5 py-2 border border-orange-500/60 text-orange-400 font-semibold rounded-lg hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all duration-300 font-orbitron text-sm tracking-wider"
-          >
-            {t("navbar.contact")}
-          </a>
+        <div className="flex items-center gap-5 sm:gap-8">
+          <ul className="flex items-center gap-5 sm:gap-8">
+            {links.map((link, i) => (
+              <li key={link.href} className={i < 2 ? "hidden sm:block" : ""}>
+                <a
+                  href={link.href}
+                  className="text-sm text-slate-300 hover:text-orange-400 transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
           <button
-            onClick={toggleLanguage}
-            className="text-white/50 hover:text-orange-400 transition-colors duration-300 text-sm font-semibold tracking-wider font-orbitron"
+            onClick={() => i18n.changeLanguage(isEnglish ? "fr" : "en")}
+            aria-label={t("navbar.language")}
+            className="text-white/50 hover:text-orange-400 transition-colors duration-200 text-sm font-semibold font-display"
           >
-            {i18n.resolvedLanguage === "en" ? (
-              <span>
-                FR / <strong className="text-white">EN</strong>
-              </span>
-            ) : (
-              <span>
-                <strong className="text-white">FR</strong> / EN
-              </span>
-            )}
+            <span className={isEnglish ? "" : "text-white"}>FR</span>
+            {" / "}
+            <span className={isEnglish ? "text-white" : ""}>EN</span>
           </button>
         </div>
       </div>
