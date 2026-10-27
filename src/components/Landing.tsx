@@ -26,7 +26,7 @@ export default function Hero() {
             className="animate-fade-up text-4xl sm:text-5xl md:text-6xl font-bold font-display text-white leading-tight mb-4"
             style={{ animationDelay: "0.05s" }}
           >
-            Hugo Mathieu&#8209;Steinbach
+            Hugo Mathieu&nbsp;Steinbach
           </h1>
 
           <p

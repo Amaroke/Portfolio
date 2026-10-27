@@ -64,7 +64,7 @@
     "sending": "Envoi…"
   },
   "footer": {
-    "copyright": "© {{year}} Hugo Mathieu-Steinbach",
+    "copyright": "© {{year}} Hugo Mathieu Steinbach",
     "source": "Code source"
   }
 }
