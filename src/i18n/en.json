@@ -1,55 +1,70 @@
 {
   "navbar": {
-    "contact": "Contact"
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Passer en français"
   },
   "hero": {
-    "welcome": "Welcome to my Portfolio",
-    "greeting": "Hey!",
-    "hi": "I'm",
-    "presentation": "Analyst Developer at ITS4U, currently on mission at BIL. Passionate about new technologies and finance, I mainly work with Java and Spring Boot, and enjoy building front-end projects with React, TypeScript and Tailwind on the side. I love working in a team and discovering new things.",
-    "connect": "Let's Connect"
+    "tagline": "Analyst developer at ITS4U",
+    "presentation": "I'm on assignment at Banque Internationale à Luxembourg, where I develop in Java and Spring Boot.\nThe rest of the time, I build projects around my passions:",
+    "cta": "See my projects",
+    "passions": {
+      "finance": {
+        "label": "Finance",
+        "text": "a site to learn finance and investing"
+      },
+      "games": {
+        "label": "Video games",
+        "text": "tools to organize your progress in video games"
+      },
+      "ai": {
+        "label": "AI",
+        "text": "Claude Code skills that organize my library of TV shows, movies and books"
+      }
+    },
+    "separator": ": "
   },
   "skills": {
-    "title": "Skills & Technologies",
-    "work": "My work stack",
-    "personal": "On my personal projects"
+    "title": "Skills",
+    "favorites": "The essentials",
+    "work": "At work",
+    "personal": "On my projects"
   },
   "projects": {
-    "title": "Personal Projects",
-    "description": "A few public projects I built in my spare time.",
-    "privateNote": "I also have many private projects and work from my studies that I don't showcase here.",
+    "title": "Projects",
+    "description": "What I build in my spare time.",
     "demo": "Demo",
     "code": "Code",
     "items": {
       "amarokeInsights": {
-        "description": "Personal educational website about finance, banking concepts, investments (stocks, ETFs, bonds), crypto and trading basics, with interactive calculation tools."
+        "description": "Personal educational website about finance: banking concepts, investing (stocks, ETFs, bonds), crypto and trading basics, with interactive calculators."
       },
       "milkLinks": {
-        "description": "Web application centralizing useful links for the game Milky Way Idle: expansions, strategy guides and community-created tools."
+        "description": "Web app gathering useful links for the game Milky Way Idle: extensions, strategy guides and community-made tools."
       },
       "charadle": {
-        "description": "Wordle-inspired web game where you guess an anime character from their picture, with a daily ladder of seven tiers and unlimited free play, built on MyAnimeList data."
+        "description": "Wordle-inspired web game where you guess an anime character from their picture. Daily challenge with seven tiers and unlimited free play, powered by MyAnimeList data."
       },
       "glUpgradePlanner": {
-        "description": "Companion for Galaxy Life players: track the buildings of each colony, the upgrades your Star Base allows, ongoing constructions and research, and never miss the free Drops."
+        "description": "Companion for Galaxy Life players: tracks the buildings of each colony, the upgrades your Star Base level allows and ongoing constructions and research, with a reminder for the free Drops."
       },
       "jellybrarian": {
-        "description": "Claude Code skills that name, file and complete a Jellyfin library (animes, shows, movies, mangas, books and music) according to a single convention."
+        "description": "Claude Code skills that name, file and complete a Jellyfin library (anime, TV shows, movies, manga, books and music) according to a single convention."
       }
     }
   },
   "contact": {
-    "title": "Get In Touch",
-    "firstname": "First Name",
-    "lastname": "Last Name",
-    "phone": "Phone",
+    "title": "Contact",
+    "intro": "A question, a project idea or just want to chat?\nEmail me directly or use the form.",
     "email": "Email",
     "message": "Message",
     "send": "Send",
-    "sent": "Sent!",
-    "sending": "Sending..."
+    "sent": "Message sent, thanks!",
+    "sending": "Sending…"
   },
   "footer": {
-    "copyright": "© {{year}} Hugo Mathieu-Steinbach. All rights reserved."
+    "copyright": "© {{year}} Hugo Mathieu-Steinbach",
+    "source": "Source code"
   }
 }

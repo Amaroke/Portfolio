@@ -1,22 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --font-orbitron: "Space Grotesk Variable", sans-serif;
-  --font-inter: "Inter Variable", sans-serif;
+  --font-display: "Space Grotesk Variable", sans-serif;
+  --font-sans: "Inter Variable", sans-serif;
   --color-space: #050510;
   --color-space-light: #080820;
   --color-space-card: #0d0d1f;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+html {
+  scroll-padding-top: 80px;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -85,52 +84,6 @@ body {
   }
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.skill-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 35s linear infinite;
-}
-
-.skill-marquee:hover {
-  animation-play-state: paused;
-}
-
-.skill-marquee-reverse {
-  display: flex;
-  width: max-content;
-  animation: marquee 30s linear infinite reverse;
-}
-
-.skill-marquee-reverse:hover {
-  animation-play-state: paused;
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-14px);
-  }
-}
-
-.animate-float {
-  animation: float 5s ease-in-out infinite;
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -145,22 +98,6 @@ body {
 
 .animate-fade-up {
   animation: fade-up 0.6s ease-out both;
-}
-
-@keyframes glow-pulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 20px 2px rgba(249, 115, 22, 0.3);
-  }
-
-  50% {
-    box-shadow: 0 0 40px 10px rgba(249, 115, 22, 0.55);
-  }
-}
-
-.animate-glow {
-  animation: glow-pulse 2.5s ease-in-out infinite;
 }
 
 @keyframes section-reveal {
@@ -181,45 +118,44 @@ body {
   animation-range: entry 0% entry 22%;
 }
 
-@keyframes title-line-expand {
+@keyframes marquee {
   from {
-    transform: scaleX(0);
-    opacity: 0;
+    transform: translateX(0);
   }
 
   to {
-    transform: scaleX(1);
-    opacity: 1;
+    transform: translateX(-50%);
   }
 }
 
-.title-line {
-  height: 2px;
-  width: 180px;
-  margin-inline: auto;
-  background: linear-gradient(to right, transparent, #f97316 35%, #f97316 65%, transparent);
-  box-shadow: 0 0 6px 1px rgba(249, 115, 22, 0.25);
-  border-radius: 2px;
-  transform-origin: center center;
-  animation: title-line-expand linear both;
-  animation-timeline: view();
-  animation-range: entry 5% entry 40%;
+.skill-marquee,
+.skill-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
 }
 
-@keyframes card-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.skill-marquee-reverse {
+  animation-duration: 30s;
+  animation-direction: reverse;
 }
 
-.card-spin {
-  animation: card-spin 6s linear infinite;
-}
-
-.project-card:hover .card-spin {
+.skill-marquee:hover,
+.skill-marquee-reverse:hover {
   animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stars,
+  .stars2,
+  .stars3,
+  .animate-fade-up,
+  .section-animate {
+    animation: none;
+  }
+
+  .skill-marquee,
+  .skill-marquee-reverse {
+    animation-play-state: paused;
+  }
 }

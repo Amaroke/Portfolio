@@ -74,18 +74,20 @@ const personalSkills: Skill[] = [
   { name: "VS Code", icon: svg(VSCodeIcon), favorite: true },
   { name: "GitHub", icon: svg(GitHubIcon, "#FFFFFF") },
   { name: "Postman", icon: svg(PostmanIcon) },
-  { name: "Claude Code", icon: svg(ClaudeIcon, "#D97757") },
+  { name: "Claude Code", icon: svg(ClaudeIcon, "#D97757"), favorite: true },
 ];
 
 function SkillItem({
   name,
   icon,
-  compact = false,
   favorite = false,
-}: Skill & { compact?: boolean }) {
+  compact = false,
+  duplicate = false,
+}: Skill & { compact?: boolean; duplicate?: boolean }) {
   return (
-    <div
-      className={`flex flex-col items-center group cursor-default ${
+    <li
+      aria-hidden={duplicate || undefined}
+      className={`flex flex-col items-center group ${
         compact ? "gap-2" : "shrink-0 gap-3 mx-6"
       }`}
     >
@@ -98,19 +100,18 @@ function SkillItem({
           {icon ? (
             <img
               src={icon}
-              alt={name}
+              alt=""
               className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               loading="lazy"
             />
           ) : (
             <span
-              className={`text-white/70 font-bold font-orbitron text-center leading-tight ${
+              className={`text-white/70 font-bold font-display ${
                 compact ? "text-[8px]" : "text-[10px]"
               }`}
+              aria-hidden="true"
             >
-              {name.length > 4
-                ? name.slice(0, 3).toUpperCase()
-                : name.toUpperCase()}
+              {name.slice(0, 3).toUpperCase()}
             </span>
           )}
         </div>
@@ -119,6 +120,7 @@ function SkillItem({
             className={`absolute -top-1 -right-1 text-orange-400 fill-orange-400 ${
               compact ? "w-3 h-3" : "w-3.5 h-3.5"
             }`}
+            aria-hidden="true"
           />
         )}
       </div>
@@ -129,6 +131,40 @@ function SkillItem({
       >
         {name}
       </span>
+    </li>
+  );
+}
+
+function SkillGroup({
+  title,
+  skills,
+  reverse = false,
+}: {
+  title: string;
+  skills: Skill[];
+  reverse?: boolean;
+}) {
+  return (
+    <div>
+      <h3 className="text-slate-400 text-xs font-display tracking-widest uppercase mb-4">
+        {title}
+      </h3>
+
+      <div className="md:hidden rounded-2xl border border-white/8 bg-white/3 p-4">
+        <ul className="grid grid-cols-4 gap-y-4 gap-x-2">
+          {skills.map((skill) => (
+            <SkillItem key={skill.name} {...skill} compact />
+          ))}
+        </ul>
+      </div>
+
+      <div className="hidden md:block overflow-hidden rounded-2xl border border-white/8 bg-white/3 py-6">
+        <ul className={reverse ? "skill-marquee-reverse" : "skill-marquee"}>
+          {[...skills, ...skills].map((skill, i) => (
+            <SkillItem key={i} {...skill} duplicate={i >= skills.length} />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
@@ -138,69 +174,28 @@ const shuffledPersonal = shuffle(personalSkills);
 
 export default function Skills() {
   const { t } = useTranslation("global");
-  const doubledWork = [...shuffledWork, ...shuffledWork];
-  const doubledPersonal = [...shuffledPersonal, ...shuffledPersonal];
 
   return (
-    <section
-      id="skills"
-      className="section-animate py-14 md:py-24 bg-space relative overflow-hidden"
-    >
-      <div className="absolute -top-20 left-0 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-20 right-0 w-72 h-72 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+    <section id="skills" className="section-animate py-16 md:py-24 bg-space">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-bold font-display text-white mb-3">
+          {t("skills.title")}
+        </h2>
+        <p className="flex items-center gap-2 text-slate-400 text-sm mb-12">
+          <HeartIcon
+            className="w-3.5 h-3.5 text-orange-400 fill-orange-400"
+            aria-hidden="true"
+          />
+          {t("skills.favorites")}
+        </p>
 
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-4 text-white">
-            {t("skills.title")}
-          </h2>
-          <div className="title-line mt-5" />
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <div>
-            <p className="text-slate-400 text-xs font-orbitron tracking-widest uppercase mb-4 pl-1">
-              {t("skills.work")}
-            </p>
-
-            <div className="md:hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-4">
-              <div className="grid grid-cols-4 gap-y-4 gap-x-2">
-                {shuffledWork.map((skill, i) => (
-                  <SkillItem key={i} {...skill} compact />
-                ))}
-              </div>
-            </div>
-
-            <div className="hidden md:block overflow-hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-6">
-              <div className="skill-marquee">
-                {doubledWork.map((skill, i) => (
-                  <SkillItem key={i} {...skill} />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-slate-400 text-xs font-orbitron tracking-widest uppercase mb-4 pl-1">
-              {t("skills.personal")}
-            </p>
-
-            <div className="md:hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-4">
-              <div className="grid grid-cols-4 gap-y-4 gap-x-2 justify-items-center">
-                {shuffledPersonal.map((skill, i) => (
-                  <SkillItem key={i} {...skill} compact />
-                ))}
-              </div>
-            </div>
-
-            <div className="hidden md:block overflow-hidden rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-6">
-              <div className="skill-marquee-reverse">
-                {doubledPersonal.map((skill, i) => (
-                  <SkillItem key={i} {...skill} />
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col gap-8">
+          <SkillGroup title={t("skills.work")} skills={shuffledWork} />
+          <SkillGroup
+            title={t("skills.personal")}
+            skills={shuffledPersonal}
+            reverse
+          />
         </div>
       </div>
     </section>

@@ -1,37 +1,53 @@
 {
   "navbar": {
-    "contact": "Contact"
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact",
+    "language": "Switch to English"
   },
   "hero": {
-    "welcome": "Bienvenue sur mon Portfolio",
-    "greeting": "Salut !",
-    "hi": "Moi c'est",
-    "presentation": "Analyste Développeur chez ITS4U, actuellement en mission à la BIL. Passionné par les nouvelles technologies et la finance, je travaille principalement en Java et Spring Boot, et j'aime faire du front avec React, TypeScript et Tailwind sur mes projets perso. J'aime travailler en équipe et découvrir de nouvelles choses.",
-    "connect": "Me Contacter"
+    "tagline": "Analyste développeur chez ITS4U",
+    "presentation": "Je suis en mission à la Banque Internationale à Luxembourg, où je développe en Java et Spring Boot.\nLe reste du temps, je construis des projets autour de mes passions :",
+    "cta": "Voir mes projets",
+    "passions": {
+      "finance": {
+        "label": "Finance",
+        "text": "un site pour apprendre la finance et l'investissement"
+      },
+      "games": {
+        "label": "Jeux vidéo",
+        "text": "des outils pour organiser sa progression dans les jeux vidéo"
+      },
+      "ai": {
+        "label": "IA",
+        "text": "des skills Claude Code qui organisent ma bibliothèque de séries, de films et de livres"
+      }
+    },
+    "separator": " : "
   },
   "skills": {
-    "title": "Compétences & Technologies",
-    "work": "Mon stack en mission",
-    "personal": "Sur mes projets persos"
+    "title": "Compétences",
+    "favorites": "Les indispensables",
+    "work": "Au travail",
+    "personal": "Sur mes projets"
   },
   "projects": {
-    "title": "Projets Personnels",
-    "description": "Quelques projets publics que j'ai développés sur mon temps libre.",
-    "privateNote": "J'ai également de nombreux projets privés et des travaux réalisés durant mes études que je ne présente pas ici.",
+    "title": "Projets",
+    "description": "Ce que je construis sur mon temps libre.",
     "demo": "Démo",
     "code": "Code",
     "items": {
       "amarokeInsights": {
-        "description": "Site éducatif personnel sur la finance, concepts bancaires, investissements (actions, ETF, obligations), cryptos et trading, avec des outils de calcul interactifs."
+        "description": "Site éducatif personnel sur la finance : concepts bancaires, investissements (actions, ETF, obligations), cryptomonnaies et trading, avec des outils de calcul interactifs."
       },
       "milkLinks": {
-        "description": "Application web centralisant les liens utiles pour le jeu Milky Way Idle : extensions, guides stratégiques et outils créés par la communauté."
+        "description": "Application web qui centralise les liens utiles pour le jeu Milky Way Idle : extensions, guides stratégiques et outils créés par la communauté."
       },
       "charadle": {
-        "description": "Jeu web inspiré de Wordle où il faut deviner un personnage d'anime à partir de son image, avec un défi quotidien en sept paliers et un mode libre illimité, basé sur les données de MyAnimeList."
+        "description": "Jeu web inspiré de Wordle où il faut deviner un personnage d'anime à partir de son image. Défi quotidien en sept paliers et mode libre illimité, à partir des données de MyAnimeList."
       },
       "glUpgradePlanner": {
-        "description": "Compagnon pour les joueurs de Galaxy Life : suivi des bâtiments de chaque colonie, des améliorations possibles selon la Star Base, des constructions et recherches en cours, et rappel des Drops gratuits."
+        "description": "Compagnon pour les joueurs de Galaxy Life : suivi des bâtiments de chaque colonie, des améliorations possibles selon le niveau de la Star Base et des constructions et recherches en cours, avec un rappel pour les Drops gratuits."
       },
       "jellybrarian": {
         "description": "Skills Claude Code qui nomment, rangent et complètent une bibliothèque Jellyfin (animes, séries, films, mangas, livres et musique) selon une convention unique."
@@ -39,17 +55,16 @@
     }
   },
   "contact": {
-    "title": "Me Contacter",
-    "firstname": "Prénom",
-    "lastname": "Nom",
-    "phone": "Téléphone",
+    "title": "Contact",
+    "intro": "Une question, une idée de projet ou juste envie d'échanger ?\nÉcris-moi directement ou passe par le formulaire.",
     "email": "Email",
     "message": "Message",
     "send": "Envoyer",
-    "sent": "Envoyé !",
-    "sending": "Envoi..."
+    "sent": "Message envoyé, merci !",
+    "sending": "Envoi…"
   },
   "footer": {
-    "copyright": "© {{year}} Hugo Mathieu-Steinbach. Tous droits réservés."
+    "copyright": "© {{year}} Hugo Mathieu-Steinbach",
+    "source": "Code source"
   }
 }
