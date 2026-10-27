@@ -15,7 +15,7 @@ export default function NavBar() {
   }, []);
 
   const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "fr" : "en");
+    i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "fr" : "en");
   };
 
   return (
@@ -71,7 +71,7 @@ export default function NavBar() {
             onClick={toggleLanguage}
             className="text-white/50 hover:text-orange-400 transition-colors duration-300 text-sm font-semibold tracking-wider font-orbitron"
           >
-            {i18n.language === "en" ? (
+            {i18n.resolvedLanguage === "en" ? (
               <span>
                 FR / <strong className="text-white">EN</strong>
               </span>

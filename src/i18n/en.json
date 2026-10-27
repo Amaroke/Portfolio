@@ -28,7 +28,13 @@
         "description": "Web application centralizing useful links for the game Milky Way Idle: expansions, strategy guides and community-created tools."
       },
       "charadle": {
-        "description": "Wordle-inspired web game where you guess an anime or manga character from the character's image displayed on screen."
+        "description": "Wordle-inspired web game where you guess an anime character from their picture, with a daily ladder of seven tiers and unlimited free play, built on MyAnimeList data."
+      },
+      "glUpgradePlanner": {
+        "description": "Companion for Galaxy Life players: track the buildings of each colony, the upgrades your Star Base allows, ongoing constructions and research, and never miss the free Drops."
+      },
+      "jellybrarian": {
+        "description": "Claude Code skills that name, file and complete a Jellyfin library (animes, shows, movies, mangas, books and music) according to a single convention."
       }
     }
   },
@@ -44,6 +50,6 @@
     "sending": "Sending..."
   },
   "footer": {
-    "copyright": "© 2026 Hugo Mathieu-Steinbach. All rights reserved."
+    "copyright": "© {{year}} Hugo Mathieu-Steinbach. All rights reserved."
   }
 }
