@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-orbitron: "Space Grotesk", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-orbitron: "Space Grotesk Variable", sans-serif;
+  --font-inter: "Inter Variable", sans-serif;
   --color-space: #050510;
   --color-space-light: #080820;
   --color-space-card: #0d0d1f;
