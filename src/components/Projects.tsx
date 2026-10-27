@@ -8,7 +8,7 @@ interface Project {
   name: string;
   stack: string[];
   github: string;
-  demo: string;
+  demo?: string;
 }
 
 const projects: Project[] = [
@@ -29,9 +29,22 @@ const projects: Project[] = [
   {
     key: "charadle",
     name: "Charadle",
-    stack: ["JavaScript", "React", "CSS"],
+    stack: ["TypeScript", "Next.js", "React", "Tailwind"],
     github: "https://github.com/Amaroke/Charadle",
-    demo: "https://amaroke.github.io/Charadle/",
+    demo: "https://charadle-v2.vercel.app/",
+  },
+  {
+    key: "glUpgradePlanner",
+    name: "GL Upgrade Planner",
+    stack: ["TypeScript", "React", "Vite", "Tailwind"],
+    github: "https://github.com/Amaroke/GL-Upgrade-Planner",
+    demo: "https://amaroke.github.io/GL-Upgrade-Planner/",
+  },
+  {
+    key: "jellybrarian",
+    name: "Jellybrarian",
+    stack: ["Python", "Claude Code"],
+    github: "https://github.com/Amaroke/Jellybrarian",
   },
 ];
 
@@ -63,11 +76,11 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {projects.map((project, index) => (
             <article
               key={project.key}
-              className="project-card relative rounded-2xl p-px overflow-hidden"
+              className="project-card relative rounded-2xl p-px overflow-hidden w-full md:w-[calc((100%-3rem)/3)]"
             >
               <div
                 className="pointer-events-none absolute top-1/2 left-1/2 aspect-square w-[200%]"
@@ -75,7 +88,7 @@ export default function Projects() {
               >
                 <div
                   className="card-spin w-full h-full"
-                  style={{ background: gradients[index] }}
+                  style={{ background: gradients[index % gradients.length] }}
                 />
               </div>
 
@@ -114,15 +127,17 @@ export default function Projects() {
                       <GitHubIcon className="w-4 h-4" />
                       {t("projects.code")}
                     </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-sm text-cyan-400 hover:bg-cyan-500/20 hover:border-cyan-500/55 transition-all duration-200"
-                    >
-                      <ExternalLinkIcon className="w-4 h-4" />
-                      {t("projects.demo")}
-                    </a>
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-sm text-cyan-400 hover:bg-cyan-500/20 hover:border-cyan-500/55 transition-all duration-200"
+                      >
+                        <ExternalLinkIcon className="w-4 h-4" />
+                        {t("projects.demo")}
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

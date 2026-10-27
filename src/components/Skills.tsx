@@ -1,36 +1,40 @@
-import type { ComponentType, SVGProps } from "react";
 import { useTranslation } from "react-i18next";
 import HeartIcon from "~icons/lucide/heart";
-import JavaIcon from "~icons/devicon/java";
-import SpringIcon from "~icons/devicon/spring";
-import MavenIcon from "~icons/devicon/maven";
-import OracleIcon from "~icons/devicon/oracle";
-import GitIcon from "~icons/devicon/git";
-import GitLabIcon from "~icons/devicon/gitlab";
-import IntelliJIcon from "~icons/devicon/intellij";
-import JiraIcon from "~icons/devicon/jira";
-import ConfluenceIcon from "~icons/devicon/confluence";
-import JavaScriptIcon from "~icons/devicon/javascript";
-import TypeScriptIcon from "~icons/devicon/typescript";
-import ReactIcon from "~icons/devicon/react";
-import TailwindIcon from "~icons/devicon/tailwindcss";
-import HtmlIcon from "~icons/devicon/html5";
-import ViteIcon from "~icons/devicon/vitejs";
-import NodeIcon from "~icons/devicon/nodejs";
-import VSCodeIcon from "~icons/devicon/vscode";
-import PostmanIcon from "~icons/devicon/postman";
-import OpenShiftIcon from "~icons/simple-icons/redhatopenshift";
-import BrunoIcon from "~icons/simple-icons/bruno";
-import GitHubIcon from "~icons/simple-icons/github";
-import ClaudeIcon from "~icons/simple-icons/claude";
+import JavaIcon from "~icons/devicon/java?raw";
+import SpringIcon from "~icons/devicon/spring?raw";
+import MavenIcon from "~icons/devicon/maven?raw";
+import OracleIcon from "~icons/devicon/oracle?raw";
+import GitIcon from "~icons/devicon/git?raw";
+import GitLabIcon from "~icons/devicon/gitlab?raw";
+import IntelliJIcon from "~icons/devicon/intellij?raw";
+import JiraIcon from "~icons/devicon/jira?raw";
+import ConfluenceIcon from "~icons/devicon/confluence?raw";
+import JavaScriptIcon from "~icons/devicon/javascript?raw";
+import TypeScriptIcon from "~icons/devicon/typescript?raw";
+import ReactIcon from "~icons/devicon/react?raw";
+import TailwindIcon from "~icons/devicon/tailwindcss?raw";
+import HtmlIcon from "~icons/devicon/html5?raw";
+import ViteIcon from "~icons/devicon/vitejs?raw";
+import NodeIcon from "~icons/devicon/nodejs?raw";
+import VSCodeIcon from "~icons/devicon/vscode?raw";
+import PostmanIcon from "~icons/devicon/postman?raw";
+import OpenShiftIcon from "~icons/simple-icons/redhatopenshift?raw";
+import BrunoIcon from "~icons/simple-icons/bruno?raw";
+import GitHubIcon from "~icons/simple-icons/github?raw";
+import ClaudeIcon from "~icons/simple-icons/claude?raw";
 
 type Skill = {
   name: string;
-  icon?: ComponentType<SVGProps<SVGSVGElement>> | string;
-  color?: string;
+  icon?: string;
   favorite?: boolean;
 };
 
+const svg = (raw: string, color = "currentColor") =>
+  `data:image/svg+xml,${encodeURIComponent(
+    raw
+      .replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" ')
+      .replace(/currentColor/g, color),
+  )}`;
 const pub = (file: string) => `${import.meta.env.BASE_URL}icons/${file}`;
 
 function shuffle<T>(arr: T[]): T[] {
@@ -43,40 +47,39 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 const workSkills: Skill[] = [
-  { name: "Java", icon: JavaIcon, favorite: true },
-  { name: "Spring Boot", icon: SpringIcon, favorite: true },
-  { name: "Maven", icon: MavenIcon },
-  { name: "Oracle", icon: OracleIcon },
-  { name: "OpenShift", icon: OpenShiftIcon, color: "#EE0000" },
+  { name: "Java", icon: svg(JavaIcon), favorite: true },
+  { name: "Spring Boot", icon: svg(SpringIcon), favorite: true },
+  { name: "Maven", icon: svg(MavenIcon) },
+  { name: "Oracle", icon: svg(OracleIcon) },
+  { name: "OpenShift", icon: svg(OpenShiftIcon, "#EE0000") },
   { name: "XLDeploy", icon: pub("xldeploy.png") },
   { name: "XLRelease" },
-  { name: "Git", icon: GitIcon },
-  { name: "GitLab", icon: GitLabIcon },
-  { name: "IntelliJ", icon: IntelliJIcon, favorite: true },
-  { name: "Jira", icon: JiraIcon },
-  { name: "Confluence", icon: ConfluenceIcon },
-  { name: "Bruno", icon: BrunoIcon, color: "#F4AA41" },
+  { name: "Git", icon: svg(GitIcon) },
+  { name: "GitLab", icon: svg(GitLabIcon) },
+  { name: "IntelliJ", icon: svg(IntelliJIcon), favorite: true },
+  { name: "Jira", icon: svg(JiraIcon) },
+  { name: "Confluence", icon: svg(ConfluenceIcon) },
+  { name: "Bruno", icon: svg(BrunoIcon, "#F4AA41") },
   { name: "DBeaver", icon: pub("dbeaver.svg") },
 ];
 
 const personalSkills: Skill[] = [
-  { name: "JavaScript", icon: JavaScriptIcon },
-  { name: "TypeScript", icon: TypeScriptIcon, favorite: true },
-  { name: "React", icon: ReactIcon, favorite: true },
-  { name: "Tailwind", icon: TailwindIcon, favorite: true },
-  { name: "HTML / CSS", icon: HtmlIcon },
-  { name: "Vite", icon: ViteIcon, favorite: true },
-  { name: "Node.js", icon: NodeIcon },
-  { name: "VS Code", icon: VSCodeIcon, favorite: true },
-  { name: "GitHub", icon: GitHubIcon, color: "#FFFFFF" },
-  { name: "Postman", icon: PostmanIcon },
-  { name: "Claude Code", icon: ClaudeIcon, color: "#D97757" },
+  { name: "JavaScript", icon: svg(JavaScriptIcon) },
+  { name: "TypeScript", icon: svg(TypeScriptIcon), favorite: true },
+  { name: "React", icon: svg(ReactIcon), favorite: true },
+  { name: "Tailwind", icon: svg(TailwindIcon), favorite: true },
+  { name: "HTML / CSS", icon: svg(HtmlIcon) },
+  { name: "Vite", icon: svg(ViteIcon), favorite: true },
+  { name: "Node.js", icon: svg(NodeIcon) },
+  { name: "VS Code", icon: svg(VSCodeIcon), favorite: true },
+  { name: "GitHub", icon: svg(GitHubIcon, "#FFFFFF") },
+  { name: "Postman", icon: svg(PostmanIcon) },
+  { name: "Claude Code", icon: svg(ClaudeIcon, "#D97757") },
 ];
 
 function SkillItem({
   name,
-  icon: Icon,
-  color,
+  icon,
   compact = false,
   favorite = false,
 }: Skill & { compact?: boolean }) {
@@ -92,19 +95,12 @@ function SkillItem({
             compact ? "w-12 h-12 p-2" : "w-16 h-16 p-3"
           }`}
         >
-          {typeof Icon === "string" ? (
+          {icon ? (
             <img
-              src={Icon}
+              src={icon}
               alt={name}
               className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               loading="lazy"
-            />
-          ) : Icon ? (
-            <Icon
-              role="img"
-              aria-label={name}
-              style={color ? { color } : undefined}
-              className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
             />
           ) : (
             <span

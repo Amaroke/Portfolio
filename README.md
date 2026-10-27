@@ -5,7 +5,7 @@
 
 Personal portfolio built with React, TypeScript, Vite and Tailwind CSS. Auto-deployed to GitHub Pages.
 
-Vibe coded from scratch with [Claude Code](https://claude.ai/code) as a modernized rewrite of my [previous portfolio](https://github.com/Amaroke/Portfolio-old), which was no longer maintained.
+Coded from scratch with [Claude Code](https://claude.ai/code) as a modernized rewrite of my [previous portfolio](https://github.com/Amaroke/Portfolio-old), which was no longer maintained.
 
 **Live:** [amaroke.github.io/Portfolio](https://amaroke.github.io/Portfolio/)
 

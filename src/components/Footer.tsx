@@ -13,7 +13,9 @@ export default function Footer() {
           <span className="text-orange-400">Amaroke</span>
         </div>
 
-        <p className="text-slate-400 text-xs">{t("footer.copyright")}</p>
+        <p className="text-slate-400 text-xs">
+          {t("footer.copyright", { year: new Date().getFullYear() })}
+        </p>
 
         <div className="flex items-center gap-2">
           <a

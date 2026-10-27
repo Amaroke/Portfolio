@@ -17,6 +17,7 @@
     "@iconify-json/lucide": "^1.2.147",
     "@iconify-json/simple-icons": "^1.2.101",
     "i18next": "^26.5.11",
+    "i18next-browser-languagedetector": "^8.2.3",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-i18next": "^17.1.9",
